@@ -122,13 +122,6 @@ public class AnimationAndMovementController : MonoBehaviour
         positionToLookAt.y = zero;
         positionToLookAt.z = currentMovement.z;
 
-        //var matrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
-        //var skewedInput = matrix.MultiplyPoint3x4(positionToLookAt);
-
-        //var relative = (transform.position + skewedInput) - transform.position;
-        //var rot = Quaternion.LookRotation(relative, Vector3.up);
-
-
         //the current rotation of our character
         Quaternion currentRotation = transform.rotation;
 
@@ -142,23 +135,21 @@ public class AnimationAndMovementController : MonoBehaviour
 
     void onMovementInput(InputAction.CallbackContext context)
     {
-        //currentMovementInput = context.ReadValue<Vector2>();
+        currentMovementInput = context.ReadValue<Vector2>();
 
-        //Debug.Log(currentMovementInput);
-
+        //// Movement for front camera
         //currentMovement.x = currentMovementInput.x;
         //currentMovement.z = currentMovementInput.y;
         //currentRunMovement.x = currentMovementInput.x * runMultiplier;
         //currentRunMovement.z = currentMovementInput.y * runMultiplier;
         //isMovementPressed = currentMovementInput.x != zero || currentMovementInput.y != zero;
 
-        Vector2 currentMovementInput = context.ReadValue<Vector2>();
+        // Movement for side camera
         Vector3 toConvert = new Vector3(currentMovementInput.x, 0, currentMovementInput.y);
         Vector3 convert = toConvert.ToIso();
-
         currentMovement = convert;
         currentRunMovement = convert * runMultiplier;
-        isMovementPressed = currentMovementInput.x != zero || currentMovementInput.y != zero;        
+        isMovementPressed = currentMovementInput.x != zero || currentMovementInput.y != zero;
     }
 
     void onJump(InputAction.CallbackContext context)
