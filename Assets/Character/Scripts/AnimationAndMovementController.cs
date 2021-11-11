@@ -43,6 +43,10 @@ public class AnimationAndMovementController : MonoBehaviour
     Dictionary<int, float> jumpGravities = new Dictionary<int, float>();
     Coroutine currentJumpResetCoroutine = null;
 
+    //action variables
+    [SerializeField]
+    bool isActionpressed;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -62,6 +66,8 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput.CharacterControls.Run.canceled += onRun;
         playerInput.CharacterControls.Jump.started += onJump;
         playerInput.CharacterControls.Jump.canceled += onJump;
+        playerInput.CharacterControls.Action.started += onAction;
+        playerInput.CharacterControls.Action.canceled += onAction;
 
         SetupJumpVariables();
     }
@@ -162,6 +168,11 @@ public class AnimationAndMovementController : MonoBehaviour
         isRunPressed = context.ReadValueAsButton();
     }
 
+    void onAction(InputAction.CallbackContext context)
+    {
+        isActionpressed = context.ReadValueAsButton();
+    }
+
     void HandleAnimation()
     {
         // get parameter value from animator
@@ -219,6 +230,20 @@ public class AnimationAndMovementController : MonoBehaviour
             float previousYVelocity = currentMovement.y;
             currentMovement.y = currentMovement.y + (jumpGravities[jumpCount] * Time.deltaTime);
             appliedMovement.y = Mathf.Max((previousYVelocity + currentMovement.y) * .5f, -20.0f);
+        }
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Pickup item = hit.gameObject.GetComponent<Pickup>();
+        if (item != null)
+        {
+            item.ShowPickup();
+
+            if (isActionpressed)
+            {
+                item.Pick();
+            }
         }
     }
 
