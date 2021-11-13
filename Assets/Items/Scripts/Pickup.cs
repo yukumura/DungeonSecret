@@ -87,4 +87,10 @@ public class Pickup : MonoBehaviour
     {
         CheckStartCoroutineHideIconPickup();
     }
+
+    //to do: check if it's better use trigger enter instead character controller OnControllerColliderHit
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.name);
+    }
 }

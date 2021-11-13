@@ -43,9 +43,10 @@ public class AnimationAndMovementController : MonoBehaviour
     Dictionary<int, float> jumpGravities = new Dictionary<int, float>();
     Coroutine currentJumpResetCoroutine = null;
 
-    //action variables
-    [SerializeField]
+    //action variables    
     bool isActionpressed;
+    [SerializeField]
+    float forceMagnitude = 1.0f;
 
     // Start is called before the first frame update
     void Awake()
@@ -235,7 +236,31 @@ public class AnimationAndMovementController : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        CheckIfHitMovableItem(hit);
+        CheckIfHitPickupableItem(hit);
+    }
+
+    private void CheckIfHitMovableItem(ControllerColliderHit hit)
+    {
+        Movable movable = hit.gameObject.GetComponent<Movable>();
+        if (movable != null)
+        {
+            Rigidbody rigidbody = hit.gameObject.GetComponent<Rigidbody>();
+
+            Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
+            forceDirection.y = 0;
+            forceDirection.Normalize();
+
+            rigidbody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
+
+
+        }
+    }
+
+    private void CheckIfHitPickupableItem(ControllerColliderHit hit)
+    {
         Pickup item = hit.gameObject.GetComponent<Pickup>();
+
         if (item != null)
         {
             item.ShowPickup();
