@@ -12,4 +12,9 @@ public class Inventory : MonoBehaviour
     {
         return slots.Where(x => x.IsEmpty).FirstOrDefault();
     }
+
+    public Slot CheckIfItemExistInInventory(string itemName)
+    {
+        return slots.Where(x => x.ItemName == itemName).FirstOrDefault();
+    }
 }

@@ -14,4 +14,12 @@ public static class Helpers
             return "Player";
         }
     }
+
+    public static string UIItemIconName
+    {
+        get
+        {
+            return "ItemIcon";
+        }
+    }
 }

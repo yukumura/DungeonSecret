@@ -238,6 +238,7 @@ public class AnimationAndMovementController : MonoBehaviour
     {
         CheckIfHitMovableItem(hit);
         CheckIfHitPickupableItem(hit);
+        CheckIfHitActionableItem(hit);
     }
 
     private void CheckIfHitMovableItem(ControllerColliderHit hit)
@@ -263,11 +264,42 @@ public class AnimationAndMovementController : MonoBehaviour
 
         if (item != null)
         {
-            item.ShowPickup();
+            item.ShowIconInGame();
 
             if (isActionpressed)
             {
                 item.Pick();
+            }
+        }
+    }
+
+    private void CheckIfHitActionableItem(ControllerColliderHit hit)
+    {
+        Actionable item = hit.gameObject.GetComponent<Actionable>();
+
+        if (item != null)
+        {
+            if (!item.IsUsed)
+            {
+                item.ShowIconInGame();
+
+                if (isActionpressed)
+                {
+                    bool canPlayerDoAction = item.CheckIfPlayerHasRequiredItems();
+                    if (canPlayerDoAction)
+                    {
+                        Debug.Log("Player can do action");
+                        item.DoAction();
+                    }
+                    else
+                    {
+                        Debug.Log("Missing items.");
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Item already used");
             }
         }
     }
@@ -293,6 +325,8 @@ public class AnimationAndMovementController : MonoBehaviour
 
         HandleGravity();
         HandleJump();
+
+        Debug.DrawRay(transform.position, transform.forward, Color.red);
     }
 
     private void OnEnable()
