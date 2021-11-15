@@ -39,6 +39,8 @@ public class Item : MonoBehaviour
             StopCoroutine(hideIconInGameRoutine);
             hideIconInGameRoutine = null;
         }
+
+        CheckStartCoroutineHideIconInGame();
     }
 
     protected void CheckStartCoroutineHideIconInGame()
@@ -72,7 +74,7 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        CheckStartCoroutineHideIconInGame();
+        //CheckStartCoroutineHideIconInGame();
     }
 
 }

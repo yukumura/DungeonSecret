@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 623333782}
   - component: {fileID: 623333781}
   - component: {fileID: 623333780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2442,6 +2442,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMagnitude: 1
+  layerWithInteract:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!143 &1521439307
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2506,6 +2509,10 @@ PrefabInstance:
     - target: {fileID: 3412230164081565875, guid: a98dbe8c6f933b64284d5c45f0ad8968, type: 3}
       propertyPath: m_Name
       value: Item Pickupable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412230164081565875, guid: a98dbe8c6f933b64284d5c45f0ad8968, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6397000647163753966, guid: a98dbe8c6f933b64284d5c45f0ad8968, type: 3}
       propertyPath: m_RootOrder
@@ -2806,6 +2813,10 @@ PrefabInstance:
     - target: {fileID: 3412230164081565875, guid: a98dbe8c6f933b64284d5c45f0ad8968, type: 3}
       propertyPath: m_Name
       value: Item Pickupable (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412230164081565875, guid: a98dbe8c6f933b64284d5c45f0ad8968, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6397000647163753966, guid: a98dbe8c6f933b64284d5c45f0ad8968, type: 3}
       propertyPath: m_RootOrder

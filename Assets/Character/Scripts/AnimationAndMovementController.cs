@@ -48,6 +48,9 @@ public class AnimationAndMovementController : MonoBehaviour
     [SerializeField]
     float forceMagnitude = 1.0f;
 
+    [SerializeField]
+    LayerMask layerWithInteract;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -234,21 +237,28 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void CheckInteraction()
     {
-        CheckIfHitMovableItem(hit);
-        CheckIfHitPickupableItem(hit);
-        CheckIfHitActionableItem(hit);
+        RaycastHit hit;
+        Vector3 sphere = transform.position + characterController.center;
+
+        if (Physics.SphereCast(sphere, characterController.height / 2, transform.forward, out hit, .5f, layerWithInteract))
+        {
+            GameObject gameObject = hit.transform.gameObject;
+            CheckIfHitMovableItem(gameObject);
+            CheckIfHitPickupableItem(gameObject);
+            CheckIfHitActionableItem(gameObject);
+        }
     }
 
-    private void CheckIfHitMovableItem(ControllerColliderHit hit)
+    private void CheckIfHitMovableItem(GameObject gameObject)
     {
-        Movable movable = hit.gameObject.GetComponent<Movable>();
+        Movable movable = gameObject.GetComponent<Movable>();
         if (movable != null)
         {
-            Rigidbody rigidbody = hit.gameObject.GetComponent<Rigidbody>();
+            Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
 
-            Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
+            Vector3 forceDirection = gameObject.transform.position - transform.position;
             forceDirection.y = 0;
             forceDirection.Normalize();
 
@@ -258,9 +268,9 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
-    private void CheckIfHitPickupableItem(ControllerColliderHit hit)
+    private void CheckIfHitPickupableItem(GameObject gameObject)
     {
-        Pickup item = hit.gameObject.GetComponent<Pickup>();
+        Pickup item = gameObject.GetComponent<Pickup>();
 
         if (item != null)
         {
@@ -273,9 +283,9 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
-    private void CheckIfHitActionableItem(ControllerColliderHit hit)
+    private void CheckIfHitActionableItem(GameObject gameObject)
     {
-        Actionable item = hit.gameObject.GetComponent<Actionable>();
+        Actionable item = gameObject.GetComponent<Actionable>();
 
         if (item != null)
         {
@@ -325,8 +335,7 @@ public class AnimationAndMovementController : MonoBehaviour
 
         HandleGravity();
         HandleJump();
-
-        Debug.DrawRay(transform.position, transform.forward, Color.red);
+        CheckInteraction();
     }
 
     private void OnEnable()
