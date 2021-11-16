@@ -2062,7 +2062,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2406,6 +2406,7 @@ GameObject:
   - component: {fileID: 1521439306}
   - component: {fileID: 1521439309}
   - component: {fileID: 1521439307}
+  - component: {fileID: 1521439310}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2499,6 +2500,22 @@ MonoBehaviour:
   - {fileID: 1383211734}
   - {fileID: 1703301033}
   - {fileID: 1265909564}
+--- !u!114 &1521439310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521439304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a846ef0b1e8c60498d9ad6fc5d30a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabUI: {fileID: 2869388511490560499, guid: 2b1e25c306a6f5b4ca724dce13cfdd9a, type: 3}
+  uiUse: {fileID: 0}
+  character: {fileID: 1521439305}
+  offset: {x: 0, y: 3, z: 0}
 --- !u!1001 &1614700453
 PrefabInstance:
   m_ObjectHideFlags: 0
