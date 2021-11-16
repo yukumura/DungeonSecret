@@ -19,6 +19,8 @@ public class Pickup : Item
         {
             slot.SetItem(iconInInventory, itemName);
             ClearReference();
+            Debug.Log(GameManager.Instance);
+            GameManager.Instance.SetCharacterThoughts("Questo mi potrà servire più tardi");
         }
     }
 
