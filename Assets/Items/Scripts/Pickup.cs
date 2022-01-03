@@ -7,6 +7,7 @@ public class Pickup : Item
     [SerializeField]
     protected string itemName;
     public string ItemName { get { return itemName; } }
+    
 
     [SerializeField]
     protected Sprite iconInInventory;
@@ -19,7 +20,6 @@ public class Pickup : Item
         {
             slot.SetItem(iconInInventory, itemName);
             ClearReference();
-            Debug.Log(GameManager.Instance);
             GameManager.Instance.SetCharacterThoughts("Questo mi potrà servire più tardi");
         }
     }
