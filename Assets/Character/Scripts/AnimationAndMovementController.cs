@@ -9,6 +9,8 @@ public class AnimationAndMovementController : MonoBehaviour
     PlayerInput playerInput;
     CharacterController characterController;
     Animator animator;
+    [SerializeField]
+    GameObject virtualCamera;
 
     int isWalkingHash;
     int isRunningHash;
@@ -24,6 +26,7 @@ public class AnimationAndMovementController : MonoBehaviour
 
     // constants
     float rotationFactorPerFrame = 15f;
+    [SerializeField]
     float runMultiplier = 3.0f;
     int zero = 0;
 
@@ -47,6 +50,15 @@ public class AnimationAndMovementController : MonoBehaviour
     bool isActionpressed;
     [SerializeField]
     float forceMagnitude = 1.0f;
+
+    //camera switch
+    bool isCameraSwitchPressed;
+    bool useNegativeInput;
+    bool useIso = true;
+    bool isRotatingCamera;
+    Quaternion cameraRotationDestination;
+    [SerializeField]
+    float cameraRotateSpeed = 10f;
 
     [SerializeField]
     LayerMask layerWithInteract;
@@ -72,6 +84,10 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput.CharacterControls.Jump.canceled += onJump;
         playerInput.CharacterControls.Action.started += onAction;
         playerInput.CharacterControls.Action.canceled += onAction;
+        playerInput.CharacterControls.SwitchCamera.started += onCameraSwitch;
+        playerInput.CharacterControls.SwitchCamera.canceled += onCameraSwitch;
+
+        cameraRotationDestination = virtualCamera.transform.rotation;
 
         SetupJumpVariables();
     }
@@ -145,7 +161,8 @@ public class AnimationAndMovementController : MonoBehaviour
 
     void onMovementInput(InputAction.CallbackContext context)
     {
-        currentMovementInput = context.ReadValue<Vector2>();
+        
+        currentMovementInput = useNegativeInput ? -context.ReadValue<Vector2>() : context.ReadValue<Vector2>();
 
         //// Movement for front camera
         //currentMovement.x = currentMovementInput.x;
@@ -156,7 +173,7 @@ public class AnimationAndMovementController : MonoBehaviour
 
         // Movement for side camera
         Vector3 toConvert = new Vector3(currentMovementInput.x, 0, currentMovementInput.y);
-        Vector3 convert = toConvert.ToIso();
+        Vector3 convert = useIso ? toConvert.ToIso() : toConvert.ToIso2();
         currentMovement = convert;
         currentRunMovement = convert * runMultiplier;
         isMovementPressed = currentMovementInput.x != zero || currentMovementInput.y != zero;
@@ -175,6 +192,10 @@ public class AnimationAndMovementController : MonoBehaviour
     void onAction(InputAction.CallbackContext context)
     {
         isActionpressed = context.ReadValueAsButton();
+    }
+    void onCameraSwitch(InputAction.CallbackContext context)
+    {
+        isCameraSwitchPressed = context.ReadValueAsButton();
     }
 
     void HandleAnimation()
@@ -249,6 +270,38 @@ public class AnimationAndMovementController : MonoBehaviour
             CheckIfHitPickupableItem(gameObject);
             CheckIfHitActionableItem(gameObject);
         }
+    }
+
+    private void RotateCamera()
+    {
+        if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 45f))
+        {
+
+            cameraRotationDestination = Quaternion.Euler(45f, 135f, 0f);
+            useNegativeInput = true;
+            useIso = true;
+        }
+        else if(Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 135f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 225f, 0f);
+
+            useNegativeInput = false;
+            useIso = false;
+        }
+        else if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 225f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 315f, 0f);
+
+            useNegativeInput = false;
+            useIso = true;
+        }
+        else if(Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 315f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 45f, 0f);
+
+            useNegativeInput = true;
+            useIso = false;
+        }        
     }
 
     private void CheckIfHitMovableItem(GameObject gameObject)
@@ -336,6 +389,26 @@ public class AnimationAndMovementController : MonoBehaviour
         HandleGravity();
         HandleJump();
         CheckInteraction();
+        HandleRotateCamera();
+    }
+
+    private void HandleRotateCamera()
+    {
+        if (isCameraSwitchPressed && !isRotatingCamera)
+        {
+            RotateCamera();
+        }
+
+        if (virtualCamera.transform.rotation.eulerAngles.normalized != cameraRotationDestination.eulerAngles.normalized)
+        {
+            isRotatingCamera = true;
+            virtualCamera.transform.rotation = virtualCamera.transform.rotation = Quaternion.Slerp(virtualCamera.transform.rotation, cameraRotationDestination, Time.deltaTime * cameraRotateSpeed);
+        }
+        else
+        {
+            isRotatingCamera = false;
+            virtualCamera.transform.rotation = cameraRotationDestination;
+        }
     }
 
     private void OnEnable()

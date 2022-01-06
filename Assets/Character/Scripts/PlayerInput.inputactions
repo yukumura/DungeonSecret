@@ -11,31 +11,44 @@
                     "id": "d994a694-fa15-4840-bff1-ef6ec3d12de7",
                     "expectedControlType": "Vector2",
                     "processors": "NormalizeVector2,InvertVector2",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Run",
                     "type": "Button",
                     "id": "bbca7e8d-d2ee-4677-99ac-21119e2671c5",
                     "expectedControlType": "Button",
-                    "processors": "NormalizeVector2",
-                    "interactions": ""
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Jump",
                     "type": "Button",
                     "id": "8e621f19-ce8d-40db-8f2d-99a0df96b30d",
                     "expectedControlType": "Button",
-                    "processors": "NormalizeVector2",
-                    "interactions": ""
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Action",
                     "type": "Button",
                     "id": "ba9b0a62-c587-49cd-a6f4-dd90c3e4c57b",
                     "expectedControlType": "Button",
-                    "processors": "NormalizeVector2",
-                    "interactions": ""
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchCamera",
+                    "type": "Button",
+                    "id": "f427cf34-e990-4c98-ae75-56001e410f4e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -168,6 +181,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e34a6767-03fb-4700-83d6-5d4a304a2420",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchCamera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
