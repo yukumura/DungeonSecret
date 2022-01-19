@@ -7,11 +7,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Barrel Holder
-    second: {fileID: 2100000, guid: ef312b7875f3b70418e4d919bb5f582a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Barrel Metal
     second: {fileID: 2100000, guid: d820a53d356bce14995298fd3f373978, type: 2}
   - first:
