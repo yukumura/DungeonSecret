@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 85701d4d6ca2b0440af59e94b7fe1d24
+guid: fb2930ff4c40e04408b951277a5d1c00
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -9,11 +9,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Floor
     second: {fileID: 2100000, guid: 1c919439ca4d8bc4194a305bf3bde983, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wall
-    second: {fileID: 2100000, guid: cf31dc800cca3e04aad42f439ea5b548, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
