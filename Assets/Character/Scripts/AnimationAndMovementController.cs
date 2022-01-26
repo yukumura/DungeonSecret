@@ -30,6 +30,10 @@ public class AnimationAndMovementController : MonoBehaviour
     float runMultiplier = 3.0f;
     int zero = 0;
 
+    // movement speed
+    [SerializeField]
+    float movementSpeed = 3.0f;
+
     // gravity variables
     float gravity = -9.8f;
     float groundedGravity = -0.5f;
@@ -52,7 +56,8 @@ public class AnimationAndMovementController : MonoBehaviour
     float forceMagnitude = 1.0f;
 
     //camera switch
-    bool isCameraSwitchPressed;
+    bool isCameraCSwitchPressed;
+    bool isCameraACSwitchPressed;
     bool useNegativeInput;
     bool useIso = true;
     bool isRotatingCamera;
@@ -84,8 +89,10 @@ public class AnimationAndMovementController : MonoBehaviour
         playerInput.CharacterControls.Jump.canceled += onJump;
         playerInput.CharacterControls.Action.started += onAction;
         playerInput.CharacterControls.Action.canceled += onAction;
-        playerInput.CharacterControls.SwitchCamera.started += onCameraSwitch;
-        playerInput.CharacterControls.SwitchCamera.canceled += onCameraSwitch;
+        playerInput.CharacterControls.SwitchCameraC.started += onCameraCSwitch;
+        playerInput.CharacterControls.SwitchCameraC.canceled += onCameraCSwitch;
+        playerInput.CharacterControls.SwitchCameraAC.started += onCameraACSwitch;
+        playerInput.CharacterControls.SwitchCameraAC.canceled += onCameraACSwitch;
 
         cameraRotationDestination = virtualCamera.transform.rotation;
 
@@ -193,9 +200,13 @@ public class AnimationAndMovementController : MonoBehaviour
     {
         isActionpressed = context.ReadValueAsButton();
     }
-    void onCameraSwitch(InputAction.CallbackContext context)
+    void onCameraCSwitch(InputAction.CallbackContext context)
     {
-        isCameraSwitchPressed = context.ReadValueAsButton();
+        isCameraCSwitchPressed = context.ReadValueAsButton();
+    }
+    void onCameraACSwitch(InputAction.CallbackContext context)
+    {
+        isCameraACSwitchPressed = context.ReadValueAsButton();
     }
 
     void HandleAnimation()
@@ -272,7 +283,38 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
-    private void RotateCamera()
+    private void RotateCCamera()
+    {
+        if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 45f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 315f, 0f);
+
+            useNegativeInput = false;
+            useIso = true;
+        }
+        else if(Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 135f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 45f, 0f);
+
+            useNegativeInput = true;
+            useIso = false;
+        }
+        else if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 225f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 135f, 0f);
+            useNegativeInput = true;
+            useIso = true;
+        }
+        else if(Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 315f))
+        {
+            cameraRotationDestination = Quaternion.Euler(45f, 225f, 0f);
+
+            useNegativeInput = false;
+            useIso = false;
+        }        
+    }
+
+    private void RotateACCamera()
     {
         if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 45f))
         {
@@ -281,7 +323,7 @@ public class AnimationAndMovementController : MonoBehaviour
             useNegativeInput = true;
             useIso = true;
         }
-        else if(Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 135f))
+        else if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 135f))
         {
             cameraRotationDestination = Quaternion.Euler(45f, 225f, 0f);
 
@@ -295,13 +337,13 @@ public class AnimationAndMovementController : MonoBehaviour
             useNegativeInput = false;
             useIso = true;
         }
-        else if(Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 315f))
+        else if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 315f))
         {
             cameraRotationDestination = Quaternion.Euler(45f, 45f, 0f);
 
             useNegativeInput = true;
             useIso = false;
-        }        
+        }
     }
 
     private void CheckIfHitMovableItem(GameObject gameObject)
@@ -384,19 +426,24 @@ public class AnimationAndMovementController : MonoBehaviour
             appliedMovement.z = currentMovement.z;
         }
 
-        characterController.Move(appliedMovement * Time.deltaTime);
+        characterController.Move(appliedMovement * Time.deltaTime * movementSpeed);
 
         HandleGravity();
-        HandleJump();
+        //Disabled for the moment.
+        //HandleJump();
         CheckInteraction();
         HandleRotateCamera();
     }
 
     private void HandleRotateCamera()
     {
-        if (isCameraSwitchPressed && !isRotatingCamera)
+        if (isCameraCSwitchPressed && !isRotatingCamera)
         {
-            RotateCamera();
+            RotateCCamera();
+        }
+        else if(isCameraACSwitchPressed && !isRotatingCamera)
+        {
+            RotateACCamera();
         }
 
         if (virtualCamera.transform.rotation.eulerAngles.normalized != cameraRotationDestination.eulerAngles.normalized)

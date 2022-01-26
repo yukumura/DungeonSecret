@@ -42,9 +42,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SwitchCamera",
+                    "name": "SwitchCameraAC",
                     "type": "Button",
                     "id": "f427cf34-e990-4c98-ae75-56001e410f4e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchCameraC",
+                    "type": "Button",
+                    "id": "60f426f8-73a1-4092-b925-000eb23e8f41",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -176,7 +185,7 @@
                 {
                     "name": "",
                     "id": "519fda04-90a6-473d-9375-6c6738cda4fc",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -191,7 +200,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SwitchCamera",
+                    "action": "SwitchCameraAC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35ada942-7e93-4514-b8c4-28d5285afd96",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchCameraC",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
