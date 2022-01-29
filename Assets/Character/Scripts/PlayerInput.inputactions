@@ -130,7 +130,7 @@
                 {
                     "name": "",
                     "id": "a23c0be2-ccb6-4e2c-a25e-11c0dfb07336",
-                    "path": "<Gamepad>/leftShoulder",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -206,8 +206,30 @@
                 },
                 {
                     "name": "",
+                    "id": "af7c300a-610f-4eb9-abfa-dceeb4cebe13",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchCameraAC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "35ada942-7e93-4514-b8c4-28d5285afd96",
                     "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchCameraC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa896c32-6a6f-4cee-a881-3f5e81d87ee3",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
