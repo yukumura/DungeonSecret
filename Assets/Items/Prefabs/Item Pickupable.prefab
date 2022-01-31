@@ -108,7 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa084549f44e87488135c264a6d725d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iconInInventory: {fileID: 21300000, guid: 743cd3e56a98a2b47ba990bee3c09a1b, type: 3}
-  iconPickup: {fileID: 5444269137216418653, guid: 022c8cf44b6ba1747ae067def73f3896, type: 3}
-  isShowIconPickup: 0
+  iconInGame: {fileID: 0}
+  isShowIconInGame: 0
   inventory: {fileID: 0}
+  itemName: 
+  iconInInventory: {fileID: 21300000, guid: 743cd3e56a98a2b47ba990bee3c09a1b, type: 3}
