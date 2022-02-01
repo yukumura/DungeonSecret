@@ -7,7 +7,7 @@ public class Pickup : Item
     [SerializeField]
     protected string itemName;
     public string ItemName { get { return itemName; } }
-    
+
 
     [SerializeField]
     protected Sprite iconInInventory;
@@ -15,13 +15,9 @@ public class Pickup : Item
 
     public void Pick()
     {
-        Slot slot = inventory.GetFirstAvailableSlot();
-        if (slot != null)
-        {
-            slot.SetItem(iconInInventory, itemName);
-            ClearReference();
-            GameManager.Instance.SetCharacterThoughts("Questo mi potrà servire più tardi");
-        }
+        Inventory.Instance.AddItemInInventory(iconInInventory, itemName);
+        ClearReference();
+        GameManager.Instance.SetCharacterThoughts("Questo mi potrà servire più tardi");
     }
 
     public override void Action()
