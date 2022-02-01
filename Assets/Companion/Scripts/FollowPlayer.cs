@@ -17,7 +17,7 @@ public class FollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         navMeshAgent.destination = movePositionTransform.position;
     }
