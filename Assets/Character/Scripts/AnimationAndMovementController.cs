@@ -277,9 +277,9 @@ public class AnimationAndMovementController : MonoBehaviour
         if (Physics.SphereCast(sphere, characterController.height / 2, transform.forward, out hit, .5f, layerWithInteract))
         {
             GameObject gameObject = hit.transform.gameObject;
-            CheckIfHitMovableItem(gameObject);
-            CheckIfHitPickupableItem(gameObject);
-            CheckIfHitActionableItem(gameObject);
+            //CheckIfHitMovableItem(gameObject);
+            //CheckIfHitPickupableItem(gameObject);
+            //CheckIfHitActionableItem(gameObject);
         }
     }
 
@@ -378,36 +378,36 @@ public class AnimationAndMovementController : MonoBehaviour
         }
     }
 
-    private void CheckIfHitActionableItem(GameObject gameObject)
-    {
-        Actionable item = gameObject.GetComponent<Actionable>();
+    //private void CheckIfHitActionableItem(GameObject gameObject)
+    //{
+    //    Actionable item = gameObject.GetComponent<Actionable>();
 
-        if (item != null)
-        {
-            if (!item.IsUsed)
-            {
-                item.ShowIconInGame();
+    //    if (item != null)
+    //    {
+    //        if (!item.IsUsed)
+    //        {
+    //            item.ShowIconInGame();
 
-                if (isActionpressed)
-                {
-                    bool canPlayerDoAction = item.CheckIfPlayerHasRequiredItems();
-                    if (canPlayerDoAction)
-                    {
-                        Debug.Log("Player can do action");
-                        item.DoAction();
-                    }
-                    else
-                    {
-                        Debug.Log("Missing items.");
-                    }
-                }
-            }
-            else
-            {
-                Debug.Log("Item already used");
-            }
-        }
-    }
+    //            if (isActionpressed)
+    //            {
+    //                bool canPlayerDoAction = item.CheckIfPlayerHasRequiredItems();
+    //                if (canPlayerDoAction)
+    //                {
+    //                    Debug.Log("Player can do action");
+    //                    item.DoAction();
+    //                }
+    //                else
+    //                {
+    //                    Debug.Log("Missing items.");
+    //                }
+    //            }
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("Item already used");
+    //        }
+    //    }
+    //}
 
     // Update is called once per frame
     void Update()

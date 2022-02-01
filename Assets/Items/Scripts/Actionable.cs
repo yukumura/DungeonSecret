@@ -30,7 +30,7 @@ public class Actionable : Item
 
         return true;
     }
-    public void DoAction()
+    public override void Action()
     {
         foreach (Slot slot in inventorySlot)
         {

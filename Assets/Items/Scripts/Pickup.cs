@@ -24,8 +24,8 @@ public class Pickup : Item
         }
     }
 
-    //to do: check if it's better use trigger enter instead character controller OnControllerColliderHit
-    private void OnTriggerEnter(Collider other)
+    public override void Action()
     {
+        Pick();
     }
 }

@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     PlayerInput playerInput;
     Rigidbody rb;
+    CapsuleCollider capsuleCollider;
     Animator animator;
     [SerializeField]
     GameObject virtualCamera;
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
     float movementSpeed = 3.0f;
 
     //action variables    
+    [SerializeField]
     bool isActionpressed;
     [SerializeField]
     float forceMagnitude = 1.0f;
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour
         playerInput = new PlayerInput();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
 
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
@@ -99,15 +102,8 @@ public class PlayerController : MonoBehaviour
 
         currentMovementInput = useNegativeInput ? -context.ReadValue<Vector2>() : context.ReadValue<Vector2>();
 
-        //// Movement for front camera
-        //currentMovement.x = currentMovementInput.x;
-        //currentMovement.z = currentMovementInput.y;
-        //currentRunMovement.x = currentMovementInput.x * runMultiplier;
-        //currentRunMovement.z = currentMovementInput.y * runMultiplier;
-        //isMovementPressed = currentMovementInput.x != zero || currentMovementInput.y != zero;
-
         // Movement for side camera
-        Vector3 toConvert = new Vector3(currentMovementInput.x, 0, currentMovementInput.y);
+        Vector3 toConvert = new Vector3(currentMovementInput.x, 0f, currentMovementInput.y);
         Vector3 convert = useIso ? toConvert.ToIso() : toConvert.ToIso2();
         currentMovement = convert;
         currentRunMovement = convert * runMultiplier;
@@ -158,16 +154,24 @@ public class PlayerController : MonoBehaviour
 
     private void CheckInteraction()
     {
-        //RaycastHit hit;
-        //Vector3 sphere = transform.position + characterController.center;
-
-        //if (Physics.SphereCast(sphere, characterController.height / 2, transform.forward, out hit, .5f, layerWithInteract))
+        //if (isActionpressed)
         //{
-        //    GameObject gameObject = hit.transform.gameObject;
-        //    CheckIfHitMovableItem(gameObject);
-        //    CheckIfHitPickupableItem(gameObject);
-        //    CheckIfHitActionableItem(gameObject);
+        //    Debug.Log("Check interaction");
+
+        //    RaycastHit hit;
+        //    Vector3 sphere = transform.position + capsuleCollider.center / 2;
+
+
+        //    if (Physics.SphereCast(sphere, capsuleCollider.height / 2, transform.forward, out hit, .5f, layerWithInteract))
+        //    {
+        //        GameObject gameObject = hit.transform.gameObject;
+        //        Debug.Log(gameObject);
+        //        //CheckIfHitMovableItem(gameObject);
+        //        //CheckIfHitPickupableItem(gameObject);
+        //        //CheckIfHitActionableItem(gameObject);
+        //    }
         //}
+        
     }
 
     private void RotateCCamera()
@@ -254,54 +258,58 @@ public class PlayerController : MonoBehaviour
     {
         Pickup item = gameObject.GetComponent<Pickup>();
 
-        if (item != null)
+        if (item != null && isActionpressed)
         {
-            item.ShowIconInGame();
-
-            if (isActionpressed)
-            {
-                item.Pick();
-            }
+            item.Pick();
         }
     }
 
-    private void CheckIfHitActionableItem(GameObject gameObject)
-    {
-        Actionable item = gameObject.GetComponent<Actionable>();
+    //private void CheckIfHitActionableItem(GameObject gameObject)
+    //{
+    //    Actionable item = gameObject.GetComponent<Actionable>();
 
-        if (item != null)
-        {
-            if (!item.IsUsed)
-            {
-                item.ShowIconInGame();
+    //    if (item != null)
+    //    {
+    //        if (!item.IsUsed)
+    //        {
+    //            item.ShowIconInGame();
 
-                if (isActionpressed)
-                {
-                    bool canPlayerDoAction = item.CheckIfPlayerHasRequiredItems();
-                    if (canPlayerDoAction)
-                    {
-                        Debug.Log("Player can do action");
-                        item.DoAction();
-                    }
-                    else
-                    {
-                        Debug.Log("Missing items.");
-                    }
-                }
-            }
-            else
-            {
-                Debug.Log("Item already used");
-            }
-        }
-    }
+    //            if (isActionpressed)
+    //            {
+    //                bool canPlayerDoAction = item.CheckIfPlayerHasRequiredItems();
+    //                if (canPlayerDoAction)
+    //                {
+    //                    Debug.Log("Player can do action");
+    //                    item.DoAction();
+    //                }
+    //                else
+    //                {
+    //                    Debug.Log("Missing items.");
+    //                }
+    //            }
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("Item already used");
+    //        }
+    //    }
+    //}
 
     // Update is called once per frame
     void FixedUpdate()
     {
         HandleRotation();
         HandleAnimation();
+        HandleMovement();
+        //CheckInteraction();
+        HandleRotateCamera();
+        //Disabled for the moment.
+        //HandleJump();
 
+    }
+
+    private void HandleMovement()
+    {
         if (isRunPressed)
         {
             appliedMovement.x = currentRunMovement.x;
@@ -313,16 +321,13 @@ public class PlayerController : MonoBehaviour
             appliedMovement.z = currentMovement.z;
         }
 
-        //Vector3 moveVector = transform.TransformDirection(appliedMovement) * movementSpeed;
-        //rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
-        //rb.AddForce(appliedMovement * Time.deltaTime * movementSpeed);
-        rb.velocity = (appliedMovement * movementSpeed);
+        Vector3 moveVector = appliedMovement * movementSpeed;
+        rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
+    }
 
-        //HandleGravity();
-        //Disabled for the moment.
-        //HandleJump();
-        CheckInteraction();
-        HandleRotateCamera();
+    private void Update()
+    {
+
     }
 
     private void HandleRotateCamera()
@@ -355,5 +360,45 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         playerInput.CharacterControls.Disable();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Item item = other.gameObject.GetComponent<Item>();
+
+        if(item != null)
+        {
+            item.ShowIconInGame();
+
+            if (isActionpressed)
+            {
+                item.Action();
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        Item item = other.gameObject.GetComponent<Item>();
+
+        if (item != null)
+        {
+            item.ShowIconInGame();
+
+            if (isActionpressed)
+            {
+                item.Action();
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Item item = other.gameObject.GetComponent<Item>();
+
+        if (item != null)
+        {
+            item.HideIconInGame();
+        }
     }
 }

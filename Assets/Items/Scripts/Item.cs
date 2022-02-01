@@ -24,6 +24,12 @@ public class Item : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<Inventory>();
     }
 
+
+    public virtual void Action()
+    {
+        Debug.Log("item");
+    }
+
     public void ShowIconInGame()
     {
         if (!isShowIconInGame)
@@ -31,27 +37,31 @@ public class Item : MonoBehaviour
             Vector3 position = new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z);
             instantiatedIconInGame = Instantiate(iconInGame, position, Quaternion.identity);
             isShowIconInGame = true;
-            hideIconInGameRoutine = StartCoroutine(HideIconInGame());
         }
 
-        if (hideIconInGameRoutine != null)
-        {
-            StopCoroutine(hideIconInGameRoutine);
-            hideIconInGameRoutine = null;
-        }
+        //if (hideIconInGameRoutine != null)
+        //{
+        //    StopCoroutine(hideIconInGameRoutine);
+        //    hideIconInGameRoutine = null;
+        //}
 
-        CheckStartCoroutineHideIconInGame();
+        //CheckStartCoroutineHideIconInGame();
     }
 
-    protected void CheckStartCoroutineHideIconInGame()
+    //protected void CheckStartCoroutineHideIconInGame()
+    //{
+    //    if (hideIconInGameRoutine == null && isShowIconInGame)
+    //    {
+    //        hideIconInGameRoutine = StartCoroutine(HideIconInGame());
+    //    }
+    //}
+
+    public void HideIconInGame()
     {
-        if (hideIconInGameRoutine == null && isShowIconInGame)
-        {
-            hideIconInGameRoutine = StartCoroutine(HideIconInGame());
-        }
+        hideIconInGameRoutine = StartCoroutine(HideIconInGameRoutine());
     }
 
-    protected IEnumerator HideIconInGame()
+    protected IEnumerator HideIconInGameRoutine()
     {
         yield return new WaitForSeconds(secondsToFade);
         if (instantiatedIconInGame != null)
@@ -60,6 +70,8 @@ public class Item : MonoBehaviour
             isShowIconInGame = false;
         }
     }
+
+
 
     protected void ClearReference()
     {
@@ -77,4 +89,19 @@ public class Item : MonoBehaviour
         //CheckStartCoroutineHideIconInGame();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //if (other.tag == Helpers.PlayerTag)
+        //{
+        //    ShowIconInGame();
+        //}
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        //if (other.tag == Helpers.PlayerTag)
+        //{
+        //    hideIconInGameRoutine = StartCoroutine(HideIconInGame());
+        //}
+    }
 }
