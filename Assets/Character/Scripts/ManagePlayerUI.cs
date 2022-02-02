@@ -12,22 +12,20 @@ public class ManagePlayerUI : MonoBehaviour
     TextMeshProUGUI prefabUI;
     [SerializeField]
     Vector3 offset = new Vector3(0, 2.25f, 0);
-    [SerializeField]
-    int secondsToFade = 3;
 
     Image uiUse;
     [SerializeField]
     TextMeshProUGUI text;
     Transform character;
+    CanvasGroup canvasGroup;
 
     // Start is called before the first frame update
     void Awake()
     {
-        //uiUse = Instantiate(prefabUI, FindObjectOfType<Canvas>().transform).GetComponent<Image>();
-        //text = uiUse.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         text = Instantiate(prefabUI, FindObjectOfType<Canvas>().transform).GetComponent<TextMeshProUGUI>();
         character = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<Transform>();
-        text.gameObject.SetActive(false);
+        canvasGroup = text.gameObject.GetComponent<CanvasGroup>();
+        canvasGroup.alpha = 0;
     }
 
     // Update is called once per frame
@@ -36,16 +34,22 @@ public class ManagePlayerUI : MonoBehaviour
         text.transform.position = Camera.main.WorldToScreenPoint(character.position + offset);
     }
 
-    public void SetMessage(string message)
+    public void SetMessage(string message, float time)
     {
         text.gameObject.SetActive(true);
+        canvasGroup.LeanAlpha(1, 0.8f);
         text.text = message;
-        StartCoroutine(HideMessage());
+        StartCoroutine(HideMessage(time));
     }
 
-    IEnumerator HideMessage()
+    IEnumerator HideMessage(float time)
     {
-        yield return new WaitForSeconds(secondsToFade);
+        yield return new WaitForSeconds(time);
+        canvasGroup.LeanAlpha(0, 0.8f).setOnComplete(OnComplete);
+    }
+
+    void OnComplete()
+    {
         text.gameObject.SetActive(false);
     }
 }

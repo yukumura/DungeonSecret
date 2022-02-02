@@ -52,6 +52,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     LayerMask layerWithInteract;
 
+    //Inventory
+    bool isInventoryPressed;
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -70,6 +74,8 @@ public class PlayerController : MonoBehaviour
         playerInput.CharacterControls.Run.canceled += onRun;
         playerInput.CharacterControls.Action.started += onAction;
         playerInput.CharacterControls.Action.canceled += onAction;
+        playerInput.CharacterControls.Inventory.started += onInventory;
+        playerInput.CharacterControls.Inventory.canceled += onInventory;
         playerInput.CharacterControls.SwitchCameraC.started += onCameraCSwitch;
         playerInput.CharacterControls.SwitchCameraC.canceled += onCameraCSwitch;
         playerInput.CharacterControls.SwitchCameraAC.started += onCameraACSwitch;
@@ -118,6 +124,10 @@ public class PlayerController : MonoBehaviour
     void onAction(InputAction.CallbackContext context)
     {
         isActionpressed = context.ReadValueAsButton();
+    }    
+    void onInventory(InputAction.CallbackContext context)
+    {
+        isInventoryPressed = context.ReadValueAsButton();
     }
     void onCameraCSwitch(InputAction.CallbackContext context)
     {
@@ -172,6 +182,14 @@ public class PlayerController : MonoBehaviour
         //    }
         //}
         
+    }
+
+    private void CheckInventory()
+    {
+        if (isInventoryPressed)
+        {
+            Inventory.Instance.Trigger();
+        }
     }
 
     private void RotateCCamera()
@@ -299,13 +317,17 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         HandleRotation();
-        HandleAnimation();
         HandleMovement();
-        //CheckInteraction();
-        HandleRotateCamera();
         //Disabled for the moment.
         //HandleJump();
 
+    }
+
+    void Update()
+    {
+        CheckInventory();
+        HandleRotateCamera();
+        HandleAnimation();
     }
 
     private void HandleMovement()
@@ -323,11 +345,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 moveVector = appliedMovement * movementSpeed;
         rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
-    }
-
-    private void Update()
-    {
-
     }
 
     private void HandleRotateCamera()

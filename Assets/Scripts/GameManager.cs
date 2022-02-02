@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
         characterToughts = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<ManagePlayerUI>();
     }
 
-    public void SetCharacterThoughts(string message)
+    public void SetCharacterThoughts(string message, float time)
     {
-        characterToughts.SetMessage(message);
+        characterToughts.SetMessage(message, time);
     }
 
     void OnDestroy()

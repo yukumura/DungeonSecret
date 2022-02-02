@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : MonoBehaviour
-{  
+{
+    [Header("Item Settings")]
     [SerializeField]
     protected GameObject iconInGame;
-    public GameObject IconInGame { get { return iconInGame; } }
     
     [SerializeField]
     protected bool isShowIconInGame;
-    public bool IsShowIconInGame { get { return isShowIconInGame; } }
 
     protected Coroutine hideIconInGameRoutine;
     protected GameObject instantiatedIconInGame;
@@ -38,23 +37,7 @@ public class Item : MonoBehaviour
             instantiatedIconInGame = Instantiate(iconInGame, position, Quaternion.identity);
             isShowIconInGame = true;
         }
-
-        //if (hideIconInGameRoutine != null)
-        //{
-        //    StopCoroutine(hideIconInGameRoutine);
-        //    hideIconInGameRoutine = null;
-        //}
-
-        //CheckStartCoroutineHideIconInGame();
     }
-
-    //protected void CheckStartCoroutineHideIconInGame()
-    //{
-    //    if (hideIconInGameRoutine == null && isShowIconInGame)
-    //    {
-    //        hideIconInGameRoutine = StartCoroutine(HideIconInGame());
-    //    }
-    //}
 
     public void HideIconInGame()
     {
@@ -71,8 +54,6 @@ public class Item : MonoBehaviour
         }
     }
 
-
-
     protected void ClearReference()
     {
         if (hideIconInGameRoutine != null)
@@ -86,22 +67,5 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        //CheckStartCoroutineHideIconInGame();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        //if (other.tag == Helpers.PlayerTag)
-        //{
-        //    ShowIconInGame();
-        //}
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        //if (other.tag == Helpers.PlayerTag)
-        //{
-        //    hideIconInGameRoutine = StartCoroutine(HideIconInGame());
-        //}
     }
 }

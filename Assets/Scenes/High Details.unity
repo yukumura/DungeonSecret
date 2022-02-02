@@ -4712,7 +4712,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &494455961
 MonoBehaviour:
@@ -7371,6 +7371,8 @@ MonoBehaviour:
   isShowIconInGame: 0
   inventory: {fileID: 0}
   itemName: Magic Key
+  pickupMessage: It's a key with peculiar reflections.... Where should I use it?
+  timeToFadeThoughts: 5
   iconInInventory: {fileID: 21300000, guid: 064e7694e05ae5a4e9387aa40b19b67a, type: 3}
 --- !u!135 &775586219
 SphereCollider:
@@ -15175,7 +15177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabUI: {fileID: 3522048985176970615, guid: a5cae54cee6d7a542a10ea4353eb4a35, type: 3}
   offset: {x: 0, y: 4.6, z: 0}
-  secondsToFade: 3
   text: {fileID: 0}
 --- !u!114 &1521439311
 MonoBehaviour:
@@ -21386,9 +21387,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -25, y: -25}
+  m_SizeDelta: {x: 50, y: 400}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &2113924575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21423,7 +21424,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 7
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -21753,6 +21754,8 @@ MonoBehaviour:
   isShowIconInGame: 0
   inventory: {fileID: 0}
   itemName: Magic Key
+  pickupMessage: Test pickup message
+  timeToFadeThoughts: 2
   iconInInventory: {fileID: 21300000, guid: 064e7694e05ae5a4e9387aa40b19b67a, type: 3}
 --- !u!135 &348187005369463733
 SphereCollider:
@@ -23367,7 +23370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5351877829962147481, guid: 7a2f3bd3fb4211c4aaef12db3fec378c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5351877829962147481, guid: 7a2f3bd3fb4211c4aaef12db3fec378c, type: 3}
       propertyPath: m_LocalPosition.x

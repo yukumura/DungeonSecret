@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2848958293650068849}
   - component: {fileID: 5166645772274373620}
   - component: {fileID: 3522048985176970615}
+  - component: {fileID: 3096147801254573372}
   m_Layer: 5
   m_Name: Character Thoughts Text
   m_TagString: Untagged
@@ -134,3 +135,15 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!225 &3096147801254573372
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6122386930203753505}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

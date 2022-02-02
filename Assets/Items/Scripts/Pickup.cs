@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Pickup : Item
 {
+    [Header("Pickup Settings")]
     [SerializeField]
     protected string itemName;
     public string ItemName { get { return itemName; } }
+
+    [Header("Thoughts Settings")]
+    [SerializeField]
+    string pickupMessage;
+    [SerializeField]
+    float timeToFadeThoughts; 
 
 
     [SerializeField]
@@ -17,7 +24,7 @@ public class Pickup : Item
     {
         Inventory.Instance.AddItemInInventory(iconInInventory, itemName);
         ClearReference();
-        GameManager.Instance.SetCharacterThoughts("Questo mi potrà servire più tardi");
+        GameManager.Instance.SetCharacterThoughts(pickupMessage, timeToFadeThoughts);
     }
 
     public override void Action()
