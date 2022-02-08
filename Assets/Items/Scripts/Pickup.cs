@@ -23,12 +23,18 @@ public class Pickup : Item
     public void Pick()
     {
         Inventory.Instance.AddItemInInventory(iconInInventory, itemName);
-        ClearReference();
+        GameManager.Instance.ClearReference();
         GameManager.Instance.SetCharacterThoughts(pickupMessage, timeToFadeThoughts);
+        Destroy(gameObject);
     }
 
     public override void Action()
     {
         Pick();
+    }
+
+    public override void ShowIcon()
+    {
+        GameManager.Instance.ShowIconInGame(Helpers.pickupIcon);
     }
 }

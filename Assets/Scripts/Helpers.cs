@@ -24,4 +24,26 @@ public static class Helpers
             return "ItemIcon";
         }
     }
+
+    public static string actionIcon
+    {
+        get
+        {
+            return "action";
+        }
+    }
+    public static string readIcon
+    {
+        get
+        {
+            return "read";
+        }
+    }
+    public static string pickupIcon
+    {
+        get
+        {
+            return "pickup";
+        }
+    }
 }

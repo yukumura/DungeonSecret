@@ -12,7 +12,6 @@ public class Inventory : MonoBehaviour
         if (Instance != null)
             Destroy(Instance);
         Instance = this;
-        transform.localPosition = new Vector2(474.5f, 204.5f);
     }
 
     [SerializeField]
@@ -49,13 +48,13 @@ public class Inventory : MonoBehaviour
 
             if (isOpen)
             {
-                transform.LeanMoveLocal(new Vector2(474.5f, 204.5f), .8f).setEaseInOutBack();
+                transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 100, transform.localPosition.y), .8f).setEaseInOutBack();
                 isOpen = false;
                 StartCoroutine(CanTriggerAgain());
             }
             else
             {
-                transform.LeanMoveLocal(new Vector2(374.5f, 204.5f), .8f).setEaseInOutBack();
+                transform.LeanMoveLocal(new Vector2(transform.localPosition.x + 100, transform.localPosition.y), .8f).setEaseInOutBack();
                 isOpen = true;
                 StartCoroutine(CanTriggerAgain());
             }

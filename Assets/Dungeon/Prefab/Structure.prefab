@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 4181928961956392664}
   - component: {fileID: 6400230148545858973}
   - component: {fileID: 3953902760012962462}
+  - component: {fileID: 4265004402953739062}
   m_Layer: 0
   m_Name: Stone Floor Large.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4181928961956392664
 Transform:
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4265004402953739062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98817347898190172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.000046, y: 1.447929, z: 20.000044}
+  m_Center: {x: -0.48059607, y: -0.52362627, z: -0.41515446}
 --- !u!1 &112979768912898027
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,12 +106,13 @@ GameObject:
   - component: {fileID: 7936340509103985167}
   - component: {fileID: 2511365584621806827}
   - component: {fileID: 8552279266911122482}
+  - component: {fileID: 4206334639512284477}
   m_Layer: 0
   m_Name: Stone Wall Large.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7936340509103985167
 Transform:
@@ -162,6 +177,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4206334639512284477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112979768912898027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404234, y: 5.9891567, z: 0.802803}
+  m_Center: {x: 0.00000071525574, y: 0.00000047683716, z: -0.00000023841858}
 --- !u!1 &323020435077558025
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,12 +201,13 @@ GameObject:
   - component: {fileID: 8086522973739049616}
   - component: {fileID: 4128494635024238105}
   - component: {fileID: 1711800955219147051}
+  - component: {fileID: 1232264401165809162}
   m_Layer: 0
   m_Name: Stone Wall Large.031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8086522973739049616
 Transform:
@@ -243,6 +272,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1232264401165809162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323020435077558025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404234, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0.0000009536743, y: 0.00000047683716, z: 0.00000017881393}
 --- !u!1 &368995968828265554
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,12 +296,13 @@ GameObject:
   - component: {fileID: 7417736193090657103}
   - component: {fileID: 2717720412975868142}
   - component: {fileID: 114991384028883214}
+  - component: {fileID: 5567240904220961093}
   m_Layer: 0
   m_Name: SmallWall R.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7417736193090657103
 Transform:
@@ -324,6 +367,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5567240904220961093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368995968828265554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955658, y: 5.9891562, z: 0.80277246}
+  m_Center: {x: 0.59543085, y: 0, z: -0.000002771616}
 --- !u!1 &389844085356779927
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,12 +391,13 @@ GameObject:
   - component: {fileID: 8696546760465062236}
   - component: {fileID: 1083996499618982635}
   - component: {fileID: 4418233588037202604}
+  - component: {fileID: 6771453263702078275}
   m_Layer: 0
   m_Name: Stone Floor Large.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8696546760465062236
 Transform:
@@ -405,6 +462,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6771453263702078275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389844085356779927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.00003, y: 1.447929, z: 20.000032}
+  m_Center: {x: -0.41515875, y: -0.52362627, z: 0.48060608}
 --- !u!1 &426281586339476349
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,12 +486,13 @@ GameObject:
   - component: {fileID: 8318669605146831149}
   - component: {fileID: 2091351298287196512}
   - component: {fileID: 6442022955035409818}
+  - component: {fileID: 9062524415620347257}
   m_Layer: 0
   m_Name: Stone Wall Large.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8318669605146831149
 Transform:
@@ -486,6 +557,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9062524415620347257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426281586339476349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.40424, y: 5.9891567, z: 0.80280113}
+  m_Center: {x: -0.0000030994415, y: 0.00000047683716, z: 0.0000001937151}
 --- !u!1 &519946017483576329
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,12 +581,13 @@ GameObject:
   - component: {fileID: 4247250003923931618}
   - component: {fileID: 254683889086227570}
   - component: {fileID: 8446510346970606337}
+  - component: {fileID: 7941542521131740117}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4247250003923931618
 Transform:
@@ -567,6 +652,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7941542521131740117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519946017483576329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78735733, y: 5.9891605, z: 10.383945}
+  m_Center: {x: -0.000000074505806, y: -0.0000013113022, z: 0.43135905}
 --- !u!1 &536876892867436780
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,12 +676,13 @@ GameObject:
   - component: {fileID: 3856178154672651727}
   - component: {fileID: 4080495502097515292}
   - component: {fileID: 4347794758983771055}
+  - component: {fileID: 7563815991709178029}
   m_Layer: 0
   m_Name: SmallWall L.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3856178154672651727
 Transform:
@@ -648,6 +747,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7563815991709178029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536876892867436780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80278015, y: 5.9891562, z: 5.206801}
+  m_Center: {x: -0.0000029802322, y: 0, z: -0.5117173}
 --- !u!1 &568357564297963127
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,12 +771,13 @@ GameObject:
   - component: {fileID: 2358303663165991462}
   - component: {fileID: 7215245120235835173}
   - component: {fileID: 297806103942080410}
+  - component: {fileID: 7819011969559932513}
   m_Layer: 0
   m_Name: SmallWall.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2358303663165991462
 Transform:
@@ -729,6 +842,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7819011969559932513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568357564297963127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7577133, y: 5.9891562, z: 0.802782}
+  m_Center: {x: -0.03856814, y: 0, z: 0.00000020861626}
 --- !u!1 &577942124735051723
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,12 +866,13 @@ GameObject:
   - component: {fileID: 1315468092588798981}
   - component: {fileID: 948776389441262046}
   - component: {fileID: 5016955898874627396}
+  - component: {fileID: 5760481368010942314}
   m_Layer: 0
   m_Name: Stone Wall Large.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1315468092588798981
 Transform:
@@ -810,6 +937,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5760481368010942314
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577942124735051723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80279344}
+  m_Center: {x: 0.0000121593475, y: 0.00000047683716, z: 0.00000035762787}
 --- !u!1 &583831391449054570
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,12 +961,13 @@ GameObject:
   - component: {fileID: 1239819200819991455}
   - component: {fileID: 6762027691099704841}
   - component: {fileID: 5206392222014141830}
+  - component: {fileID: 370306062716253134}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1239819200819991455
 Transform:
@@ -891,6 +1032,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &370306062716253134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583831391449054570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873688, y: 5.9891567, z: 11.337124}
+  m_Center: {x: 0.000000074505806, y: -0.0000032186508, z: 0.57091403}
 --- !u!1 &724491361596535399
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,12 +1056,13 @@ GameObject:
   - component: {fileID: 5789284522491898842}
   - component: {fileID: 5469927383153710576}
   - component: {fileID: 1760584567880671069}
+  - component: {fileID: 4941726898292647157}
   m_Layer: 0
   m_Name: SmallWall R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5789284522491898842
 Transform:
@@ -972,6 +1127,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4941726898292647157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724491361596535399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955658, y: 5.9891562, z: 0.80277437}
+  m_Center: {x: -0.5954357, y: 0, z: -0.0000012516975}
 --- !u!1 &796012994725619249
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,12 +1151,13 @@ GameObject:
   - component: {fileID: 345906648981867572}
   - component: {fileID: 5416275382540849919}
   - component: {fileID: 1548197078642632316}
+  - component: {fileID: 1179200355691135610}
   m_Layer: 0
   m_Name: Stone Floor Small.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &345906648981867572
 Transform:
@@ -1053,6 +1222,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1179200355691135610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796012994725619249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.013588, y: 1.4479291, z: 19.29385}
+  m_Center: {x: 0.07230568, y: -0.5220027, z: -0.39592552}
 --- !u!1 &804836859064169660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,12 +1246,13 @@ GameObject:
   - component: {fileID: 7286722380973618552}
   - component: {fileID: 5715462648366142309}
   - component: {fileID: 3066317563042201695}
+  - component: {fileID: 5792952644418271206}
   m_Layer: 0
   m_Name: Stone Floor Large.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7286722380973618552
 Transform:
@@ -1134,6 +1317,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5792952644418271206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804836859064169660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.00003, y: 1.4479289, z: 20.00004}
+  m_Center: {x: 0.48059988, y: -0.5236262, z: 0.41515827}
 --- !u!1 &886796478247813768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,12 +1341,13 @@ GameObject:
   - component: {fileID: 6779259416508910917}
   - component: {fileID: 1546414574775348292}
   - component: {fileID: 1238360131277224648}
+  - component: {fileID: 1882492584507474771}
   m_Layer: 0
   m_Name: Stone Wall Large.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6779259416508910917
 Transform:
@@ -1215,6 +1412,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1882492584507474771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886796478247813768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: -0.0000011920929, y: 0.00000047683716, z: -0.0000034868717}
 --- !u!1 &899254098877610432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,12 +1436,13 @@ GameObject:
   - component: {fileID: 973760737793707281}
   - component: {fileID: 1771194008984990095}
   - component: {fileID: 8754650760567878849}
+  - component: {fileID: 331191755653495531}
   m_Layer: 0
   m_Name: SmallWall L.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &973760737793707281
 Transform:
@@ -1296,6 +1507,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &331191755653495531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899254098877610432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2067986, y: 5.9891562, z: 0.80277634}
+  m_Center: {x: 0.51171815, y: 0, z: -0.0000003427267}
 --- !u!1 &904680033565425379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,12 +1531,13 @@ GameObject:
   - component: {fileID: 760377390520946902}
   - component: {fileID: 397965961500908586}
   - component: {fileID: 8499680685688475523}
+  - component: {fileID: 3545750421241587592}
   m_Layer: 0
   m_Name: Stone Wall Large.063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &760377390520946902
 Transform:
@@ -1377,6 +1602,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3545750421241587592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904680033565425379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8028011}
+  m_Center: {x: -0.00000023841858, y: 0.00000047683716, z: -0.00000017881393}
 --- !u!1 &1150360330446049156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,12 +1626,13 @@ GameObject:
   - component: {fileID: 1416707834212146312}
   - component: {fileID: 5112696996538669782}
   - component: {fileID: 3206281243806940027}
+  - component: {fileID: 3492918458806453213}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1416707834212146312
 Transform:
@@ -1458,6 +1697,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3492918458806453213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150360330446049156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.337128, y: 5.9891567, z: 0.78735876}
+  m_Center: {x: 0.57091236, y: -0.0000032186508, z: 0.00000093877316}
 --- !u!1 &1213473188796921076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,12 +1721,13 @@ GameObject:
   - component: {fileID: 762971388823957799}
   - component: {fileID: 1419043157508763415}
   - component: {fileID: 3196521317653566785}
+  - component: {fileID: 9006226338936907124}
   m_Layer: 0
   m_Name: Stone Wall Large.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &762971388823957799
 Transform:
@@ -1539,6 +1792,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9006226338936907124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213473188796921076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80278015, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.000001758337, y: 0.00000047683716, z: 0.0000019073486}
 --- !u!1 &1257190773492265520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,12 +1816,13 @@ GameObject:
   - component: {fileID: 5579677311120379335}
   - component: {fileID: 6805761659049212229}
   - component: {fileID: 6822118178762929335}
+  - component: {fileID: 7438619220676189328}
   m_Layer: 0
   m_Name: Stone Wall Large Close L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5579677311120379335
 Transform:
@@ -1620,6 +1887,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7438619220676189328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257190773492265520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78735733, y: 5.9891567, z: 11.290867}
+  m_Center: {x: 0.0000013411045, y: -0.0000032186508, z: -0.5489793}
 --- !u!1 &1279048105740116421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,12 +1911,13 @@ GameObject:
   - component: {fileID: 2462643736345406014}
   - component: {fileID: 451165615863606221}
   - component: {fileID: 4197395130647459008}
+  - component: {fileID: 6745520601401330810}
   m_Layer: 0
   m_Name: Stone Wall Large.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2462643736345406014
 Transform:
@@ -1701,6 +1982,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6745520601401330810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279048105740116421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000006109476, y: 0.00000047683716, z: 0.0000011920929}
 --- !u!1 &1370742476572739733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,12 +2006,13 @@ GameObject:
   - component: {fileID: 386050236001132300}
   - component: {fileID: 3506531729903054415}
   - component: {fileID: 7127774070613210538}
+  - component: {fileID: 8360911588216309035}
   m_Layer: 0
   m_Name: Stone Wall Large.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &386050236001132300
 Transform:
@@ -1782,6 +2077,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8360911588216309035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370742476572739733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80279726}
+  m_Center: {x: -0.00001168251, y: 0.00000047683716, z: 0.000000059604645}
 --- !u!1 &1394744263239565499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,12 +2101,13 @@ GameObject:
   - component: {fileID: 8946519188709095548}
   - component: {fileID: 7320599899228552178}
   - component: {fileID: 2371520542718736591}
+  - component: {fileID: 2992325006919813840}
   m_Layer: 0
   m_Name: Stone Wall Large.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8946519188709095548
 Transform:
@@ -1863,6 +2172,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2992325006919813840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394744263239565499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80278015, y: 5.9891567, z: 10.404234}
+  m_Center: {x: 0.0000068694353, y: 0.00000047683716, z: 0}
 --- !u!1 &1463765323227465761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,12 +2196,13 @@ GameObject:
   - component: {fileID: 8598332160331214816}
   - component: {fileID: 7244223068175843820}
   - component: {fileID: 8690580247291251312}
+  - component: {fileID: 3417878416124821018}
   m_Layer: 0
   m_Name: SmallWall R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8598332160331214816
 Transform:
@@ -1944,6 +2267,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3417878416124821018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463765323227465761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955658, y: 5.9891562, z: 0.8027725}
+  m_Center: {x: 0.59543204, y: 0, z: 0.0000022500753}
 --- !u!1 &1478419486651460427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,12 +2291,13 @@ GameObject:
   - component: {fileID: 7917159949584281995}
   - component: {fileID: 8916355715799965654}
   - component: {fileID: 2180477870637402995}
+  - component: {fileID: 7944088459890908451}
   m_Layer: 0
   m_Name: SmallWall R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7917159949584281995
 Transform:
@@ -2025,6 +2362,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7944088459890908451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478419486651460427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955658, y: 5.9891562, z: 0.80277586}
+  m_Center: {x: -0.5954357, y: 0, z: -0.00000055134296}
 --- !u!1 &1519222267028584933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,12 +2386,13 @@ GameObject:
   - component: {fileID: 5170895806150703655}
   - component: {fileID: 8697648941153770371}
   - component: {fileID: 1316169327162628938}
+  - component: {fileID: 151071534905417010}
   m_Layer: 0
   m_Name: Stone Wall Large.057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5170895806150703655
 Transform:
@@ -2106,6 +2457,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &151071534905417010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519222267028584933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0.0000019073486, y: 0.00000047683716, z: 0.0000028014183}
 --- !u!1 &1692815653688684721
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,12 +2481,13 @@ GameObject:
   - component: {fileID: 6745647814170445590}
   - component: {fileID: 4375109545236329366}
   - component: {fileID: 1916209052565970187}
+  - component: {fileID: 6538300152086041682}
   m_Layer: 0
   m_Name: Stone Floor Large.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6745647814170445590
 Transform:
@@ -2187,6 +2552,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6538300152086041682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692815653688684721}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.000034, y: 1.447929, z: 20.00003}
+  m_Center: {x: -0.41515827, y: -0.52362627, z: 0.4806075}
 --- !u!1 &1719141727433360017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,12 +2576,13 @@ GameObject:
   - component: {fileID: 5061163853245589821}
   - component: {fileID: 1048745224359846775}
   - component: {fileID: 9013298313858656400}
+  - component: {fileID: 1917347906189062629}
   m_Layer: 0
   m_Name: Stone Floor Large.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5061163853245589821
 Transform:
@@ -2268,6 +2647,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1917347906189062629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719141727433360017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.000027, y: 1.447929, z: 20.00003}
+  m_Center: {x: -0.41515732, y: -0.52362627, z: 0.48060322}
 --- !u!1 &1842297452530183603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,12 +2671,13 @@ GameObject:
   - component: {fileID: 1606781418503902938}
   - component: {fileID: 7667581128111686329}
   - component: {fileID: 7302926384620092582}
+  - component: {fileID: 2014142417934710922}
   m_Layer: 0
   m_Name: Stone Wall Large.067
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1606781418503902938
 Transform:
@@ -2349,6 +2742,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2014142417934710922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842297452530183603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027909, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.00000010430813, y: 0.00000047683716, z: 0}
 --- !u!1 &1852978645167951907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,12 +2766,13 @@ GameObject:
   - component: {fileID: 3261620366874062667}
   - component: {fileID: 1267835519053732266}
   - component: {fileID: 1424867003244069198}
+  - component: {fileID: 4507636797643012168}
   m_Layer: 0
   m_Name: Stone Wall Large.062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3261620366874062667
 Transform:
@@ -2430,6 +2837,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4507636797643012168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852978645167951907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8028011}
+  m_Center: {x: 0, y: 0.00000047683716, z: -0.00000032782555}
 --- !u!1 &1942420578140986300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,12 +2861,13 @@ GameObject:
   - component: {fileID: 6780003451748368544}
   - component: {fileID: 1859105500307370972}
   - component: {fileID: 7952453896257443353}
+  - component: {fileID: 7341221191289164453}
   m_Layer: 0
   m_Name: SmallWall L.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6780003451748368544
 Transform:
@@ -2511,6 +2932,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7341221191289164453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942420578140986300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.206803, y: 5.9891562, z: 0.8027763}
+  m_Center: {x: -0.5117173, y: 0, z: -0.0000014007092}
 --- !u!1 &2013306852525593962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,12 +2956,13 @@ GameObject:
   - component: {fileID: 3321768095488634598}
   - component: {fileID: 8458246366917532636}
   - component: {fileID: 5918317620487332646}
+  - component: {fileID: 4617294176157507614}
   m_Layer: 0
   m_Name: Stone Wall Large.050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3321768095488634598
 Transform:
@@ -2592,6 +3027,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4617294176157507614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013306852525593962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.802803}
+  m_Center: {x: 0.0000047683716, y: 0.00000047683716, z: -0.0000005066395}
 --- !u!1 &2045787631151827755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,12 +3051,13 @@ GameObject:
   - component: {fileID: 8735479022474345269}
   - component: {fileID: 351314836171358672}
   - component: {fileID: 3353105082238417992}
+  - component: {fileID: 2655869085217385274}
   m_Layer: 0
   m_Name: Stone Wall Large.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8735479022474345269
 Transform:
@@ -2673,6 +3122,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2655869085217385274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045787631151827755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000011473894, y: 0.00000047683716, z: -0.0000011920929}
 --- !u!1 &2132777793010949552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,12 +3146,13 @@ GameObject:
   - component: {fileID: 9012274448612071174}
   - component: {fileID: 4706452752374393282}
   - component: {fileID: 5143566111251967551}
+  - component: {fileID: 414929110788648381}
   m_Layer: 0
   m_Name: SmallWall L.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9012274448612071174
 Transform:
@@ -2754,6 +3217,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &414929110788648381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132777793010949552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2068024, y: 5.9891562, z: 0.80277574}
+  m_Center: {x: 0.511719, y: 0, z: 0.0000007301569}
 --- !u!1 &2227321882603653234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,12 +3241,13 @@ GameObject:
   - component: {fileID: 6359855287949780236}
   - component: {fileID: 4099865781355056888}
   - component: {fileID: 7799427232696277787}
+  - component: {fileID: 3994424429426021643}
   m_Layer: 0
   m_Name: SmallWall R.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6359855287949780236
 Transform:
@@ -2835,6 +3312,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3994424429426021643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2227321882603653234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955657, y: 5.9891562, z: 0.80277634}
+  m_Center: {x: -0.59543246, y: 0, z: -0.0000007599592}
 --- !u!1 &2243532456231061683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,12 +3336,13 @@ GameObject:
   - component: {fileID: 7038160579445534312}
   - component: {fileID: 7658270189373398392}
   - component: {fileID: 2841656735850936737}
+  - component: {fileID: 5811193069794645790}
   m_Layer: 0
   m_Name: Stone Wall Large.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7038160579445534312
 Transform:
@@ -2916,6 +3407,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5811193069794645790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243532456231061683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.167717, y: 5.9891567, z: 0.80280113}
+  m_Center: {x: -0.09460759, y: 0.00000047683716, z: -0.00000013411045}
 --- !u!1 &2254958964800293253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,12 +3431,13 @@ GameObject:
   - component: {fileID: 1847190129138456325}
   - component: {fileID: 5088971749319824647}
   - component: {fileID: 6377466877304630998}
+  - component: {fileID: 2517991887605322207}
   m_Layer: 0
   m_Name: SmallWall R.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1847190129138456325
 Transform:
@@ -2997,6 +3502,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2517991887605322207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254958964800293253}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955662, y: 5.9891562, z: 0.8027767}
+  m_Center: {x: -0.5954343, y: 0, z: -0.00000093877316}
 --- !u!1 &2285028497976827703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3008,12 +3526,13 @@ GameObject:
   - component: {fileID: 126911147038415287}
   - component: {fileID: 7717622584965724707}
   - component: {fileID: 8410965960434762624}
+  - component: {fileID: 8782229087336431255}
   m_Layer: 0
   m_Name: Stone Wall Large.058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &126911147038415287
 Transform:
@@ -3078,6 +3597,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8782229087336431255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285028497976827703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.0000004917383, y: 0.00000047683716, z: -0.00000047683716}
 --- !u!1 &2592985790080442384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,12 +3621,13 @@ GameObject:
   - component: {fileID: 2279067522358596440}
   - component: {fileID: 4878413637560860710}
   - component: {fileID: 2620947531919460372}
+  - component: {fileID: 1409752713119289580}
   m_Layer: 0
   m_Name: Stone Wall Large.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2279067522358596440
 Transform:
@@ -3159,6 +3692,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1409752713119289580
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592985790080442384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000004172325, y: 0.00000047683716, z: 0.00000071525574}
 --- !u!1 &2624677876599903950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,12 +3716,13 @@ GameObject:
   - component: {fileID: 64517794543907263}
   - component: {fileID: 3816519069515337568}
   - component: {fileID: 1087399857905928277}
+  - component: {fileID: 5053758388169746646}
   m_Layer: 0
   m_Name: Stone Floor Large.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &64517794543907263
 Transform:
@@ -3240,6 +3787,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5053758388169746646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624677876599903950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.00003, y: 1.447929, z: 20.000032}
+  m_Center: {x: -0.41515636, y: -0.52362627, z: 0.48060608}
 --- !u!1 &2666464917383051443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,12 +3811,13 @@ GameObject:
   - component: {fileID: 5656563454266859897}
   - component: {fileID: 4163382652262752278}
   - component: {fileID: 2109194403249140544}
+  - component: {fileID: 492453838934116870}
   m_Layer: 0
   m_Name: SmallWall R.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5656563454266859897
 Transform:
@@ -3321,6 +3882,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &492453838934116870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666464917383051443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.9556584, y: 5.9891562, z: 0.80278015}
+  m_Center: {x: -0.5954328, y: 0, z: -0.0000003427267}
 --- !u!1 &2765003352479661035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,12 +3906,13 @@ GameObject:
   - component: {fileID: 576496232207515508}
   - component: {fileID: 8869349189141786647}
   - component: {fileID: 1737440332772144357}
+  - component: {fileID: 2069362651105205880}
   m_Layer: 0
   m_Name: Stone Wall Large.066
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &576496232207515508
 Transform:
@@ -3402,6 +3977,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2069362651105205880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765003352479661035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80279106, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.000000059604645, y: 0.00000047683716, z: 0.0000035762787}
 --- !u!1 &2767513595961952078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,12 +4001,13 @@ GameObject:
   - component: {fileID: 3031310709309947165}
   - component: {fileID: 6846255720888033029}
   - component: {fileID: 5492988821733775587}
+  - component: {fileID: 1705790124394426842}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3031310709309947165
 Transform:
@@ -3483,6 +4072,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1705790124394426842
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767513595961952078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78736115, y: 5.9891567, z: 11.337124}
+  m_Center: {x: -0.000004157424, y: -0.0000032186508, z: 0.57091236}
 --- !u!1 &2778722316346028153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3494,12 +4096,13 @@ GameObject:
   - component: {fileID: 4221629326758292376}
   - component: {fileID: 5289213961558291010}
   - component: {fileID: 7625336673017278626}
+  - component: {fileID: 3539017496450197247}
   m_Layer: 0
   m_Name: Stone Wall Large.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4221629326758292376
 Transform:
@@ -3564,6 +4167,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3539017496450197247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778722316346028153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.648324}
+  m_Center: {x: -0.000000461936, y: 0.00000047683716, z: -0.09763479}
 --- !u!1 &3126326726309305008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,12 +4191,13 @@ GameObject:
   - component: {fileID: 387411039648023418}
   - component: {fileID: 8290464591517622875}
   - component: {fileID: 3989196978195793721}
+  - component: {fileID: 2511020732738549596}
   m_Layer: 0
   m_Name: Stone Wall Large.053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &387411039648023418
 Transform:
@@ -3645,6 +4262,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2511020732738549596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126326726309305008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000011473894, y: 0.00000047683716, z: -0.0000019073486}
 --- !u!1 &3180308458253875467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,12 +4286,13 @@ GameObject:
   - component: {fileID: 7756621429229216900}
   - component: {fileID: 4108172765500769809}
   - component: {fileID: 3473469263455282309}
+  - component: {fileID: 1750467852101772607}
   m_Layer: 0
   m_Name: Stone Wall Large.075
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7756621429229216900
 Transform:
@@ -3726,6 +4357,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1750467852101772607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180308458253875467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.802802}
+  m_Center: {x: 0.0000030994415, y: 0.00000047683716, z: -0.0000002682209}
 --- !u!1 &3182490327202190734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3737,12 +4381,13 @@ GameObject:
   - component: {fileID: 5360921536457233441}
   - component: {fileID: 2615059659274272521}
   - component: {fileID: 7593021608568631138}
+  - component: {fileID: 142289764757196232}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5360921536457233441
 Transform:
@@ -3807,6 +4452,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &142289764757196232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3182490327202190734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78735733, y: 5.9891605, z: 10.383949}
+  m_Center: {x: -0.00000031292439, y: -0.0000013113022, z: 0.43136144}
 --- !u!1 &3183201545592416529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,12 +4476,13 @@ GameObject:
   - component: {fileID: 4101534205494089912}
   - component: {fileID: 7959493844348833770}
   - component: {fileID: 383809848175513241}
+  - component: {fileID: 4799697590390329944}
   m_Layer: 0
   m_Name: Stone Wall Large.051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4101534205494089912
 Transform:
@@ -3888,6 +4547,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4799697590390329944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3183201545592416529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.802803}
+  m_Center: {x: 0.0000047683716, y: 0.00000047683716, z: -0.00000017881393}
 --- !u!1 &3314831611901759872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,12 +4571,13 @@ GameObject:
   - component: {fileID: 2291030586620631809}
   - component: {fileID: 6956557473998728321}
   - component: {fileID: 8447824528077593595}
+  - component: {fileID: 4790336226359202191}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2291030586620631809
 Transform:
@@ -3969,6 +4642,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4790336226359202191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314831611901759872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891567, z: 11.33712}
+  m_Center: {x: -0.0000005662441, y: -0.0000032186508, z: 0.57091427}
 --- !u!1 &3436268533909070197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,12 +4666,13 @@ GameObject:
   - component: {fileID: 4710937560778294285}
   - component: {fileID: 7198228317175909904}
   - component: {fileID: 3325592448265854365}
+  - component: {fileID: 4386557357938820475}
   m_Layer: 0
   m_Name: Stone Wall Large.054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4710937560778294285
 Transform:
@@ -4050,6 +4737,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4386557357938820475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3436268533909070197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80278015}
+  m_Center: {x: 0.0000019073486, y: 0.00000047683716, z: 0.0000055879354}
 --- !u!1 &3540342552518016600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,12 +4761,13 @@ GameObject:
   - component: {fileID: 6535589719228324187}
   - component: {fileID: 4236311600986616558}
   - component: {fileID: 3863699878136264975}
+  - component: {fileID: 852068994476482781}
   m_Layer: 0
   m_Name: Stone Floor Small.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6535589719228324187
 Transform:
@@ -4131,6 +4832,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &852068994476482781
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3540342552518016600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.717941, y: 1.4479291, z: 19.423786}
+  m_Center: {x: 0.07016611, y: -0.5220027, z: -0.39859343}
 --- !u!1 &3582167942567740396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4142,12 +4856,13 @@ GameObject:
   - component: {fileID: 5575370255081621847}
   - component: {fileID: 5998774711161432592}
   - component: {fileID: 2848908147084206349}
+  - component: {fileID: 8628626229120530406}
   m_Layer: 0
   m_Name: Stone Floor Large.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5575370255081621847
 Transform:
@@ -4212,6 +4927,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8628626229120530406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3582167942567740396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.000032, y: 1.447929, z: 20.00003}
+  m_Center: {x: -0.41515923, y: -0.52362627, z: 0.48060608}
 --- !u!1 &3592729694818865187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4223,12 +4951,13 @@ GameObject:
   - component: {fileID: 3993789610553851174}
   - component: {fileID: 732288870681587936}
   - component: {fileID: 3204405696411180612}
+  - component: {fileID: 6140314037308871895}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3993789610553851174
 Transform:
@@ -4293,6 +5022,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6140314037308871895
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592729694818865187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891605, z: 10.383949}
+  m_Center: {x: 0.0000015646219, y: -0.0000013113022, z: -0.43136048}
 --- !u!1 &3614359342004430960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,12 +5046,13 @@ GameObject:
   - component: {fileID: 793606351001535791}
   - component: {fileID: 814566561284929249}
   - component: {fileID: 3474076897126376240}
+  - component: {fileID: 1270304596088137936}
   m_Layer: 0
   m_Name: Stone Floor Small.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &793606351001535791
 Transform:
@@ -4374,6 +5117,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1270304596088137936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614359342004430960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.717934, y: 1.4479291, z: 19.380478}
+  m_Center: {x: 0.070167065, y: -0.5220027, z: -0.39770412}
 --- !u!1 &3656395141788681450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,12 +5141,13 @@ GameObject:
   - component: {fileID: 1739007540010057800}
   - component: {fileID: 4376337692601465233}
   - component: {fileID: 8900839155917331064}
+  - component: {fileID: 3494843615709582245}
   m_Layer: 0
   m_Name: SmallWall L.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1739007540010057800
 Transform:
@@ -4455,6 +5212,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3494843615709582245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656395141788681450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2068024, y: 5.9891562, z: 0.8027763}
+  m_Center: {x: 0.511719, y: 0, z: 0.0000005066395}
 --- !u!1 &3827111523070826393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,12 +5236,13 @@ GameObject:
   - component: {fileID: 1635652350425597580}
   - component: {fileID: 7740773967453355330}
   - component: {fileID: 6682510072199753859}
+  - component: {fileID: 7939943370826057866}
   m_Layer: 0
   m_Name: Stone Floor Large.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1635652350425597580
 Transform:
@@ -4536,6 +5307,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7939943370826057866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827111523070826393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.046402, y: 1.447929, z: 20.000027}
+  m_Center: {x: -0.5088868, y: -0.52362627, z: 0.4806056}
 --- !u!1 &3868713610848302134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,12 +5331,13 @@ GameObject:
   - component: {fileID: 3156375864520308156}
   - component: {fileID: 3762294649858968346}
   - component: {fileID: 6729708187711723422}
+  - component: {fileID: 4908690458815556542}
   m_Layer: 0
   m_Name: Stone Wall Large.032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3156375864520308156
 Transform:
@@ -4617,6 +5402,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4908690458815556542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3868713610848302134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0.000001847744}
 --- !u!1 &3959075780782918572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,12 +5426,13 @@ GameObject:
   - component: {fileID: 3659256855561908559}
   - component: {fileID: 933514929846872480}
   - component: {fileID: 4680221380887555341}
+  - component: {fileID: 3197949259374676849}
   m_Layer: 0
   m_Name: Stone Floor Small.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3659256855561908559
 Transform:
@@ -4698,6 +5497,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3197949259374676849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959075780782918572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.423782, y: 1.4479289, z: 10.01359}
+  m_Center: {x: -0.3985939, y: -0.5220026, z: -0.07230568}
 --- !u!1 &3960461223926867693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4709,12 +5521,13 @@ GameObject:
   - component: {fileID: 4555384346980810947}
   - component: {fileID: 1306163367584047886}
   - component: {fileID: 5489619790264426644}
+  - component: {fileID: 5054652736601329118}
   m_Layer: 0
   m_Name: SmallWall L.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4555384346980810947
 Transform:
@@ -4779,6 +5592,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5054652736601329118
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960461223926867693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2068024, y: 5.9891562, z: 0.8027763}
+  m_Center: {x: 0.5117166, y: 0, z: 0.00000062584877}
 --- !u!1 &3974251334693803910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,12 +5616,13 @@ GameObject:
   - component: {fileID: 9022589737049838162}
   - component: {fileID: 2808535400809589362}
   - component: {fileID: 4870910476556567699}
+  - component: {fileID: 2430179145051223705}
   m_Layer: 0
   m_Name: Stone Wall Large.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9022589737049838162
 Transform:
@@ -4860,6 +5687,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2430179145051223705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974251334693803910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027992}
+  m_Center: {x: -0.0000011920929, y: 0.00000047683716, z: 0.000000074505806}
 --- !u!1 &4132635237236680817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,12 +5711,13 @@ GameObject:
   - component: {fileID: 8513421302174782519}
   - component: {fileID: 553692449126549057}
   - component: {fileID: 3312017440509926867}
+  - component: {fileID: 7902751064157765490}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8513421302174782519
 Transform:
@@ -4941,6 +5782,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7902751064157765490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132635237236680817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78736115, y: 5.9891567, z: 11.337124}
+  m_Center: {x: 0.0000006109476, y: -0.0000032186508, z: -0.57091045}
 --- !u!1 &4179825445690942639
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,12 +5806,13 @@ GameObject:
   - component: {fileID: 6174896680912174897}
   - component: {fileID: 8095464637077082912}
   - component: {fileID: 5442471112107092830}
+  - component: {fileID: 515031522907431986}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6174896680912174897
 Transform:
@@ -5022,6 +5877,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &515031522907431986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4179825445690942639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891567, z: 11.337124}
+  m_Center: {x: -0.0000007599592, y: -0.0000032186508, z: 0.5709114}
 --- !u!1 &4210195138782057753
 GameObject:
   m_ObjectHideFlags: 0
@@ -5033,12 +5901,13 @@ GameObject:
   - component: {fileID: 3312382449222999661}
   - component: {fileID: 4081870323618675330}
   - component: {fileID: 7682910680159083554}
+  - component: {fileID: 6396401093647483219}
   m_Layer: 0
   m_Name: Stone Wall Large.033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3312382449222999661
 Transform:
@@ -5103,6 +5972,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6396401093647483219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4210195138782057753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027878, y: 5.9891567, z: 10.404236}
+  m_Center: {x: -0.0000012218952, y: 0.00000047683716, z: -0.0000019073486}
 --- !u!1 &4243718422950811923
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,12 +5996,13 @@ GameObject:
   - component: {fileID: 322797040309961055}
   - component: {fileID: 7174306420095599206}
   - component: {fileID: 4692178171610249353}
+  - component: {fileID: 9210550170335559907}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &322797040309961055
 Transform:
@@ -5184,6 +6067,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9210550170335559907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243718422950811923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873554, y: 5.9891567, z: 11.337124}
+  m_Center: {x: -0.0000014454126, y: -0.0000032186508, z: 0.57091403}
 --- !u!1 &4392509947812035687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,12 +6091,13 @@ GameObject:
   - component: {fileID: 5150340153702664692}
   - component: {fileID: 931632723591368572}
   - component: {fileID: 2529761724438805821}
+  - component: {fileID: 8598479453499883859}
   m_Layer: 0
   m_Name: Stone Wall Large.030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5150340153702664692
 Transform:
@@ -5265,6 +6162,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8598479453499883859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392509947812035687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027935, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.00000014901161, y: 0.00000047683716, z: -0.00000047683716}
 --- !u!1 &4632441341196060601
 GameObject:
   m_ObjectHideFlags: 0
@@ -5276,12 +6186,13 @@ GameObject:
   - component: {fileID: 2566464157572215383}
   - component: {fileID: 8372938554895981007}
   - component: {fileID: 5937654696680570467}
+  - component: {fileID: 8929734240733447159}
   m_Layer: 0
   m_Name: SmallWall R.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2566464157572215383
 Transform:
@@ -5346,6 +6257,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8929734240733447159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4632441341196060601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955654, y: 5.9891562, z: 0.8027801}
+  m_Center: {x: -0.59543395, y: 0, z: -0.00000074505806}
 --- !u!1 &4647242583739019552
 GameObject:
   m_ObjectHideFlags: 0
@@ -5357,12 +6281,13 @@ GameObject:
   - component: {fileID: 3881036502463645227}
   - component: {fileID: 8219333769755070284}
   - component: {fileID: 8258848939453720069}
+  - component: {fileID: 8565744044250096049}
   m_Layer: 0
   m_Name: Stone Wall Large.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3881036502463645227
 Transform:
@@ -5427,6 +6352,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8565744044250096049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4647242583739019552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.0000001937151, y: 0.00000047683716, z: -0.00000047683716}
 --- !u!1 &4649007756028801778
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,12 +6376,13 @@ GameObject:
   - component: {fileID: 8881822419271315267}
   - component: {fileID: 7053573861497140147}
   - component: {fileID: 6429513978776279023}
+  - component: {fileID: 6230691533448810763}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8881822419271315267
 Transform:
@@ -5508,6 +6447,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6230691533448810763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4649007756028801778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891605, z: 10.383948}
+  m_Center: {x: 0.00000090897083, y: -0.0000013113022, z: -0.43136024}
 --- !u!1 &4653665352523588448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,12 +6471,13 @@ GameObject:
   - component: {fileID: 6660737367461337869}
   - component: {fileID: 6487806572312267910}
   - component: {fileID: 5468434938033683593}
+  - component: {fileID: 3052612886038462162}
   m_Layer: 0
   m_Name: Stone Wall Large.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6660737367461337869
 Transform:
@@ -5589,6 +6542,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3052612886038462162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653665352523588448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: -0.0000019073486, y: 0.00000047683716, z: -0.0000034868717}
 --- !u!1 &4698632635510733175
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,12 +6566,13 @@ GameObject:
   - component: {fileID: 399826337717998208}
   - component: {fileID: 2815821554974112743}
   - component: {fileID: 2359929241001957852}
+  - component: {fileID: 1411048932172172159}
   m_Layer: 0
   m_Name: Stone Wall Large.037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &399826337717998208
 Transform:
@@ -5670,6 +6637,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1411048932172172159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698632635510733175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404228, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0.00000047683716, y: 0.00000047683716, z: 0.0000005066395}
 --- !u!1 &4798827131938454528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5681,12 +6661,13 @@ GameObject:
   - component: {fileID: 2951374878019181931}
   - component: {fileID: 5134396968218372223}
   - component: {fileID: 1003655978529525992}
+  - component: {fileID: 8446912579975910295}
   m_Layer: 0
   m_Name: SmallWall R.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2951374878019181931
 Transform:
@@ -5751,6 +6732,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8446912579975910295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798827131938454528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027725, y: 5.9891562, z: 4.955656}
+  m_Center: {x: 0.0000027418137, y: 0, z: 0.5954316}
 --- !u!1 &5068030354073263342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,12 +6756,13 @@ GameObject:
   - component: {fileID: 3057234419734871466}
   - component: {fileID: 7804362798723869574}
   - component: {fileID: 5646353479516624721}
+  - component: {fileID: 444230514735209619}
   m_Layer: 0
   m_Name: Stone Wall Large.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3057234419734871466
 Transform:
@@ -5832,6 +6827,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &444230514735209619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5068030354073263342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: -0.000000461936, y: 0.00000047683716, z: 0.00000071525574}
 --- !u!1 &5182588495304976148
 GameObject:
   m_ObjectHideFlags: 0
@@ -5843,12 +6851,13 @@ GameObject:
   - component: {fileID: 154677065720752489}
   - component: {fileID: 263382607312047463}
   - component: {fileID: 628656281388018056}
+  - component: {fileID: 728446182856162687}
   m_Layer: 0
   m_Name: SmallWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &154677065720752489
 Transform:
@@ -5913,6 +6922,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &728446182856162687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182588495304976148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.624108, y: 5.9891562, z: 0.8027858}
+  m_Center: {x: -0.0000011920929, y: 0, z: -0.00000017881393}
 --- !u!1 &5275516345959324254
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,12 +6946,13 @@ GameObject:
   - component: {fileID: 7172892445614394850}
   - component: {fileID: 106441852113682571}
   - component: {fileID: 1214799038871825251}
+  - component: {fileID: 6866112151421018256}
   m_Layer: 0
   m_Name: SmallWall R.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7172892445614394850
 Transform:
@@ -5994,6 +7017,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6866112151421018256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5275516345959324254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.955655, y: 5.9891562, z: 0.80277246}
+  m_Center: {x: -0.59543294, y: 0, z: -0.00000032782555}
 --- !u!1 &5309666171792996925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,12 +7041,13 @@ GameObject:
   - component: {fileID: 2634637103894512174}
   - component: {fileID: 5501315874637559585}
   - component: {fileID: 5140243141852255469}
+  - component: {fileID: 2160463975191268728}
   m_Layer: 0
   m_Name: Stone Floor Large.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2634637103894512174
 Transform:
@@ -6075,6 +7112,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2160463975191268728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309666171792996925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.00003, y: 1.447929, z: 20.00003}
+  m_Center: {x: -0.41515446, y: -0.52362627, z: 0.48060322}
 --- !u!1 &5333224359022178517
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,12 +7136,13 @@ GameObject:
   - component: {fileID: 8117554097985889997}
   - component: {fileID: 5377918039350648543}
   - component: {fileID: 7353535236648978877}
+  - component: {fileID: 700507907919069802}
   m_Layer: 0
   m_Name: Stone Wall Large.056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8117554097985889997
 Transform:
@@ -6156,6 +7207,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &700507907919069802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333224359022178517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80278015}
+  m_Center: {x: 0.0000023841858, y: 0.00000047683716, z: 0.0000055879354}
 --- !u!1 &5385926290081373769
 GameObject:
   m_ObjectHideFlags: 0
@@ -6167,12 +7231,13 @@ GameObject:
   - component: {fileID: 5578187376366031263}
   - component: {fileID: 6012445058011697862}
   - component: {fileID: 4065349073691510791}
+  - component: {fileID: 6800188876713389622}
   m_Layer: 0
   m_Name: Stone Floor Large.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5578187376366031263
 Transform:
@@ -6237,6 +7302,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6800188876713389622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385926290081373769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.98003, y: 1.4479289, z: 20.000036}
+  m_Center: {x: -0.43549776, y: -0.5236262, z: 0.48060513}
 --- !u!1 &5399256203740383299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6248,12 +7326,13 @@ GameObject:
   - component: {fileID: 1896233195583802410}
   - component: {fileID: 9145924700407512977}
   - component: {fileID: 1370667088785816765}
+  - component: {fileID: 431297310124100322}
   m_Layer: 0
   m_Name: Stone Floor Large.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1896233195583802410
 Transform:
@@ -6318,6 +7397,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &431297310124100322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399256203740383299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.00003, y: 1.447929, z: 20.00003}
+  m_Center: {x: -0.41515923, y: -0.52362627, z: 0.48060465}
 --- !u!1 &5563778654824790023
 GameObject:
   m_ObjectHideFlags: 0
@@ -6329,12 +7421,13 @@ GameObject:
   - component: {fileID: 3432604193292243539}
   - component: {fileID: 2504966935781194968}
   - component: {fileID: 1731473023508998903}
+  - component: {fileID: 5306137545731881119}
   m_Layer: 0
   m_Name: Stone Wall Large.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3432604193292243539
 Transform:
@@ -6399,6 +7492,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5306137545731881119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563778654824790023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80279344}
+  m_Center: {x: -0.0000030994415, y: 0.00000047683716, z: -0.00000044703484}
 --- !u!1 &5826793458889615461
 GameObject:
   m_ObjectHideFlags: 0
@@ -6410,12 +7516,13 @@ GameObject:
   - component: {fileID: 7283637762759052430}
   - component: {fileID: 1953706068342482059}
   - component: {fileID: 1468610566863667925}
+  - component: {fileID: 4756458053215463968}
   m_Layer: 0
   m_Name: Stone Wall Large.071
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7283637762759052430
 Transform:
@@ -6480,6 +7587,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4756458053215463968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826793458889615461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000021010637, y: 0.00000047683716, z: 0.0000030994415}
 --- !u!1 &5885008529908351340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6491,12 +7611,13 @@ GameObject:
   - component: {fileID: 1282250967014360471}
   - component: {fileID: 6109242382030832775}
   - component: {fileID: 3271028873533464363}
+  - component: {fileID: 3362217747958202980}
   m_Layer: 0
   m_Name: SmallWall L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1282250967014360471
 Transform:
@@ -6561,6 +7682,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3362217747958202980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885008529908351340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2067947, y: 5.9891562, z: 0.8027763}
+  m_Center: {x: 0.5117152, y: 0, z: 0.0000015497208}
 --- !u!1 &5886253665841591362
 GameObject:
   m_ObjectHideFlags: 0
@@ -6572,12 +7706,13 @@ GameObject:
   - component: {fileID: 4431871968378770834}
   - component: {fileID: 7631214247480743549}
   - component: {fileID: 3246484910072421858}
+  - component: {fileID: 93318108757109287}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4431871968378770834
 Transform:
@@ -6642,6 +7777,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &93318108757109287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5886253665841591362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891605, z: 10.383947}
+  m_Center: {x: 0.0000015199184, y: -0.0000013113022, z: -0.43136048}
 --- !u!1 &5888140907179407829
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,12 +7801,13 @@ GameObject:
   - component: {fileID: 6305283012308836931}
   - component: {fileID: 4759798929694107680}
   - component: {fileID: 8908001734238726924}
+  - component: {fileID: 1767037046404530849}
   m_Layer: 0
   m_Name: Stone Wall Large.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6305283012308836931
 Transform:
@@ -6723,6 +7872,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1767037046404530849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5888140907179407829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80278015, y: 5.9891567, z: 10.5108795}
+  m_Center: {x: 0.0000068694353, y: 0.00000047683716, z: 0.04265833}
 --- !u!1 &5908239881145107655
 GameObject:
   m_ObjectHideFlags: 0
@@ -6734,12 +7896,13 @@ GameObject:
   - component: {fileID: 3626926726252349626}
   - component: {fileID: 1242727496355657709}
   - component: {fileID: 1771996453051242928}
+  - component: {fileID: 1476326903923289129}
   m_Layer: 0
   m_Name: Stone Wall Large.074
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3626926726252349626
 Transform:
@@ -6804,6 +7967,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1476326903923289129
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908239881145107655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8028011}
+  m_Center: {x: 0.0000030994415, y: 0.00000047683716, z: 0.00000017881393}
 --- !u!1 &6055421743581868519
 GameObject:
   m_ObjectHideFlags: 0
@@ -6815,12 +7991,13 @@ GameObject:
   - component: {fileID: 414269151802724233}
   - component: {fileID: 387537521679993483}
   - component: {fileID: 6825725314235933029}
+  - component: {fileID: 7682626056150768692}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &414269151802724233
 Transform:
@@ -6885,6 +8062,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7682626056150768692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055421743581868519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.383949, y: 5.9891605, z: 0.78735733}
+  m_Center: {x: -0.43135905, y: -0.0000013113022, z: -0.0000018328428}
 --- !u!1 &6195542110975095622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6896,12 +8086,13 @@ GameObject:
   - component: {fileID: 6985681953851384949}
   - component: {fileID: 4607311964802073694}
   - component: {fileID: 6916715699850298654}
+  - component: {fileID: 2999576605829634775}
   m_Layer: 0
   m_Name: SmallWall L.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6985681953851384949
 Transform:
@@ -6966,6 +8157,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2999576605829634775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195542110975095622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2068024, y: 5.9891562, z: 0.8027763}
+  m_Center: {x: 0.51171625, y: 0, z: 0.00000047683716}
 --- !u!1 &6196191822758427249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6977,12 +8181,13 @@ GameObject:
   - component: {fileID: 4155240211799141440}
   - component: {fileID: 8175289840737698524}
   - component: {fileID: 5451082397457305776}
+  - component: {fileID: 680536651565338286}
   m_Layer: 0
   m_Name: SmallWall L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4155240211799141440
 Transform:
@@ -7047,6 +8252,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &680536651565338286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6196191822758427249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2067947, y: 5.9891562, z: 0.8027801}
+  m_Center: {x: 0.5117183, y: 0, z: -0.0000008940697}
 --- !u!1 &6229741694576832095
 GameObject:
   m_ObjectHideFlags: 0
@@ -7058,12 +8276,13 @@ GameObject:
   - component: {fileID: 9008811993802973260}
   - component: {fileID: 4026503065679488308}
   - component: {fileID: 7806613665376447333}
+  - component: {fileID: 5128884166967793063}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9008811993802973260
 Transform:
@@ -7128,6 +8347,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5128884166967793063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6229741694576832095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891605, z: 10.383947}
+  m_Center: {x: 0.0000009536743, y: -0.0000013113022, z: -0.43135977}
 --- !u!1 &6329805782566410174
 GameObject:
   m_ObjectHideFlags: 0
@@ -7139,12 +8371,13 @@ GameObject:
   - component: {fileID: 3092674885546514951}
   - component: {fileID: 4892145106415897048}
   - component: {fileID: 7986060368591179277}
+  - component: {fileID: 6739306334319975083}
   m_Layer: 0
   m_Name: Stone Wall Large.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3092674885546514951
 Transform:
@@ -7209,6 +8442,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6739306334319975083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329805782566410174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80278015, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.000001758337, y: 0.00000047683716, z: 0.0000019073486}
 --- !u!1 &6397264920397046942
 GameObject:
   m_ObjectHideFlags: 0
@@ -7220,12 +8466,13 @@ GameObject:
   - component: {fileID: 8327380110402525556}
   - component: {fileID: 4166498953710454303}
   - component: {fileID: 1716295184417867035}
+  - component: {fileID: 2128416647168958067}
   m_Layer: 0
   m_Name: Stone Wall Large.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8327380110402525556
 Transform:
@@ -7290,6 +8537,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2128416647168958067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397264920397046942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80279726}
+  m_Center: {x: -0.000010967255, y: 0.00000047683716, z: -0.000000029802322}
 --- !u!1 &6510478208429228834
 GameObject:
   m_ObjectHideFlags: 0
@@ -7301,12 +8561,13 @@ GameObject:
   - component: {fileID: 4990638628410378048}
   - component: {fileID: 5490037541128447815}
   - component: {fileID: 1704204904691908930}
+  - component: {fileID: 8401433350703172810}
   m_Layer: 0
   m_Name: SmallWall L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4990638628410378048
 Transform:
@@ -7371,6 +8632,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8401433350703172810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6510478208429228834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.206799, y: 5.9891562, z: 0.8027725}
+  m_Center: {x: -0.51171637, y: 0, z: 0.000003054738}
 --- !u!1 &6585107745859695770
 GameObject:
   m_ObjectHideFlags: 0
@@ -7382,12 +8656,13 @@ GameObject:
   - component: {fileID: 3544241788102343042}
   - component: {fileID: 6517848947322025012}
   - component: {fileID: 4150033296287158979}
+  - component: {fileID: 1025277341880471341}
   m_Layer: 0
   m_Name: Stone Wall Large.034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3544241788102343042
 Transform:
@@ -7452,6 +8727,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1025277341880471341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585107745859695770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027878, y: 5.9891567, z: 10.404236}
+  m_Center: {x: -0.000001296401, y: 0.00000047683716, z: -0.0000023841858}
 --- !u!1 &6673366961653738885
 GameObject:
   m_ObjectHideFlags: 0
@@ -7463,12 +8751,13 @@ GameObject:
   - component: {fileID: 5518882003788681575}
   - component: {fileID: 9004749437529406766}
   - component: {fileID: 8829090717605436806}
+  - component: {fileID: 5660929252953911850}
   m_Layer: 0
   m_Name: Stone Floor Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5518882003788681575
 Transform:
@@ -7533,6 +8822,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5660929252953911850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6673366961653738885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.013588, y: 1.4479291, z: 19.293852}
+  m_Center: {x: 0.07230067, y: -0.5220027, z: -0.39592934}
 --- !u!1 &6739886716258841073
 GameObject:
   m_ObjectHideFlags: 0
@@ -7544,12 +8846,13 @@ GameObject:
   - component: {fileID: 7832347036489283771}
   - component: {fileID: 6308690810799436568}
   - component: {fileID: 5625835513178428692}
+  - component: {fileID: 4234865020961936726}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7832347036489283771
 Transform:
@@ -7614,6 +8917,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4234865020961936726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739886716258841073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891605, z: 10.383949}
+  m_Center: {x: 0.0000011771917, y: -0.0000013113022, z: -0.43136048}
 --- !u!1 &6881265879943977258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7625,12 +8941,13 @@ GameObject:
   - component: {fileID: 7289945387699788201}
   - component: {fileID: 7476572362514645310}
   - component: {fileID: 7084535536083087846}
+  - component: {fileID: 6423106317923413873}
   m_Layer: 0
   m_Name: Stone Wall Large.059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7289945387699788201
 Transform:
@@ -7695,6 +9012,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6423106317923413873
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881265879943977258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.0000021010637, y: 0.00000047683716, z: 0.0000047683716}
 --- !u!1 &6998982068468185361
 GameObject:
   m_ObjectHideFlags: 0
@@ -7706,12 +9036,13 @@ GameObject:
   - component: {fileID: 6952727845095246903}
   - component: {fileID: 8258522458871701415}
   - component: {fileID: 4436134874198451633}
+  - component: {fileID: 116423170424109879}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6952727845095246903
 Transform:
@@ -7776,6 +9107,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &116423170424109879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6998982068468185361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.383949, y: 5.9891605, z: 0.7873573}
+  m_Center: {x: -0.43135905, y: -0.0000013113022, z: -0.000000923872}
 --- !u!1 &7141359036258563029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7787,12 +9131,13 @@ GameObject:
   - component: {fileID: 5616900694590410224}
   - component: {fileID: 7967376535642161906}
   - component: {fileID: 2252799217059062466}
+  - component: {fileID: 3403942562581879310}
   m_Layer: 0
   m_Name: SmallWall L.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5616900694590410224
 Transform:
@@ -7857,6 +9202,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3403942562581879310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141359036258563029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2067947, y: 5.9891562, z: 0.80278015}
+  m_Center: {x: -0.51171815, y: 0, z: -0.0000021010637}
 --- !u!1 &7216783743182794521
 GameObject:
   m_ObjectHideFlags: 0
@@ -7868,12 +9226,13 @@ GameObject:
   - component: {fileID: 4097190485897759833}
   - component: {fileID: 8826291989997101320}
   - component: {fileID: 3091924933853290984}
+  - component: {fileID: 5423240900358996586}
   m_Layer: 0
   m_Name: SmallWall L.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4097190485897759833
 Transform:
@@ -7938,6 +9297,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5423240900358996586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7216783743182794521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.80278015, y: 5.9891562, z: 5.2068}
+  m_Center: {x: -0.0000029802322, y: 0, z: -0.5117171}
 --- !u!1 &7246618302480743786
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,12 +9321,13 @@ GameObject:
   - component: {fileID: 4866299207701660046}
   - component: {fileID: 6761210663167673654}
   - component: {fileID: 7977504296974844012}
+  - component: {fileID: 8629664904582933250}
   m_Layer: 0
   m_Name: Stone Wall Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4866299207701660046
 Transform:
@@ -8019,6 +9392,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8629664904582933250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7246618302480743786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.4042425, y: 5.9891567, z: 0.802803}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0.00000029802322}
 --- !u!1 &7372019394339183526
 GameObject:
   m_ObjectHideFlags: 0
@@ -8033,7 +9419,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7855821705083666716
 Transform:
@@ -8180,12 +9566,13 @@ GameObject:
   - component: {fileID: 2859538269184895213}
   - component: {fileID: 6649188329935688380}
   - component: {fileID: 5274081967832329311}
+  - component: {fileID: 590542833928282025}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2859538269184895213
 Transform:
@@ -8250,6 +9637,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &590542833928282025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399628732932247579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.337128, y: 5.9891567, z: 0.78735924}
+  m_Center: {x: 0.57091236, y: -0.0000032186508, z: 0.00000081956387}
 --- !u!1 &7436564427799102604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8261,12 +9661,13 @@ GameObject:
   - component: {fileID: 4709788796006438572}
   - component: {fileID: 6060670999840898775}
   - component: {fileID: 388890599111552819}
+  - component: {fileID: 173617701282414532}
   m_Layer: 0
   m_Name: Stone Floor Small.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4709788796006438572
 Transform:
@@ -8331,6 +9732,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &173617701282414532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7436564427799102604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.013592, y: 1.4479291, z: 19.423784}
+  m_Center: {x: 0.07230282, y: -0.5220027, z: -0.3985901}
 --- !u!1 &7503717365745825056
 GameObject:
   m_ObjectHideFlags: 0
@@ -8342,12 +9756,13 @@ GameObject:
   - component: {fileID: 5039857350341645920}
   - component: {fileID: 2993675801526109055}
   - component: {fileID: 6559644876013299031}
+  - component: {fileID: 157720733084070351}
   m_Layer: 0
   m_Name: Stone Wall Large.069
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5039857350341645920
 Transform:
@@ -8412,6 +9827,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &157720733084070351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503717365745825056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0.00000071525574, y: 0.00000047683716, z: 0.0000015199184}
 --- !u!1 &7619690589312761078
 GameObject:
   m_ObjectHideFlags: 0
@@ -8423,12 +9851,13 @@ GameObject:
   - component: {fileID: 9028749668620523639}
   - component: {fileID: 8002896913782666217}
   - component: {fileID: 4786426589306744439}
+  - component: {fileID: 3643395427830717325}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9028749668620523639
 Transform:
@@ -8493,6 +9922,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3643395427830717325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619690589312761078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78736115, y: 5.9891605, z: 10.383947}
+  m_Center: {x: -0.000002861023, y: -0.0000013113022, z: 0.4313593}
 --- !u!1 &7644391071113839996
 GameObject:
   m_ObjectHideFlags: 0
@@ -8504,12 +9946,13 @@ GameObject:
   - component: {fileID: 3676786035763036820}
   - component: {fileID: 9080080365367452203}
   - component: {fileID: 6354977555974589770}
+  - component: {fileID: 4477459073605365492}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3676786035763036820
 Transform:
@@ -8574,6 +10017,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4477459073605365492
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644391071113839996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78736115, y: 5.9891567, z: 11.337124}
+  m_Center: {x: 0.00000064074993, y: -0.0000032186508, z: -0.57091045}
 --- !u!1 &7747497428330853513
 GameObject:
   m_ObjectHideFlags: 0
@@ -8585,12 +10041,13 @@ GameObject:
   - component: {fileID: 5014100549910220307}
   - component: {fileID: 5095536812880707485}
   - component: {fileID: 8583925272240073742}
+  - component: {fileID: 607739229157042175}
   m_Layer: 0
   m_Name: Stone Wall Large.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5014100549910220307
 Transform:
@@ -8655,6 +10112,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &607739229157042175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7747497428330853513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0.0000011920929, y: 0.00000047683716, z: -0.0000029206276}
 --- !u!1 &7865240963434725263
 GameObject:
   m_ObjectHideFlags: 0
@@ -8666,12 +10136,13 @@ GameObject:
   - component: {fileID: 7881823913432574486}
   - component: {fileID: 8423339320425232879}
   - component: {fileID: 991752950810245351}
+  - component: {fileID: 7581987823933427167}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7881823913432574486
 Transform:
@@ -8736,6 +10207,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7581987823933427167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7865240963434725263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873688, y: 5.9891567, z: 11.337122}
+  m_Center: {x: 0.00000011920929, y: -0.0000032186508, z: 0.5709131}
 --- !u!1 &7890819215014198588
 GameObject:
   m_ObjectHideFlags: 0
@@ -8747,12 +10231,13 @@ GameObject:
   - component: {fileID: 8011984234719137991}
   - component: {fileID: 250931998876402790}
   - component: {fileID: 2551133783645971295}
+  - component: {fileID: 4681733170718732838}
   m_Layer: 0
   m_Name: Stone Wall Large Close R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8011984234719137991
 Transform:
@@ -8817,6 +10302,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4681733170718732838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890819215014198588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7873535, y: 5.9891605, z: 10.383949}
+  m_Center: {x: 0.0000008791685, y: -0.0000013113022, z: -0.43136072}
 --- !u!1 &7914326070147253648
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,12 +10326,13 @@ GameObject:
   - component: {fileID: 7052643962687945667}
   - component: {fileID: 2650821982469931029}
   - component: {fileID: 5013355754663865568}
+  - component: {fileID: 7085330432323696867}
   m_Layer: 0
   m_Name: Stone Floor Large Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7052643962687945667
 Transform:
@@ -8898,6 +10397,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7085330432323696867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914326070147253648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.000023, y: 2.0922458, z: 20.015871}
+  m_Center: {x: 0.51425123, y: -0.84266365, z: 0.44985867}
 --- !u!1 &7960776738227745483
 GameObject:
   m_ObjectHideFlags: 0
@@ -8909,12 +10421,13 @@ GameObject:
   - component: {fileID: 7515339933905682749}
   - component: {fileID: 956880870842528725}
   - component: {fileID: 8771320559854325099}
+  - component: {fileID: 6541375747401292987}
   m_Layer: 0
   m_Name: Stone Wall Large Close L.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7515339933905682749
 Transform:
@@ -8979,6 +10492,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6541375747401292987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7960776738227745483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78736115, y: 5.9891567, z: 11.290867}
+  m_Center: {x: -0.0000006109476, y: -0.0000032186508, z: -0.54897904}
 --- !u!1 &8156442734531811022
 GameObject:
   m_ObjectHideFlags: 0
@@ -8990,12 +10516,13 @@ GameObject:
   - component: {fileID: 3024855521405678428}
   - component: {fileID: 7671171898010023146}
   - component: {fileID: 5219415755438144048}
+  - component: {fileID: 4679445789317207412}
   m_Layer: 0
   m_Name: Stone Wall Small.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3024855521405678428
 Transform:
@@ -9060,6 +10587,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4679445789317207412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8156442734531811022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027725, y: 5.9891562, z: 4.955658}
+  m_Center: {x: 0.0000027865171, y: 0, z: 0.5954324}
 --- !u!1 &8216544245243226073
 GameObject:
   m_ObjectHideFlags: 0
@@ -9071,12 +10611,13 @@ GameObject:
   - component: {fileID: 718005873587740694}
   - component: {fileID: 1153572211736158460}
   - component: {fileID: 3520574222376378135}
+  - component: {fileID: 8943657904056408149}
   m_Layer: 0
   m_Name: Stone Wall Large.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &718005873587740694
 Transform:
@@ -9141,6 +10682,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8943657904056408149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216544245243226073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000004172325, y: 0.00000047683716, z: 0.0000030994415}
 --- !u!1 &8241513391445029740
 GameObject:
   m_ObjectHideFlags: 0
@@ -9152,12 +10706,13 @@ GameObject:
   - component: {fileID: 3073751526921182923}
   - component: {fileID: 593593133050969}
   - component: {fileID: 5491129400053081031}
+  - component: {fileID: 3948572202904557568}
   m_Layer: 0
   m_Name: Stone Wall Large.068
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3073751526921182923
 Transform:
@@ -9222,6 +10777,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3948572202904557568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241513391445029740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.510878, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: -0.042657614, y: 0.00000047683716, z: 0.0000015199184}
 --- !u!1 &8246636542810072646
 GameObject:
   m_ObjectHideFlags: 0
@@ -9233,12 +10801,13 @@ GameObject:
   - component: {fileID: 5070984287566533697}
   - component: {fileID: 683160101126160497}
   - component: {fileID: 3795006371249721099}
+  - component: {fileID: 8540010732978070055}
   m_Layer: 0
   m_Name: Stone Wall Large.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5070984287566533697
 Transform:
@@ -9303,6 +10872,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8540010732978070055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8246636542810072646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.8027801}
+  m_Center: {x: 0.0000019073486, y: 0.00000047683716, z: -0.0000029206276}
 --- !u!1 &8247507960106022488
 GameObject:
   m_ObjectHideFlags: 0
@@ -9314,12 +10896,13 @@ GameObject:
   - component: {fileID: 9098723663719440652}
   - component: {fileID: 120643244898298518}
   - component: {fileID: 5304428097890199761}
+  - component: {fileID: 1129193503583255481}
   m_Layer: 0
   m_Name: Stone Wall Large.052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9098723663719440652
 Transform:
@@ -9384,6 +10967,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1129193503583255481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8247507960106022488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000011473894, y: 0.00000047683716, z: 0.0000011920929}
 --- !u!1 &8486524237865657138
 GameObject:
   m_ObjectHideFlags: 0
@@ -9395,12 +10991,13 @@ GameObject:
   - component: {fileID: 8893373525150424949}
   - component: {fileID: 5031920338718524544}
   - component: {fileID: 745457081731210736}
+  - component: {fileID: 6842685891555400198}
   m_Layer: 0
   m_Name: Stone Wall Large.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8893373525150424949
 Transform:
@@ -9465,6 +11062,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6842685891555400198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8486524237865657138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.0000011473894, y: 0.00000047683716, z: 0.0000019073486}
 --- !u!1 &8529206928055507519
 GameObject:
   m_ObjectHideFlags: 0
@@ -9476,12 +11086,13 @@ GameObject:
   - component: {fileID: 439790637825553343}
   - component: {fileID: 6726975012268361232}
   - component: {fileID: 4724184194847539951}
+  - component: {fileID: 2048634695641322456}
   m_Layer: 0
   m_Name: Stone Wall Large Close R.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &439790637825553343
 Transform:
@@ -9546,6 +11157,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2048634695641322456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8529206928055507519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78736115, y: 5.9891605, z: 10.383949}
+  m_Center: {x: -0.0000029057264, y: -0.0000013113022, z: 0.4313588}
 --- !u!1 &8677510990474719452
 GameObject:
   m_ObjectHideFlags: 0
@@ -9557,12 +11181,13 @@ GameObject:
   - component: {fileID: 3634637520622576202}
   - component: {fileID: 5314274838636447528}
   - component: {fileID: 4429231731233457340}
+  - component: {fileID: 4005692083426998039}
   m_Layer: 0
   m_Name: Stone Wall Large.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3634637520622576202
 Transform:
@@ -9627,6 +11252,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4005692083426998039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8677510990474719452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404236}
+  m_Center: {x: 0.0000006109476, y: 0.00000047683716, z: 0.0000030994415}
 --- !u!1 &8797575353142700644
 GameObject:
   m_ObjectHideFlags: 0
@@ -9638,12 +11276,13 @@ GameObject:
   - component: {fileID: 5295577168861870208}
   - component: {fileID: 3710532784494391000}
   - component: {fileID: 7143325294382187263}
+  - component: {fileID: 2678362551126550805}
   m_Layer: 0
   m_Name: SmallWall R.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5295577168861870208
 Transform:
@@ -9708,6 +11347,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2678362551126550805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8797575353142700644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2619324, y: 5.9891562, z: 0.8027782}
+  m_Center: {x: 0.6975266, y: 0, z: 0.0000008940697}
 --- !u!1 &8815184706570769683
 GameObject:
   m_ObjectHideFlags: 0
@@ -9719,12 +11371,13 @@ GameObject:
   - component: {fileID: 707922214142739701}
   - component: {fileID: 1570269226848408089}
   - component: {fileID: 7699824559050544536}
+  - component: {fileID: 1909687645836132867}
   m_Layer: 0
   m_Name: Stone Wall Large.070
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &707922214142739701
 Transform:
@@ -9789,6 +11442,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1909687645836132867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8815184706570769683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027954, y: 5.9891567, z: 10.404228}
+  m_Center: {x: 0.000000461936, y: 0.00000047683716, z: -0.00000047683716}
 --- !u!1 &9175315305680439354
 GameObject:
   m_ObjectHideFlags: 0
@@ -9800,12 +11466,13 @@ GameObject:
   - component: {fileID: 2957067798686070731}
   - component: {fileID: 2017357204184988650}
   - component: {fileID: 8934776160625857052}
+  - component: {fileID: 8605261460694659410}
   m_Layer: 0
   m_Name: Stone Wall Large.055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2957067798686070731
 Transform:
@@ -9870,3 +11537,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8605261460694659410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175315305680439354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.404236, y: 5.9891567, z: 0.80278015}
+  m_Center: {x: 0.0000011920929, y: 0.00000047683716, z: 0.0000055879354}

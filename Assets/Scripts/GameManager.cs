@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    ManagePlayerUI characterToughts;
+    ManagePlayerUI playerUI;
 
     void Awake()
     {
@@ -14,12 +14,12 @@ public class GameManager : MonoBehaviour
             Destroy(Instance);
         Instance = this;
 
-        characterToughts = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<ManagePlayerUI>();
+        playerUI = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<ManagePlayerUI>();
     }
 
     public void SetCharacterThoughts(string message, float time)
     {
-        characterToughts.SetMessage(message, time);
+        playerUI.SetMessage(message, time);
     }
 
     void OnDestroy()
@@ -28,5 +28,20 @@ public class GameManager : MonoBehaviour
         {
             Instance = null;
         }
+    }
+
+    public void ClearReference()
+    {
+        playerUI.ClearReference();
+    }
+
+    public void ShowIconInGame(string action)
+    {
+        playerUI.ShowIconInGame(action);
+    }
+
+    public void HideIconInGame()
+    {
+        playerUI.HideIconInGame();
     }
 }

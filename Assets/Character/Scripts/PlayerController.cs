@@ -36,8 +36,6 @@ public class PlayerController : MonoBehaviour
     //action variables    
     [SerializeField]
     bool isActionpressed;
-    [SerializeField]
-    float forceMagnitude = 1.0f;
 
     //camera switch
     bool isCameraCSwitchPressed;
@@ -254,66 +252,6 @@ public class PlayerController : MonoBehaviour
             useIso = false;
         }
     }
-
-    private void CheckIfHitMovableItem(GameObject gameObject)
-    {
-        Movable movable = gameObject.GetComponent<Movable>();
-        if (movable != null)
-        {
-            Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
-
-            Vector3 forceDirection = gameObject.transform.position - transform.position;
-            forceDirection.y = 0;
-            forceDirection.Normalize();
-
-            rigidbody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
-
-
-        }
-    }
-
-    private void CheckIfHitPickupableItem(GameObject gameObject)
-    {
-        Pickup item = gameObject.GetComponent<Pickup>();
-
-        if (item != null && isActionpressed)
-        {
-            item.Pick();
-        }
-    }
-
-    //private void CheckIfHitActionableItem(GameObject gameObject)
-    //{
-    //    Actionable item = gameObject.GetComponent<Actionable>();
-
-    //    if (item != null)
-    //    {
-    //        if (!item.IsUsed)
-    //        {
-    //            item.ShowIconInGame();
-
-    //            if (isActionpressed)
-    //            {
-    //                bool canPlayerDoAction = item.CheckIfPlayerHasRequiredItems();
-    //                if (canPlayerDoAction)
-    //                {
-    //                    Debug.Log("Player can do action");
-    //                    item.DoAction();
-    //                }
-    //                else
-    //                {
-    //                    Debug.Log("Missing items.");
-    //                }
-    //            }
-    //        }
-    //        else
-    //        {
-    //            Debug.Log("Item already used");
-    //        }
-    //    }
-    //}
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         HandleRotation();
@@ -385,7 +323,7 @@ public class PlayerController : MonoBehaviour
 
         if(item != null)
         {
-            item.ShowIconInGame();
+            item.ShowIcon();
 
             if (isActionpressed)
             {
@@ -400,8 +338,6 @@ public class PlayerController : MonoBehaviour
 
         if (item != null)
         {
-            item.ShowIconInGame();
-
             if (isActionpressed)
             {
                 item.Action();
@@ -415,7 +351,7 @@ public class PlayerController : MonoBehaviour
 
         if (item != null)
         {
-            item.HideIconInGame();
+            GameManager.Instance.HideIconInGame();
         }
     }
 }

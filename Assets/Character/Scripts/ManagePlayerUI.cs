@@ -6,24 +6,43 @@ using TMPro;
 
 public class ManagePlayerUI : MonoBehaviour
 {
-    //[SerializeField]
-    //Image prefabUI;
+    [Header("Player Thoughts Settings")]
     [SerializeField]
     TextMeshProUGUI prefabUI;
     [SerializeField]
     Vector3 offset = new Vector3(0, 2.25f, 0);
-
-    Image uiUse;
     [SerializeField]
     TextMeshProUGUI text;
+
+    Image uiUse;
     Transform character;
     CanvasGroup canvasGroup;
+
+    [Header("Player Icons Settings")]
+    [SerializeField]
+    GameObject iconInGame;
+    [SerializeField]
+    Sprite action;
+    [SerializeField]
+    Sprite read;
+    [SerializeField]
+    Sprite pickup;
+    [SerializeField]
+    float secondsToFade = .7f;
+
+    Coroutine hideIconInGameRoutine;
+    GameObject instantiatedIconInGame;
+
 
     // Start is called before the first frame update
     void Awake()
     {
-        text = Instantiate(prefabUI, FindObjectOfType<Canvas>().transform).GetComponent<TextMeshProUGUI>();
         character = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<Transform>();
+        text = Instantiate(prefabUI, FindObjectOfType<Canvas>().transform).GetComponent<TextMeshProUGUI>();
+        text.gameObject.SetActive(false);
+        instantiatedIconInGame = Instantiate(iconInGame, transform.position + offset, Quaternion.identity, character);
+        instantiatedIconInGame.LeanScale(new Vector3(.8f, .8f, .8f), .5f).setEaseLinear().setLoopPingPong();
+        instantiatedIconInGame.SetActive(false);
         canvasGroup = text.gameObject.GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
     }
@@ -51,5 +70,36 @@ public class ManagePlayerUI : MonoBehaviour
     void OnComplete()
     {
         text.gameObject.SetActive(false);
+    }
+
+    public void ShowIconInGame(string iconName)
+    {
+        if (!instantiatedIconInGame.activeSelf)
+        {
+            instantiatedIconInGame.GetComponent<SpriteRenderer>().sprite = iconName == Helpers.actionIcon ? action : iconName == Helpers.pickupIcon ? pickup : read;
+            instantiatedIconInGame.SetActive(true);
+        }
+    }
+
+    public void HideIconInGame()
+    {
+        hideIconInGameRoutine = StartCoroutine(HideIconInGameRoutine());
+    }
+
+    protected IEnumerator HideIconInGameRoutine()
+    {
+        yield return new WaitForSeconds(secondsToFade);
+        if (instantiatedIconInGame != null)
+            instantiatedIconInGame.SetActive(false);
+    }
+
+    public void ClearReference()
+    {
+        if (hideIconInGameRoutine != null)
+        {
+            StopCoroutine(hideIconInGameRoutine);
+        }
+
+        Destroy(instantiatedIconInGame);
     }
 }
