@@ -7,48 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Floor
-    second: {fileID: 2100000, guid: 1c919439ca4d8bc4194a305bf3bde983, type: 2}
+      name: Floor Large Hole Stone
+    second: {fileID: 2100000, guid: d4fb15b50f73a1d499afdf0ba87f8a34, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Floor Hole
-    second: {fileID: 2100000, guid: 14b9062f5c1aabe499ccc2ac13eb7f82, type: 2}
+      name: Floor Large Stone
+    second: {fileID: 2100000, guid: 2b4fd02a1ab914547ac234239ef6fa47, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallFloor
-    second: {fileID: 2100000, guid: af250e36d6356ba4980285d4e4ef000a, type: 2}
+      name: Floor Small Stone
+    second: {fileID: 2100000, guid: 59dc818e686601844b2e5103d4a9b36f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallWall
-    second: {fileID: 2100000, guid: 9843a25224f0b83418f991815bc99191, type: 2}
+      name: Wall Large Stone
+    second: {fileID: 2100000, guid: 7a7da09b94678f54bb78f34fb4a8feae, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallWall L
-    second: {fileID: 2100000, guid: fcce848a127a93f42bfc41d146e68110, type: 2}
+      name: Wall Pillar
+    second: {fileID: 2100000, guid: ba344f8d5fdfd0346b5632132c8f9f1b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallWall R
-    second: {fileID: 2100000, guid: b6d77230830002f42a670ace67ad705b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wall
-    second: {fileID: 2100000, guid: cf31dc800cca3e04aad42f439ea5b548, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wall Close L
-    second: {fileID: 2100000, guid: d36602ecc08ff854991f7f3a0c23a8bf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wall Close R
-    second: {fileID: 2100000, guid: dd13f87c96cd5c34580af312a2720aea, type: 2}
+      name: Wall Small Stone
+    second: {fileID: 2100000, guid: 471eb38063553ed458f9bd4f9e9225a0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

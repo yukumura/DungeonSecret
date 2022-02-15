@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 {
     PlayerInput playerInput;
     Rigidbody rb;
-    CapsuleCollider capsuleCollider;
     Animator animator;
     [SerializeField]
     GameObject virtualCamera;
@@ -47,9 +46,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float cameraRotateSpeed = 10f;
 
-    [SerializeField]
-    LayerMask layerWithInteract;
-
     //Inventory
     bool isInventoryPressed;
 
@@ -60,7 +56,6 @@ public class PlayerController : MonoBehaviour
         playerInput = new PlayerInput();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        capsuleCollider = GetComponent<CapsuleCollider>();
 
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
@@ -158,28 +153,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool(isRunningHash, false);
         }
-    }
-
-    private void CheckInteraction()
-    {
-        //if (isActionpressed)
-        //{
-        //    Debug.Log("Check interaction");
-
-        //    RaycastHit hit;
-        //    Vector3 sphere = transform.position + capsuleCollider.center / 2;
-
-
-        //    if (Physics.SphereCast(sphere, capsuleCollider.height / 2, transform.forward, out hit, .5f, layerWithInteract))
-        //    {
-        //        GameObject gameObject = hit.transform.gameObject;
-        //        Debug.Log(gameObject);
-        //        //CheckIfHitMovableItem(gameObject);
-        //        //CheckIfHitPickupableItem(gameObject);
-        //        //CheckIfHitActionableItem(gameObject);
-        //    }
-        //}
-        
     }
 
     private void CheckInventory()
@@ -328,6 +301,7 @@ public class PlayerController : MonoBehaviour
             if (isActionpressed)
             {
                 item.Action();
+                GameManager.Instance.HideIconInGame();
             }
         }
     }
@@ -341,6 +315,7 @@ public class PlayerController : MonoBehaviour
             if (isActionpressed)
             {
                 item.Action();
+                GameManager.Instance.HideIconInGame();
             }
         }
     }

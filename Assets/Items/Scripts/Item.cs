@@ -9,6 +9,12 @@ public class Item : MonoBehaviour
     [SerializeField]
     protected Inventory inventory;
 
+    [Header("Thoughts Settings")]
+    [SerializeField]
+    protected string message;
+    [SerializeField]
+    protected float timeToFadeThoughts; 
+
     void Awake()
     {
         inventory = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<Inventory>();

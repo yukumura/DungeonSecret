@@ -9,13 +9,6 @@ public class Pickup : Item
     protected string itemName;
     public string ItemName { get { return itemName; } }
 
-    [Header("Thoughts Settings")]
-    [SerializeField]
-    string pickupMessage;
-    [SerializeField]
-    float timeToFadeThoughts; 
-
-
     [SerializeField]
     protected Sprite iconInInventory;
     public Sprite IconInInventory { get { return iconInInventory; } }
@@ -24,7 +17,7 @@ public class Pickup : Item
     {
         Inventory.Instance.AddItemInInventory(iconInInventory, itemName);
         GameManager.Instance.ClearReference();
-        GameManager.Instance.SetCharacterThoughts(pickupMessage, timeToFadeThoughts);
+        GameManager.Instance.SetCharacterThoughts(message, timeToFadeThoughts);
         Destroy(gameObject);
     }
 

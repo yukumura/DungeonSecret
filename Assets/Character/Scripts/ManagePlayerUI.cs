@@ -100,6 +100,6 @@ public class ManagePlayerUI : MonoBehaviour
             StopCoroutine(hideIconInGameRoutine);
         }
 
-        Destroy(instantiatedIconInGame);
+        instantiatedIconInGame.SetActive(false);
     }
 }
