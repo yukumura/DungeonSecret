@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     Rigidbody rb;
     Animator animator;
-    [SerializeField]
-    GameObject virtualCamera;
 
     int isWalkingHash;
     int isRunningHash;
@@ -22,29 +20,32 @@ public class PlayerController : MonoBehaviour
     bool isMovementPressed;
     bool isRunPressed;
 
-    // constants
-    float rotationFactorPerFrame = 15f;
+    [Header("Player Movement Settings")]
     [SerializeField]
     float runMultiplier = 3.0f;
-    int zero = 0;
-
-    // movement speed
     [SerializeField]
     float movementSpeed = 3.0f;
-
-    //action variables    
+    float rotationFactorPerFrame = 15f;
+    int zero = 0;
+    // movement speed
+    [Header("Action Settings")]
     [SerializeField]
     bool isActionpressed;
+    [SerializeField]
+    float cooldownBetweenActions = .5f;
+    bool canDoActionAgain = true;
 
-    //camera switch
+    [Header("Camera Settings")]
+    [SerializeField]
+    GameObject virtualCamera;
+    [SerializeField]
+    float cameraRotateSpeed = 10f;
     bool isCameraCSwitchPressed;
     bool isCameraACSwitchPressed;
     bool useNegativeInput;
     bool useIso = true;
     bool isRotatingCamera;
     Quaternion cameraRotationDestination;
-    [SerializeField]
-    float cameraRotateSpeed = 10f;
 
     //Inventory
     bool isInventoryPressed;
@@ -294,15 +295,15 @@ public class PlayerController : MonoBehaviour
     {
         Item item = other.gameObject.GetComponent<Item>();
 
-        if(item != null)
+        if (item != null)
         {
             item.ShowIcon();
 
-            if (isActionpressed)
-            {
-                item.Trigger();
-                GameManager.Instance.HideIconInGame();
-            }
+            //if (isActionpressed)
+            //{
+            //    item.Trigger();
+            //    GameManager.Instance.HideIconInGame();
+            //}
         }
     }
 
@@ -312,12 +313,20 @@ public class PlayerController : MonoBehaviour
 
         if (item != null)
         {
-            if (isActionpressed)
+            if (isActionpressed && canDoActionAgain)
             {
                 item.Trigger();
                 GameManager.Instance.HideIconInGame();
+                canDoActionAgain = false;
+                StartCoroutine(SetCooldown(cooldownBetweenActions));
             }
         }
+    }
+
+    IEnumerator SetCooldown(float time)
+    {
+        yield return new WaitForSeconds(time);
+        canDoActionAgain = true;
     }
 
     private void OnTriggerExit(Collider other)

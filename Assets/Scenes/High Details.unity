@@ -14795,10 +14795,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ae4bd40a642f54fa966c04094d6584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virtualCamera: {fileID: 1256961081}
   runMultiplier: 3
   movementSpeed: 2.5
   isActionpressed: 0
+  cooldownBetweenActions: 0.5
+  virtualCamera: {fileID: 1256961081}
   cameraRotateSpeed: 10
 --- !u!54 &1521439312
 Rigidbody:
