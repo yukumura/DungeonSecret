@@ -17,6 +17,14 @@ public static class Helpers
         }
     }
 
+    public static string InventoryTag
+    {
+        get
+        {
+            return "Inventory";
+        }
+    }
+
     public static string UIItemIconName
     {
         get
@@ -44,6 +52,53 @@ public static class Helpers
         get
         {
             return "pickup";
+        }
+    }
+
+    public static string JsonPath
+    {
+        get
+        {
+            return "./Assets/Items/Descriptions/";
+        }
+    }
+
+    public static string English
+    {
+        get
+        {
+            return "English.json";
+        }
+    }
+
+    public static string Italian
+    {
+        get
+        {
+            return "Italiano.json";
+        }
+    }
+
+    public static string TreasureOpenAnimation
+    {
+        get
+        {
+            return "Treasure Open";
+        }
+    }
+
+    public static string PlayerIsWalkingAnimation
+    {
+        get
+        {
+            return "isWalking";
+        }
+    }
+    public static string PlayerIsRunningAnimation
+    {
+        get
+        {
+            return "isRunning";
         }
     }
 }

@@ -3,12 +3,7 @@ guid: 1d3b2fd3ced73e74c943fb1d92461617
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sack_
-    second: {fileID: 2100000, guid: ef259429ae4496f4abd0dd3eff4cfe46, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -57,8 +57,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
 
-        isWalkingHash = Animator.StringToHash("isWalking");
-        isRunningHash = Animator.StringToHash("isRunning");
+        isWalkingHash = Animator.StringToHash(Helpers.PlayerIsWalkingAnimation);
+        isRunningHash = Animator.StringToHash(Helpers.PlayerIsRunningAnimation);
 
         playerInput.CharacterControls.Move.started += onMovementInput;
         playerInput.CharacterControls.Move.canceled += onMovementInput;
@@ -300,7 +300,7 @@ public class PlayerController : MonoBehaviour
 
             if (isActionpressed)
             {
-                item.Action();
+                item.Trigger();
                 GameManager.Instance.HideIconInGame();
             }
         }
@@ -314,7 +314,7 @@ public class PlayerController : MonoBehaviour
         {
             if (isActionpressed)
             {
-                item.Action();
+                item.Trigger();
                 GameManager.Instance.HideIconInGame();
             }
         }

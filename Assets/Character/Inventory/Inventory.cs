@@ -39,22 +39,33 @@ public class Inventory : MonoBehaviour
         obj.transform.SetParent(transform, false);
     }
 
+    public void RemoveItemInInventory(string itemName)
+    {
+        Slot slot = CheckIfItemExistInInventory(itemName);
+
+        if (slot)
+        {
+            slots.Remove(slot);
+        }
+
+        Destroy(slot.gameObject);
+    }
+
     public void Trigger()
     {
         if (canTriggerAgain)
         {
-            Debug.Log("Trigger inventory");
             canTriggerAgain = false;
 
             if (isOpen)
             {
-                transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 100, transform.localPosition.y), .8f).setEaseInOutBack();
+                transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 200, transform.localPosition.y), .8f).setEaseInOutBack();
                 isOpen = false;
                 StartCoroutine(CanTriggerAgain());
             }
             else
             {
-                transform.LeanMoveLocal(new Vector2(transform.localPosition.x + 100, transform.localPosition.y), .8f).setEaseInOutBack();
+                transform.LeanMoveLocal(new Vector2(transform.localPosition.x + 200, transform.localPosition.y), .8f).setEaseInOutBack();
                 isOpen = true;
                 StartCoroutine(CanTriggerAgain());
             }
