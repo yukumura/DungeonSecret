@@ -1522,12 +1522,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: 
-  timeToFadeThoughts: 5
+  timeToFadeThoughts: 3
   type: 4
   isUsed: 0
   itemsRequired:
   - {fileID: 779911677}
-  actionMessage: Let's see what's inside
+  actionMessage: Open! Let's see what's inside
   unableMessage: As I suspected, I need a key to open it.
   goldenSpoon: {fileID: 1710846549}
 --- !u!135 &148332957
@@ -3054,7 +3054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: The remains of a corpse. I hope I won't suffer the same fate...
   timeToFadeThoughts: 5
-  type: 0
+  type: 3
   isUsed: 0
 --- !u!135 &325240103
 SphereCollider:

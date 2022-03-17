@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     int pickingItemsFromMiddleHash;
     int openingChestHash;
     int lookAroundHash;
+    int standardIdleHash;
 
     Vector2 currentMovementInput;
     Vector3 currentMovement;
@@ -73,6 +74,8 @@ public class PlayerController : MonoBehaviour
         pickingItemsFromMiddleHash = Animator.StringToHash(Helpers.PickingItemsFromMiddleAnimation);
         openingChestHash = Animator.StringToHash(Helpers.OpeningChestAnimation);
         lookAroundHash = Animator.StringToHash(Helpers.LookAroundAnimation);
+        standardIdleHash = Animator.StringToHash(Helpers.StandardIdleAnimation);
+        
 
         playerInput.CharacterControls.Move.started += onMovementInput;
         playerInput.CharacterControls.Move.canceled += onMovementInput;
@@ -189,7 +192,11 @@ public class PlayerController : MonoBehaviour
                 animator.Play(openingChestHash);
                 StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.OpeningChestAnimation).FirstOrDefault().length / 2));
                 break;
-            case Helpers.ItemType.LookAround:
+            case Helpers.ItemType.Generic:
+                animator.Play(standardIdleHash);
+                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.StandardIdleAnimation).FirstOrDefault().length));
+                break; 
+            case Helpers.ItemType.CloseChest:
                 animator.Play(lookAroundHash);
                 StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.LookAroundAnimation).FirstOrDefault().length));
                 break;

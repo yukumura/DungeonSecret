@@ -69,6 +69,6 @@ public class Actionable : Item
 
     protected virtual void PlayUnableAnimation()
     {
-        GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.LookAround);
+        GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.Generic);
     }
 }
