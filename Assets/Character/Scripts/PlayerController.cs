@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,9 +10,16 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     Rigidbody rb;
     Animator animator;
+    RuntimeAnimatorController ac;
+
 
     int isWalkingHash;
     int isRunningHash;
+    int tryToOpenTheDoorHash;
+    int pickingItemsFromGroundHash;
+    int pickingItemsFromMiddleHash;
+    int openingChestHash;
+    int lookAroundHash;
 
     Vector2 currentMovementInput;
     Vector3 currentMovement;
@@ -32,8 +40,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     bool isActionpressed;
     [SerializeField]
-    float cooldownBetweenActions = .5f;
-    bool canDoActionAgain = true;
+    bool canDoAction = true;
 
     [Header("Camera Settings")]
     [SerializeField]
@@ -57,9 +64,15 @@ public class PlayerController : MonoBehaviour
         playerInput = new PlayerInput();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        ac = animator.runtimeAnimatorController;
 
         isWalkingHash = Animator.StringToHash(Helpers.PlayerIsWalkingAnimation);
         isRunningHash = Animator.StringToHash(Helpers.PlayerIsRunningAnimation);
+        tryToOpenTheDoorHash = Animator.StringToHash(Helpers.TryToOpenTheDoorAnimation);
+        pickingItemsFromGroundHash = Animator.StringToHash(Helpers.PickingItemsFromGroundAnimation);
+        pickingItemsFromMiddleHash = Animator.StringToHash(Helpers.PickingItemsFromMiddleAnimation);
+        openingChestHash = Animator.StringToHash(Helpers.OpeningChestAnimation);
+        lookAroundHash = Animator.StringToHash(Helpers.LookAroundAnimation);
 
         playerInput.CharacterControls.Move.started += onMovementInput;
         playerInput.CharacterControls.Move.canceled += onMovementInput;
@@ -118,7 +131,7 @@ public class PlayerController : MonoBehaviour
     void onAction(InputAction.CallbackContext context)
     {
         isActionpressed = context.ReadValueAsButton();
-    }    
+    }
     void onInventory(InputAction.CallbackContext context)
     {
         isInventoryPressed = context.ReadValueAsButton();
@@ -132,7 +145,7 @@ public class PlayerController : MonoBehaviour
         isCameraACSwitchPressed = context.ReadValueAsButton();
     }
 
-    void HandleAnimation()
+    void HandleMovementAnimation()
     {
         // get parameter value from animator
         bool isWalking = animator.GetBool(isWalkingHash);
@@ -153,6 +166,35 @@ public class PlayerController : MonoBehaviour
         else if ((!isMovementPressed || !isRunPressed) && isRunning)
         {
             animator.SetBool(isRunningHash, false);
+        }
+    }
+
+    public void PlayItemAnimation(Helpers.ItemType itemType)
+    {
+        switch (itemType)
+        {
+            case Helpers.ItemType.PickupFromGround:
+                animator.Play(pickingItemsFromGroundHash);
+                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.PickingItemsFromGroundAnimation).FirstOrDefault().length / 1.5f));
+                break;
+            case Helpers.ItemType.PickupFromMiddle:
+                animator.Play(pickingItemsFromMiddleHash);
+                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.PickingItemsFromMiddleAnimation).FirstOrDefault().length));
+                break;
+            case Helpers.ItemType.ActionableDoor:
+                animator.Play(tryToOpenTheDoorHash);
+                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.TryToOpenTheDoorAnimation).FirstOrDefault().length));
+                break;
+            case Helpers.ItemType.OpeningChest:
+                animator.Play(openingChestHash);
+                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.OpeningChestAnimation).FirstOrDefault().length / 2));
+                break;
+            case Helpers.ItemType.LookAround:
+                animator.Play(lookAroundHash);
+                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.LookAroundAnimation).FirstOrDefault().length));
+                break;
+            default:
+                break;
         }
     }
 
@@ -228,18 +270,24 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        HandleRotation();
-        HandleMovement();
-        //Disabled for the moment.
-        //HandleJump();
-
+        if (canDoAction)
+        {
+            HandleRotation();
+            HandleMovement();
+            //Disabled for the moment.
+            //HandleJump();
+        }
     }
 
     void Update()
     {
-        CheckInventory();
-        HandleRotateCamera();
-        HandleAnimation();
+        if (canDoAction)
+        {
+            CheckInventory();
+            HandleRotateCamera();
+            HandleMovementAnimation();
+        }
+
     }
 
     private void HandleMovement()
@@ -313,20 +361,26 @@ public class PlayerController : MonoBehaviour
 
         if (item != null)
         {
-            if (isActionpressed && canDoActionAgain)
+            if (isActionpressed && canDoAction && !item.IsUsed)
             {
-                item.Trigger();
+                canDoAction = false;
                 GameManager.Instance.HideIconInGame();
-                canDoActionAgain = false;
-                StartCoroutine(SetCooldown(cooldownBetweenActions));
+                item.Trigger();
             }
         }
     }
 
     IEnumerator SetCooldown(float time)
     {
+        StopMovement();
         yield return new WaitForSeconds(time);
-        canDoActionAgain = true;
+        canDoAction = true;
+    }
+
+    private void StopMovement()
+    {
+        animator.SetBool(isWalkingHash, false);
+        animator.SetBool(isRunningHash, false);
     }
 
     private void OnTriggerExit(Collider other)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Helpers;
 
 public class Item : MonoBehaviour
 {
@@ -9,7 +10,19 @@ public class Item : MonoBehaviour
     [TextArea]
     protected string message;
     [SerializeField]
-    protected float timeToFadeThoughts; 
+    protected float timeToFadeThoughts;
+
+    [Header("Item Type")]
+    public ItemType type;
+    [SerializeField]
+    protected bool isUsed = false;
+    public bool IsUsed
+    {
+        get
+        {
+            return isUsed;
+        }        
+    }
 
     void Awake()
     {
@@ -18,6 +31,7 @@ public class Item : MonoBehaviour
 
     public virtual void Trigger()
     {
+        GameManager.Instance.GetPlayer().PlayItemAnimation(type);
     }
 
     public virtual void ShowIcon()

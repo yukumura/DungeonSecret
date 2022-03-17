@@ -24,6 +24,7 @@ public class Pickup : Item
     public override void Trigger()
     {
         Pick();
+        base.Trigger();
     }
 
     public override void ShowIcon()

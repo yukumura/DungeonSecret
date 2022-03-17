@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool isEnglish = true;
 
     ManagePlayerUI playerUI;
+    PlayerController playerController;
+
 
     void Awake()
     {
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         playerUI = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<ManagePlayerUI>();
+        playerController = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<PlayerController>();
     }
 
     public void SetCharacterThoughts(string message, float time)
@@ -46,4 +49,15 @@ public class GameManager : MonoBehaviour
     {
         playerUI.HideIconInGame();
     }
+
+    public PlayerController GetPlayer()
+    {
+        return playerController;
+    }
+
+    public ManagePlayerUI GetPlayerUI()
+    {
+        return playerUI;
+    }
+    
 }

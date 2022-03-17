@@ -4,6 +4,15 @@ using UnityEngine;
 
 public static class Helpers
 {
+    public enum ItemType
+    {
+        PickupFromGround,
+        PickupFromMiddle,
+        ActionableDoor,
+        LookAround,
+        OpeningChest
+    }
+
     private static Matrix4x4 _isoMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 135f, 0));
     private static Matrix4x4 _isoMatrix2 = Matrix4x4.Rotate(Quaternion.Euler(0, 45f, 0));
     public static Vector3 ToIso(this Vector3 vector) => _isoMatrix.MultiplyPoint3x4(vector);
@@ -99,6 +108,41 @@ public static class Helpers
         get
         {
             return "isRunning";
+        }
+    }
+    public static string TryToOpenTheDoorAnimation
+    {
+        get
+        {
+            return "TryToOpenTheDoor";
+        }
+    }
+    public static string PickingItemsFromGroundAnimation
+    {
+        get
+        {
+            return "PickingItemsFromGround";
+        }
+    }
+    public static string LookAroundAnimation
+    {
+        get
+        {
+            return "Looking";
+        }
+    }
+    public static string PickingItemsFromMiddleAnimation
+    {
+        get
+        {
+            return "PickingItemsFromMiddle";
+        }
+    }
+    public static string OpeningChestAnimation
+    {
+        get
+        {
+            return "OpeningChest";
         }
     }
 }

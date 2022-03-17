@@ -14,8 +14,6 @@ public class Actionable : Item
     [SerializeField]
     [TextArea]
     string unableMessage;
-    [SerializeField]
-    bool isUsed = false;
 
     public bool CheckIfPlayerHasRequiredItems()
     {
@@ -35,14 +33,16 @@ public class Actionable : Item
         {
             if (CheckIfPlayerHasRequiredItems())
             {
-                GameManager.Instance.SetCharacterThoughts(actionMessage, timeToFadeThoughts);
+                GameManager.Instance.GetPlayerUI().SetMessage(actionMessage, timeToFadeThoughts);
                 RemoveRequiredItemsFromInventory();
                 isUsed = true;
                 Action();
+                base.Trigger();
             }
             else
             {
-                GameManager.Instance.SetCharacterThoughts(unableMessage, timeToFadeThoughts);
+                GameManager.Instance.GetPlayerUI().SetMessage(unableMessage, timeToFadeThoughts);
+                PlayUnableAnimation();
             }
         }
             
@@ -65,5 +65,10 @@ public class Actionable : Item
 
     public virtual void Action()
     {
+    }
+
+    protected virtual void PlayUnableAnimation()
+    {
+        GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.LookAround);
     }
 }

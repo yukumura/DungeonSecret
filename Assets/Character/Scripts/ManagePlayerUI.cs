@@ -31,6 +31,7 @@ public class ManagePlayerUI : MonoBehaviour
     float secondsToFade = .7f;
 
     Coroutine hideIconInGameRoutine;
+    Coroutine hideMessageRoutine;
     GameObject instantiatedIconInGame;
 
 
@@ -55,10 +56,15 @@ public class ManagePlayerUI : MonoBehaviour
 
     public void SetMessage(string message, float time)
     {
+        if(hideMessageRoutine != null)
+        {
+            StopCoroutine(hideMessageRoutine);
+        }
+
         text.gameObject.SetActive(true);
         canvasGroup.LeanAlpha(1, 0.8f);
         text.text = message;
-        StartCoroutine(HideMessage(time));
+        hideMessageRoutine = StartCoroutine(HideMessage(time));
     }
 
     IEnumerator HideMessage(float time)

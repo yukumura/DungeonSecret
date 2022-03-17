@@ -9,6 +9,7 @@ public class Readable : Item
     {
         GameManager.Instance.SetCharacterThoughts(message, timeToFadeThoughts);
         GameManager.Instance.ClearReference();
+        base.Trigger();
     }
 
     public override void ShowIcon()

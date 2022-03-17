@@ -26,5 +26,4 @@ public class TreasureChest : Actionable
     {
         goldenSpoon.GetComponent<SphereCollider>().enabled = true;
     }
-
 }
