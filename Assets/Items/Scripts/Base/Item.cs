@@ -16,6 +16,8 @@ public class Item : MonoBehaviour
     public ItemType type;
     [SerializeField]
     protected bool isUsed = false;
+
+    public bool CanPlayerMoves;
     public bool IsUsed
     {
         get

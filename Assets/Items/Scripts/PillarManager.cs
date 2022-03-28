@@ -10,6 +10,10 @@ public class PillarManager : MonoBehaviour
     Pillar[] pillars;
     [SerializeField]
     WindowGlass windowGlass;
+    [SerializeField]
+    [TextArea]
+    string message;
+
     bool enigmaSolved = false;
 
     private void CheckCombination()
@@ -21,9 +25,15 @@ public class PillarManager : MonoBehaviour
                 return;
         }
 
+        EnigmaSolved();
+    }
+
+    private void EnigmaSolved()
+    {
         enigmaSolved = true;
         Array.ForEach(pillars, x => x.Use());
         windowGlass.Disappear();
+        GameManager.Instance.SetCharacterThoughts(message, 3f);
     }
 
     private void Update()

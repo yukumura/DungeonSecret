@@ -193,8 +193,9 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.OpeningChestAnimation).FirstOrDefault().length / 2));
                 break;
             case Helpers.ItemType.Generic:
-                animator.Play(standardIdleHash);
-                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.StandardIdleAnimation).FirstOrDefault().length));
+                //animator.Play(standardIdleHash);
+                //StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.StandardIdleAnimation).FirstOrDefault().length));
+                StartCoroutine(SetCooldown(0.1f));
                 break; 
             case Helpers.ItemType.CloseChest:
                 animator.Play(lookAroundHash);
@@ -277,7 +278,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (canDoAction)
+        if (canDoAction && !GameManager.Instance.finishGame)
         {
             HandleRotation();
             HandleMovement();
@@ -288,7 +289,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canDoAction)
+        if (canDoAction && !GameManager.Instance.finishGame)
         {
             CheckInventory();
             HandleRotateCamera();
@@ -353,12 +354,6 @@ public class PlayerController : MonoBehaviour
         if (item != null)
         {
             item.ShowIcon();
-
-            //if (isActionpressed)
-            //{
-            //    item.Trigger();
-            //    GameManager.Instance.HideIconInGame();
-            //}
         }
     }
 

@@ -221,12 +221,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: 
-  timeToFadeThoughts: 3
+  timeToFadeThoughts: 1
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired: []
-  actionMessage: action
-  unableMessage: unable
+  actionMessage: '*click*'
+  unableMessage: 
   rightPosition: 0
   currentNumber: 1
   rightNumber: 2
@@ -640,12 +641,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: 
-  timeToFadeThoughts: 3
+  timeToFadeThoughts: 1
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired: []
-  actionMessage: action
-  unableMessage: unable
+  actionMessage: '*click*'
+  unableMessage: 
   rightPosition: 0
   currentNumber: 1
   rightNumber: 2
@@ -1625,6 +1627,7 @@ MonoBehaviour:
   timeToFadeThoughts: 3
   type: 4
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired:
   - {fileID: 779911677}
   actionMessage: Open! Let's see what's inside
@@ -3092,6 +3095,7 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 1
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired:
   - {fileID: 1710846555}
   actionMessage: I heard a strange noise in the distance after setting the spoon
@@ -3331,6 +3335,7 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
 --- !u!135 &325240103
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4764,6 +4769,7 @@ MonoBehaviour:
   timeToFadeThoughts: 4
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
 --- !u!1001 &488666362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4940,7 +4946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4185eefa44cd8864ca923c92ca38ced2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEnglish: 1
+  finishGame: 0
 --- !u!114 &494455962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5817,12 +5823,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: 
-  timeToFadeThoughts: 3
+  timeToFadeThoughts: 1
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired: []
-  actionMessage: action
-  unableMessage: unable
+  actionMessage: '*click*'
+  unableMessage: 
   rightPosition: 0
   currentNumber: 1
   rightNumber: 2
@@ -6611,12 +6618,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: 
-  timeToFadeThoughts: 3
+  timeToFadeThoughts: 1
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired: []
-  actionMessage: action
-  unableMessage: unable
+  actionMessage: '*click*'
+  unableMessage: 
   rightPosition: 0
   currentNumber: 1
   rightNumber: 2
@@ -8663,8 +8671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: 
   timeToFadeThoughts: 4
-  type: 1
+  type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired:
   - {fileID: 586926420}
   actionMessage: Unlocked! Let's see what's inside the book....
@@ -10988,6 +10997,7 @@ Transform:
   m_Children:
   - {fileID: 6462003538346181871}
   - {fileID: 600481305}
+  - {fileID: 1319652077}
   m_Father: {fileID: 901241735}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11026,12 +11036,14 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired:
   - {fileID: 1504918471}
   actionMessage: '*Magic Formula*'
   unableMessage: It looks like a trap door. I wonder if it can be opened...
   finishMessage: I seem to be able to climb down this trap door. What will be down
     here?
+  finishGO: {fileID: 1319652076}
 --- !u!65 &1068924655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13427,6 +13439,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3884948270386564294, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
   m_PrefabInstance: {fileID: 1317640177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1319652076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319652077}
+  - component: {fileID: 1319652079}
+  - component: {fileID: 1319652078}
+  - component: {fileID: 1319652080}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1319652077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319652076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.87, y: 0.95, z: -50.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1068924652}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1319652078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319652076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 1, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1319652079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319652076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.889353, y: 1, z: 6.065365}
+  m_Center: {x: 0.070319176, y: 0, z: 0.011720657}
+--- !u!114 &1319652080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319652076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8c9c036d2a25047adc00533584e719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 
+  timeToFadeThoughts: 3
+  type: 3
+  isUsed: 0
+  CanPlayerMoves: 0
+  itemsRequired: []
+  actionMessage: End.
+  unableMessage: 
 --- !u!4 &1322689053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 352a1ed5452ba834f87d94b2d60a63f1, type: 3}
@@ -15159,8 +15250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: Da inserire
   timeToFadeThoughts: 4
-  type: 1
+  type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   itemName: Magic Book
   iconInInventory: {fileID: 21300000, guid: 27a98dcfdcac0d54e866366ecb569a2e, type: 3}
 --- !u!1001 &1506982081
@@ -16375,6 +16467,7 @@ MonoBehaviour:
   timeToFadeThoughts: 4
   type: 0
   isUsed: 0
+  CanPlayerMoves: 0
   itemName: Book
   iconInInventory: {fileID: 21300000, guid: 2f4f7fb5deb7c6b4598dded0baf795da, type: 3}
 --- !u!135 &1588336392
@@ -16474,6 +16567,7 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
 --- !u!135 &1594360111
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16954,6 +17048,7 @@ MonoBehaviour:
   - {fileID: 1000342}
   - {fileID: 629323784}
   windowGlass: {fileID: 1633979792}
+  message: It seems to be working! The barrier seems to be melting...
 --- !u!4 &1605029931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3651f85d613fada49b081176000bda28, type: 3}
@@ -17379,6 +17474,7 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
   bookLock: {fileID: 857847846}
 --- !u!4 &1645020830 stripped
 Transform:
@@ -18063,6 +18159,7 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 2
   isUsed: 0
+  CanPlayerMoves: 0
   itemsRequired:
   - {fileID: 904521277952547283, guid: bf5b8db18b239d84183cbb755cfc5a9b, type: 3}
   actionMessage: 
@@ -18089,6 +18186,7 @@ MonoBehaviour:
   timeToFadeThoughts: 4
   type: 3
   isUsed: 0
+  CanPlayerMoves: 0
 --- !u!135 &1710176026
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18142,6 +18240,7 @@ MonoBehaviour:
   timeToFadeThoughts: 5
   type: 0
   isUsed: 0
+  CanPlayerMoves: 0
   itemName: Golden Spoon
   iconInInventory: {fileID: 21300000, guid: f110966b86a2acc4ca96447b60dcc6fd, type: 3}
 --- !u!4 &1714075540 stripped
@@ -24133,7 +24232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 348187005369463732, guid: 7a2f3bd3fb4211c4aaef12db3fec378c, type: 3}
       propertyPath: itemName
-      value: Key Magic
+      value: Key Treasure
       objectReference: {fileID: 0}
     - target: {fileID: 348187005369463732, guid: 7a2f3bd3fb4211c4aaef12db3fec378c, type: 3}
       propertyPath: iconInInventory

@@ -8,6 +8,8 @@ public class Grilles : Actionable
     [SerializeField]
     [TextArea]
     string finishMessage;
+    [SerializeField]
+    GameObject finishGO;
     // Start is called before the first frame update
 
     public void Awake()
@@ -17,13 +19,13 @@ public class Grilles : Actionable
     public override void Action()
     {
         animator.Play(Helpers.GrillesOpenAnimation);
-        StartCoroutine(WaitAndFinishGame());
     }
 
-    IEnumerator WaitAndFinishGame()
+
+    public void ActivateEnd()
     {
-        yield return new WaitForSeconds(15f);
-        gameObject.SetActive(false);
         GameManager.Instance.GetPlayerUI().SetMessage(finishMessage, timeToFadeThoughts);
+        GetComponent<BoxCollider>().enabled = false;
+        finishGO.SetActive(true);
     }
 }

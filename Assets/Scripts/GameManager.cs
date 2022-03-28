@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public bool isEnglish = true;
+    [SerializeField]
+    public bool finishGame = false;
 
     ManagePlayerUI playerUI;
     PlayerController playerController;
@@ -58,6 +59,13 @@ public class GameManager : MonoBehaviour
     public ManagePlayerUI GetPlayerUI()
     {
         return playerUI;
+    }
+
+    public void FinishGame()
+    {
+
+        Time.timeScale = 0;
+        finishGame = true;
     }
     
 }
