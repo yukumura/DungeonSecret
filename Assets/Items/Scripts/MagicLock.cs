@@ -11,12 +11,12 @@ public class MagicLock : Actionable
     public override void Action()
     {
         StartCoroutine(EnableBook(timeToUnlockBook));
-        gameObject.SetActive(false);
     }
 
     IEnumerator EnableBook(float time)
     {
         yield return new WaitForSeconds(time);
         magicBook.GetComponent<SphereCollider>().enabled = true;
+        gameObject.SetActive(false);
     }
 }

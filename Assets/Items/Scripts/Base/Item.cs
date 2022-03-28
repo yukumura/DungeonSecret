@@ -21,7 +21,11 @@ public class Item : MonoBehaviour
         get
         {
             return isUsed;
-        }        
+        }
+        set
+        {
+            isUsed = value;
+        }
     }
 
     void Awake()

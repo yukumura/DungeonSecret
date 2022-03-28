@@ -153,4 +153,18 @@ public static class Helpers
             return "Standard Idle";
         }
     }
+    public static string GrillesOpenAnimation
+    {
+        get
+        {
+            return "Grilles Open";
+        }
+    }
+    public static string WindowGlassDisappearAnimation
+    {
+        get
+        {
+            return "WindowGlass Disappear";
+        }
+    }
 }
