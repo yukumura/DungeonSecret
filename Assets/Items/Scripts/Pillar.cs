@@ -19,8 +19,7 @@ public class Pillar : Actionable
         if (currentNumber > 4)
             currentNumber = 1;
 
-        StartCoroutine(RotateMe(Vector3.up * 90, time));
-        isUsed = false;
+        StartCoroutine(RotateMe(Vector3.up * 90, time));        
 
         rightPosition = currentNumber == rightNumber;
     }
@@ -34,6 +33,8 @@ public class Pillar : Actionable
             transform.rotation = Quaternion.Slerp(fromAngle, toAngle, t);
             yield return null;
         }
+
+        isUsed = false;
     }
 
     public void Use()
