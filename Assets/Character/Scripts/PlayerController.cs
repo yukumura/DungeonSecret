@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     int pickingItemsFromMiddleHash;
     int openingChestHash;
     int lookAroundHash;
-    int standardIdleHash;
+    int getUpHash;
 
     Vector2 currentMovementInput;
     Vector3 currentMovement;
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     bool isActionpressed;
     [SerializeField]
-    bool canDoAction = true;
+    bool canDoAction = false;
 
     [Header("Camera Settings")]
     [SerializeField]
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         pickingItemsFromMiddleHash = Animator.StringToHash(Helpers.PickingItemsFromMiddleAnimation);
         openingChestHash = Animator.StringToHash(Helpers.OpeningChestAnimation);
         lookAroundHash = Animator.StringToHash(Helpers.LookAroundAnimation);
-        standardIdleHash = Animator.StringToHash(Helpers.StandardIdleAnimation);
+        getUpHash = Animator.StringToHash(Helpers.GetUpAnimation);
         
 
         playerInput.CharacterControls.Move.started += onMovementInput;
@@ -293,7 +293,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (canDoAction && !GameManager.Instance.finishGame && !GameManager.Instance.startGameIntro)
+        if (canDoAction && !GameManager.Instance.finishGame)
         {
             HandleRotation();
             HandleMovement();
@@ -304,7 +304,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canDoAction && !GameManager.Instance.finishGame && !GameManager.Instance.startGameIntro)
+        if (canDoAction && !GameManager.Instance.finishGame)
         {
             CheckInventory();
             CheckMenu();
@@ -409,5 +409,15 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.HideIconInGame();
         }
+    }
+
+    public void StartUsePlayer()
+    {
+        canDoAction = true;        
+    }
+
+    public void GetUp()
+    {
+        animator.SetTrigger(getUpHash);
     }
 }

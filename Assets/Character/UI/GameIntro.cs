@@ -64,8 +64,7 @@ public class GameIntro : MonoBehaviour
             blackScreen.color = objectColor;
             yield return null;
         }
-
-        GameManager.Instance.startGameIntro = false;
+        GameManager.Instance.GetPlayer().GetUp();
         gameObject.SetActive(false);
     }
 }

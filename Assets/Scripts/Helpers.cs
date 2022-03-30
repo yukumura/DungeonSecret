@@ -161,11 +161,11 @@ public static class Helpers
             return "OpeningChest";
         }
     }
-    public static string StandardIdleAnimation
+    public static string GetUpAnimation
     {
         get
         {
-            return "Standard Idle";
+            return "GetUp";
         }
     }
     public static string GrillesOpenAnimation

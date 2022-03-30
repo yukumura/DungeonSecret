@@ -2250,10 +2250,6 @@ MonoBehaviour:
   text: {fileID: 374930889}
   story:
   - 'From MSDN:  '
-  - 'using System; '
-  - 'using System.Collections.Generic; '
-  - 'namespace ConsoleApplication1 '
-  - 'class MSDNSample '
   timeBetweenText: 5
 --- !u!1001 &196733752
 PrefabInstance:
@@ -5179,7 +5175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishGame: 0
-  startGameIntro: 1
+  playerUI: {fileID: 0}
   commandsController: {fileID: 0}
 --- !u!114 &494455962
 MonoBehaviour:
@@ -16011,7 +16007,7 @@ MonoBehaviour:
   runMultiplier: 3
   movementSpeed: 2.5
   isActionpressed: 0
-  canDoAction: 1
+  canDoAction: 0
   virtualCamera: {fileID: 1256961081}
   cameraRotateSpeed: 10
 --- !u!54 &1521439312

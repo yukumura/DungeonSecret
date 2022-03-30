@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public bool finishGame = false;
     [SerializeField]
-    public bool startGameIntro = true;
 
     ManagePlayerUI playerUI;
     PlayerController playerController;
