@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Transporters
   - Inventory
+  - Commands
   layers:
   - Default
   - TransparentFX

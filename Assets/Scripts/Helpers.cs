@@ -26,6 +26,13 @@ public static class Helpers
             return "Player";
         }
     }
+    public static string CommandsTag
+    {
+        get
+        {
+            return "Commands";
+        }
+    }
 
     public static string InventoryTag
     {
@@ -62,6 +69,14 @@ public static class Helpers
         get
         {
             return "pickup";
+        }
+    }
+
+    public static string generalIcon
+    {
+        get
+        {
+            return "general";
         }
     }
 

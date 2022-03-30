@@ -8,9 +8,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     public bool finishGame = false;
+    [SerializeField]
+    public bool startGameIntro = true;
 
     ManagePlayerUI playerUI;
     PlayerController playerController;
+    [SerializeField]
+    Commands commandsController;
 
 
     void Awake()
@@ -21,6 +25,7 @@ public class GameManager : MonoBehaviour
 
         playerUI = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<ManagePlayerUI>();
         playerController = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<PlayerController>();
+        commandsController = GameObject.FindGameObjectWithTag(Helpers.CommandsTag).GetComponent<Commands>();
     }
 
     public void SetCharacterThoughts(string message, float time)
@@ -66,6 +71,11 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 0;
         finishGame = true;
+    }
+
+    public void TriggerCommands()
+    {
+        commandsController.Trigger();
     }
     
 }

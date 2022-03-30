@@ -57,6 +57,8 @@ public class PlayerController : MonoBehaviour
 
     //Inventory
     bool isInventoryPressed;
+    //Menu
+    bool isMenuPressed;
 
 
     // Start is called before the first frame update
@@ -90,6 +92,8 @@ public class PlayerController : MonoBehaviour
         playerInput.CharacterControls.SwitchCameraC.canceled += onCameraCSwitch;
         playerInput.CharacterControls.SwitchCameraAC.started += onCameraACSwitch;
         playerInput.CharacterControls.SwitchCameraAC.canceled += onCameraACSwitch;
+        playerInput.CharacterControls.Menu.started += onMenu;
+        playerInput.CharacterControls.Menu.canceled += onMenu;
 
         cameraRotationDestination = virtualCamera.transform.rotation;
     }
@@ -138,6 +142,10 @@ public class PlayerController : MonoBehaviour
     void onInventory(InputAction.CallbackContext context)
     {
         isInventoryPressed = context.ReadValueAsButton();
+    }
+    void onMenu(InputAction.CallbackContext context)
+    {
+        isMenuPressed = context.ReadValueAsButton();
     }
     void onCameraCSwitch(InputAction.CallbackContext context)
     {
@@ -213,6 +221,13 @@ public class PlayerController : MonoBehaviour
             Inventory.Instance.Trigger();
         }
     }
+    private void CheckMenu()
+    {
+        if (isMenuPressed)
+        {
+            GameManager.Instance.TriggerCommands();
+        }
+    }
 
     private void RotateCCamera()
     {
@@ -278,7 +293,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (canDoAction && !GameManager.Instance.finishGame)
+        if (canDoAction && !GameManager.Instance.finishGame && !GameManager.Instance.startGameIntro)
         {
             HandleRotation();
             HandleMovement();
@@ -289,9 +304,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canDoAction && !GameManager.Instance.finishGame)
+        if (canDoAction && !GameManager.Instance.finishGame && !GameManager.Instance.startGameIntro)
         {
             CheckInventory();
+            CheckMenu();
             HandleRotateCamera();
             HandleMovementAnimation();
         }

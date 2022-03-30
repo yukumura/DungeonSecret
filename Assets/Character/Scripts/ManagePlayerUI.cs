@@ -28,6 +28,8 @@ public class ManagePlayerUI : MonoBehaviour
     [SerializeField]
     Sprite pickup;
     [SerializeField]
+    Sprite general;
+    [SerializeField]
     float secondsToFade = .7f;
 
     Coroutine hideIconInGameRoutine;
@@ -42,7 +44,7 @@ public class ManagePlayerUI : MonoBehaviour
         text = Instantiate(prefabUI, FindObjectOfType<Canvas>().transform).GetComponent<TextMeshProUGUI>();
         text.gameObject.SetActive(false);
         instantiatedIconInGame = Instantiate(iconInGame, transform.position + offset, Quaternion.identity, character);
-        instantiatedIconInGame.LeanScale(new Vector3(.9f, .9f, .9f), .8f).setEaseLinear().setLoopPingPong();
+        instantiatedIconInGame.LeanScale(new Vector3(.25f, .25f, .25f), .8f).setEaseLinear().setLoopPingPong();
         instantiatedIconInGame.SetActive(false);
         canvasGroup = text.gameObject.GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
@@ -82,7 +84,8 @@ public class ManagePlayerUI : MonoBehaviour
     {
         if (!instantiatedIconInGame.activeSelf)
         {
-            instantiatedIconInGame.GetComponent<SpriteRenderer>().sprite = iconName == Helpers.actionIcon ? action : iconName == Helpers.pickupIcon ? pickup : read;
+            //instantiatedIconInGame.GetComponent<SpriteRenderer>().sprite = iconName == Helpers.actionIcon ? action : iconName == Helpers.pickupIcon ? pickup : read;
+            instantiatedIconInGame.GetComponent<SpriteRenderer>().sprite = general;
             instantiatedIconInGame.SetActive(true);
         }
     }
