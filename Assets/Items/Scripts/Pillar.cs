@@ -11,6 +11,8 @@ public class Pillar : Actionable
     private int rightNumber;
     [SerializeField]
     private float time;
+    [SerializeField]
+    AudioClip pillarSound;
 
 
     public override void Action()
@@ -26,6 +28,7 @@ public class Pillar : Actionable
 
     IEnumerator RotateMe(Vector3 byAngles, float inTime)
     {
+        SFXManager.Instance.Audio.PlayOneShot(pillarSound);
         var fromAngle = transform.rotation;
         var toAngle = Quaternion.Euler(transform.eulerAngles + byAngles);
         for (var t = 0f; t < 1; t += Time.deltaTime / inTime)

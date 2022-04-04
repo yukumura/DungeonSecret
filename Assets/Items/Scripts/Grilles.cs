@@ -10,6 +10,8 @@ public class Grilles : Actionable
     string finishMessage;
     [SerializeField]
     GameObject finishGO;
+    [SerializeField]
+    AudioClip audioFormula;
     // Start is called before the first frame update
 
     public void Awake()
@@ -18,6 +20,7 @@ public class Grilles : Actionable
     }
     public override void Action()
     {
+        SFXManager.Instance.Audio.PlayOneShot(audioFormula);
         animator.Play(Helpers.GrillesOpenAnimation);
     }
 

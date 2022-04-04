@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     float movementSpeed = 3.0f;
     float rotationFactorPerFrame = 15f;
     int zero = 0;
+    [SerializeField]
+    AudioClip[] steps;
     // movement speed
     [Header("Action Settings")]
     [SerializeField]
@@ -419,5 +421,11 @@ public class PlayerController : MonoBehaviour
     public void GetUp()
     {
         animator.SetTrigger(getUpHash);
+    }
+
+    public void PlayStep()
+    {
+        int step = UnityEngine.Random.Range(0, steps.Count() - 1);
+        SFXManager.Instance.Audio.PlayOneShot(steps[step], .5f);
     }
 }

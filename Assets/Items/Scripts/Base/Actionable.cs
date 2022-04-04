@@ -14,6 +14,9 @@ public class Actionable : Item
     [SerializeField]
     [TextArea]
     string unableMessage;
+    [Header("Audio Settings")]
+    [SerializeField]
+    AudioClip audioUsage;
 
     public bool CheckIfPlayerHasRequiredItems()
     {
