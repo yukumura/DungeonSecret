@@ -19,6 +19,7 @@ public class TreasureChest : Actionable
 
     public override void Action()
     {
+        base.Action();
         animator.Play(openHash);
     }
 

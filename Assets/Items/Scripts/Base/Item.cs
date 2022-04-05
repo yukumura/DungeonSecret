@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField]
-    AudioClip pickAudio;
+    AudioClip interactAudio;
 
     public bool CanPlayerMoves;
     public bool IsUsed
@@ -43,8 +43,8 @@ public class Item : MonoBehaviour
     {
         GameManager.Instance.GetPlayer().PlayItemAnimation(type);
         
-        if (pickAudio != null)
-            SFXManager.Instance.Audio.PlayOneShot(pickAudio);
+        if (interactAudio != null)
+            SFXManager.Instance.Audio.PlayOneShot(interactAudio);
     }
 
     public virtual void ShowIcon()

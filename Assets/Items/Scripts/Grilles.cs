@@ -22,6 +22,7 @@ public class Grilles : Actionable
     {
         SFXManager.Instance.Audio.PlayOneShot(audioFormula);
         animator.Play(Helpers.GrillesOpenAnimation);
+        base.Action();
     }
 
 

@@ -7,6 +7,8 @@ public class WindowGlass : Readable
     [SerializeField]
     GameObject bookLock;
     Animator anim;
+    [SerializeField]
+    AudioClip audioDisappear;
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,8 +23,8 @@ public class WindowGlass : Readable
 
     public void Disappear()
     {
+        SFXManager.Instance.Audio.PlayOneShot(audioDisappear);
         anim.Play(Helpers.WindowGlassDisappearAnimation);
-
     }
 
     public void TurnOff()

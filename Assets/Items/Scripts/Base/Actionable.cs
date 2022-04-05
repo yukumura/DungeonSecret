@@ -68,6 +68,8 @@ public class Actionable : Item
 
     public virtual void Action()
     {
+        if(audioUsage != null)
+            SFXManager.Instance.Audio.PlayOneShot(audioUsage);
     }
 
     protected virtual void PlayUnableAnimation()

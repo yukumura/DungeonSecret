@@ -11,6 +11,7 @@ public class MagicLock : Actionable
     public override void Action()
     {
         StartCoroutine(EnableBook(timeToUnlockBook));
+        base.Action();
     }
 
     IEnumerator EnableBook(float time)
