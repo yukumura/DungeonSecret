@@ -5,13 +5,13 @@ using UnityEngine;
 public static class Helpers
 {
     public enum ItemType
-    {        
-        PickupFromGround,
-        PickupFromMiddle,
-        ActionableDoor,
-        Generic,
-        OpeningChest,        
-        CloseChest,        
+    {
+        //PickupFromGround,
+        //PickupFromMiddle,
+        //ActionableDoor,
+        Generic,        
+        //OpeningChest,        
+        //CloseChest,        
     }
 
     private static Matrix4x4 _isoMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 135f, 0));

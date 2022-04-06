@@ -32,20 +32,20 @@ public class ManagePlayerUI : MonoBehaviour
     [SerializeField]
     float secondsToFade = .7f;
 
+    public bool inUse;
+
     Coroutine hideIconInGameRoutine;
     Coroutine hideMessageRoutine;
-    GameObject instantiatedIconInGame;
-
 
     // Start is called before the first frame update
     void Awake()
     {
         character = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<Transform>();
-        text = Instantiate(prefabUI, FindObjectOfType<Canvas>().transform).GetComponent<TextMeshProUGUI>();
+        text = prefabUI.transform.GetComponent<TextMeshProUGUI>();
         text.gameObject.SetActive(false);
-        instantiatedIconInGame = Instantiate(iconInGame, transform.position + offset, Quaternion.identity, character);
-        instantiatedIconInGame.LeanScale(new Vector3(.25f, .25f, .25f), .8f).setEaseLinear().setLoopPingPong();
-        instantiatedIconInGame.SetActive(false);
+        iconInGame.transform.position = transform.position + offset;        
+        iconInGame.LeanScale(new Vector3(.25f, .25f, .25f), .8f).setEaseLinear().setLoopPingPong();
+        iconInGame.SetActive(false);
         canvasGroup = text.gameObject.GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
     }
@@ -54,6 +54,7 @@ public class ManagePlayerUI : MonoBehaviour
     void Update()
     {
         text.transform.position = Camera.main.WorldToScreenPoint(character.position + offset);
+        inUse = text.gameObject.activeSelf;
     }
 
     public void SetMessage(string message, float time)
@@ -61,6 +62,7 @@ public class ManagePlayerUI : MonoBehaviour
         if(hideMessageRoutine != null)
         {
             StopCoroutine(hideMessageRoutine);
+            hideMessageRoutine = null;
         }
 
         text.gameObject.SetActive(true);
@@ -78,15 +80,16 @@ public class ManagePlayerUI : MonoBehaviour
     void OnComplete()
     {
         text.gameObject.SetActive(false);
+        hideMessageRoutine = null;
     }
 
     public void ShowIconInGame(string iconName)
     {
-        if (!instantiatedIconInGame.activeSelf)
+        if (!iconInGame.activeSelf && !text.gameObject.activeSelf)
         {
             //instantiatedIconInGame.GetComponent<SpriteRenderer>().sprite = iconName == Helpers.actionIcon ? action : iconName == Helpers.pickupIcon ? pickup : read;
-            instantiatedIconInGame.GetComponent<SpriteRenderer>().sprite = general;
-            instantiatedIconInGame.SetActive(true);
+            iconInGame.GetComponent<SpriteRenderer>().sprite = general;
+            iconInGame.SetActive(true);
         }
     }
 
@@ -98,8 +101,7 @@ public class ManagePlayerUI : MonoBehaviour
     protected IEnumerator HideIconInGameRoutine()
     {
         yield return new WaitForSeconds(secondsToFade);
-        if (instantiatedIconInGame != null)
-            instantiatedIconInGame.SetActive(false);
+            iconInGame.SetActive(false);
     }
 
     public void ClearReference()
@@ -109,6 +111,6 @@ public class ManagePlayerUI : MonoBehaviour
             StopCoroutine(hideIconInGameRoutine);
         }
 
-        instantiatedIconInGame.SetActive(false);
+        iconInGame.SetActive(false);
     }
 }

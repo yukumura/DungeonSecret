@@ -28,8 +28,8 @@ public class TreasureChest : Actionable
         goldenSpoon.GetComponent<SphereCollider>().enabled = true;
     }
 
-    protected override void PlayUnableAnimation()
-    {
-        GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.CloseChest);
-    }
+    //protected override void PlayUnableAnimation()
+    //{
+    //    GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.CloseChest);
+    //}
 }

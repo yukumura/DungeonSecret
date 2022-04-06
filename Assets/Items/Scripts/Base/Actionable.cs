@@ -38,25 +38,24 @@ public class Actionable : Item
             {
                 GameManager.Instance.GetPlayerUI().SetMessage(actionMessage, timeToFadeThoughts);
                 RemoveRequiredItemsFromInventory();
-                isUsed = true;
-                Action();
                 base.Trigger();
+                Action();
             }
             else
             {
                 GameManager.Instance.GetPlayerUI().SetMessage(unableMessage, timeToFadeThoughts);
-                PlayUnableAnimation();
+                //PlayUnableAnimation();
             }
         }
             
         GameManager.Instance.ClearReference();
     }
 
-    public override void ShowIcon()
-    {
-        if (!isUsed)
-            GameManager.Instance.ShowIconInGame(Helpers.actionIcon);
-    }
+    //public override void ShowIcon()
+    //{
+    //    if (!isUsed)
+    //        GameManager.Instance.ShowIconInGame(Helpers.actionIcon);
+    //}
 
     private void RemoveRequiredItemsFromInventory()
     {
@@ -68,12 +67,17 @@ public class Actionable : Item
 
     public virtual void Action()
     {
-        if(audioUsage != null)
+        if (reusable != null)
+            StopCoroutine(reusable);
+
+        isUsed = true;
+
+        if (audioUsage != null)
             SFXManager.Instance.Audio.PlayOneShot(audioUsage);
     }
 
     protected virtual void PlayUnableAnimation()
     {
-        GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.Generic);
+        //GameManager.Instance.GetPlayer().PlayItemAnimation(Helpers.ItemType.Generic);
     }
 }

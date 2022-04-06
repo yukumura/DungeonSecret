@@ -12,8 +12,8 @@ public class Readable : Item
         base.Trigger();
     }
 
-    public override void ShowIcon()
-    {
-        GameManager.Instance.ShowIconInGame(Helpers.readIcon);
-    }
+    //public override void ShowIcon()
+    //{
+    //    GameManager.Instance.ShowIconInGame(Helpers.readIcon);
+    //}
 }

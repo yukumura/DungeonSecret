@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Commands commandsController;
 
-
     void Awake()
     {
         if (Instance != null)

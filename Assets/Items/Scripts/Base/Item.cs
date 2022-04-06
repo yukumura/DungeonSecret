@@ -16,10 +16,14 @@ public class Item : MonoBehaviour
     public ItemType type;
     [SerializeField]
     protected bool isUsed = false;
+    [SerializeField]
+    bool isReusable = true;
 
     [Header("Audio")]
     [SerializeField]
     AudioClip interactAudio;
+
+    protected Coroutine reusable;
 
     public bool CanPlayerMoves;
     public bool IsUsed
@@ -41,14 +45,24 @@ public class Item : MonoBehaviour
 
     public virtual void Trigger()
     {
-        GameManager.Instance.GetPlayer().PlayItemAnimation(type);
+        //GameManager.Instance.GetPlayer().PlayItemAnimation(type);
         
         if (interactAudio != null)
             SFXManager.Instance.Audio.PlayOneShot(interactAudio);
+
+        isUsed = true;
+        reusable = StartCoroutine(SetReusable(timeToFadeThoughts + 1));
     }
 
     public virtual void ShowIcon()
     {
+        if (!isUsed)
+            GameManager.Instance.ShowIconInGame(readIcon);
+    }
 
+    IEnumerator SetReusable(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isUsed = false;
     }
 }

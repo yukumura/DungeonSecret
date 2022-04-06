@@ -27,8 +27,8 @@ public class Pickup : Item
         base.Trigger();
     }
 
-    public override void ShowIcon()
-    {
-        GameManager.Instance.ShowIconInGame(Helpers.pickupIcon);
-    }
+    //public override void ShowIcon()
+    //{
+    //    GameManager.Instance.ShowIconInGame(Helpers.pickupIcon);
+    //}
 }

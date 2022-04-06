@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     PlayerInput playerInput;
+    ManagePlayerUI playerUI;
     Rigidbody rb;
     Animator animator;
     RuntimeAnimatorController ac;
@@ -38,6 +39,8 @@ public class PlayerController : MonoBehaviour
     int zero = 0;
     [SerializeField]
     AudioClip[] steps;
+    [SerializeField]
+    AudioClip audioGetUp;
     // movement speed
     [Header("Action Settings")]
     [SerializeField]
@@ -50,6 +53,8 @@ public class PlayerController : MonoBehaviour
     GameObject virtualCamera;
     [SerializeField]
     float cameraRotateSpeed = 10f;
+    [SerializeField]
+    AudioClip audioCameraRotate;
     bool isCameraCSwitchPressed;
     bool isCameraACSwitchPressed;
     bool useNegativeInput;
@@ -69,6 +74,7 @@ public class PlayerController : MonoBehaviour
         playerInput = new PlayerInput();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        playerUI = GetComponent<ManagePlayerUI>();
         ac = animator.runtimeAnimatorController;
 
         isWalkingHash = Animator.StringToHash(Helpers.PlayerIsWalkingAnimation);
@@ -79,7 +85,7 @@ public class PlayerController : MonoBehaviour
         openingChestHash = Animator.StringToHash(Helpers.OpeningChestAnimation);
         lookAroundHash = Animator.StringToHash(Helpers.LookAroundAnimation);
         getUpHash = Animator.StringToHash(Helpers.GetUpAnimation);
-        
+
 
         playerInput.CharacterControls.Move.started += onMovementInput;
         playerInput.CharacterControls.Move.canceled += onMovementInput;
@@ -182,39 +188,39 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void PlayItemAnimation(Helpers.ItemType itemType)
-    {
-        switch (itemType)
-        {
-            case Helpers.ItemType.PickupFromGround:
-                animator.Play(pickingItemsFromGroundHash);
-                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.PickingItemsFromGroundAnimation).FirstOrDefault().length / 1.5f));
-                break;
-            case Helpers.ItemType.PickupFromMiddle:
-                animator.Play(pickingItemsFromMiddleHash);
-                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.PickingItemsFromMiddleAnimation).FirstOrDefault().length));
-                break;
-            case Helpers.ItemType.ActionableDoor:
-                animator.Play(tryToOpenTheDoorHash);
-                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.TryToOpenTheDoorAnimation).FirstOrDefault().length));
-                break;
-            case Helpers.ItemType.OpeningChest:
-                animator.Play(openingChestHash);
-                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.OpeningChestAnimation).FirstOrDefault().length / 2));
-                break;
-            case Helpers.ItemType.Generic:
-                //animator.Play(standardIdleHash);
-                //StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.StandardIdleAnimation).FirstOrDefault().length));
-                StartCoroutine(SetCooldown(0.1f));
-                break; 
-            case Helpers.ItemType.CloseChest:
-                animator.Play(lookAroundHash);
-                StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.LookAroundAnimation).FirstOrDefault().length));
-                break;
-            default:
-                break;
-        }
-    }
+    //public void PlayItemAnimation(Helpers.ItemType itemType)
+    //{
+    //    switch (itemType)
+    //    {
+    //        case Helpers.ItemType.PickupFromGround:
+    //            animator.Play(pickingItemsFromGroundHash);
+    //            StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.PickingItemsFromGroundAnimation).FirstOrDefault().length / 1.5f));
+    //            break;
+    //        case Helpers.ItemType.PickupFromMiddle:
+    //            animator.Play(pickingItemsFromMiddleHash);
+    //            StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.PickingItemsFromMiddleAnimation).FirstOrDefault().length));
+    //            break;
+    //        case Helpers.ItemType.ActionableDoor:
+    //            animator.Play(tryToOpenTheDoorHash);
+    //            StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.TryToOpenTheDoorAnimation).FirstOrDefault().length));
+    //            break;
+    //        case Helpers.ItemType.OpeningChest:
+    //            animator.Play(openingChestHash);
+    //            StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.OpeningChestAnimation).FirstOrDefault().length / 2));
+    //            break;
+    //        case Helpers.ItemType.Generic:
+    //            animator.Play(standardIdleHash);
+    //            StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.StandardIdleAnimation).FirstOrDefault().length));
+    //            StartCoroutine(SetCooldown(0.1f));
+    //            break;
+    //        case Helpers.ItemType.CloseChest:
+    //            animator.Play(lookAroundHash);
+    //            StartCoroutine(SetCooldown(ac.animationClips.Where(x => x.name == Helpers.LookAroundAnimation).FirstOrDefault().length));
+    //            break;
+    //        default:
+    //            break;
+    //    }
+    //}
 
     private void CheckInventory()
     {
@@ -233,6 +239,8 @@ public class PlayerController : MonoBehaviour
 
     private void RotateCCamera()
     {
+        SFXManager.Instance.Audio.PlayOneShot(audioCameraRotate, .5f);
+
         if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 45f))
         {
             cameraRotationDestination = Quaternion.Euler(45f, 315f, 0f);
@@ -264,6 +272,8 @@ public class PlayerController : MonoBehaviour
 
     private void RotateACCamera()
     {
+        SFXManager.Instance.Audio.PlayOneShot(audioCameraRotate, .5f);
+
         if (Mathf.Approximately(virtualCamera.transform.rotation.eulerAngles.y, 45f))
         {
 
@@ -381,11 +391,16 @@ public class PlayerController : MonoBehaviour
 
         if (item != null)
         {
-            if (isActionpressed && canDoAction && !item.IsUsed)
+            if (!item.IsUsed)
             {
-                canDoAction = false;
-                GameManager.Instance.HideIconInGame();
-                item.Trigger();
+                item.ShowIcon();
+
+                if (isActionpressed && canDoAction && !playerUI.inUse)
+                {
+                    //canDoAction = false;
+                    GameManager.Instance.HideIconInGame();
+                    item.Trigger();
+                }
             }
         }
     }
@@ -415,7 +430,7 @@ public class PlayerController : MonoBehaviour
 
     public void StartUsePlayer()
     {
-        canDoAction = true;        
+        canDoAction = true;
     }
 
     public void GetUp()
@@ -427,5 +442,10 @@ public class PlayerController : MonoBehaviour
     {
         int step = UnityEngine.Random.Range(0, steps.Count() - 1);
         SFXManager.Instance.Audio.PlayOneShot(steps[step], .5f);
+    }
+
+    public void PlayGetUp()
+    {
+        SFXManager.Instance.Audio.PlayOneShot(audioGetUp, .5f);
     }
 }
