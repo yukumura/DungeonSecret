@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public bool finishGame = false;
     [SerializeField]
+    Image blackScreen;
+    [SerializeField]
+    TextMeshProUGUI finishGameTimer;
 
     ManagePlayerUI playerUI;
     PlayerController playerController;
@@ -66,8 +72,7 @@ public class GameManager : MonoBehaviour
 
     public void FinishGame()
     {
-
-        Time.timeScale = 0;
+        StartCoroutine(FadeIn());
         finishGame = true;
     }
 
@@ -75,5 +80,27 @@ public class GameManager : MonoBehaviour
     {
         commandsController.Trigger();
     }
-    
+
+    IEnumerator FadeIn(float fadeSpeed = .5f)
+    {
+        float fadeAmount;
+        Color objectColor = blackScreen.color;
+        while (blackScreen.color.a < 1)
+        {
+            fadeAmount = objectColor.a + (fadeSpeed * Time.deltaTime);
+
+            objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
+            blackScreen.color = objectColor;
+            yield return null;
+        }
+
+        StartCoroutine(Cooldown(3f));
+    }
+
+    IEnumerator Cooldown(float time)
+    {
+        yield return new WaitForSeconds(time);
+        var ts = TimeSpan.FromSeconds(Time.timeSinceLevelLoad);
+        finishGameTimer.text = string.Format("You have completed this introduction. \n \n Congratulations! \n \n Your completion time is {0:00}:{1:00}", ts.Minutes, ts.Seconds);
+    }
 }

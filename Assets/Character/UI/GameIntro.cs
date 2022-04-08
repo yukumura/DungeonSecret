@@ -51,7 +51,7 @@ public class GameIntro : MonoBehaviour
         canChangeText = true;
     }
 
-    IEnumerator FadeOut(float fadeSpeed = 0.5f)
+    IEnumerator FadeOut(float fadeSpeed = 0.4f)
     {
         text.text = "";
         float fadeAmount;

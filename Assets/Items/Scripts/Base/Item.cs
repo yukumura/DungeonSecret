@@ -16,8 +16,6 @@ public class Item : MonoBehaviour
     public ItemType type;
     [SerializeField]
     protected bool isUsed = false;
-    [SerializeField]
-    bool isReusable = true;
 
     [Header("Audio")]
     [SerializeField]
@@ -25,7 +23,6 @@ public class Item : MonoBehaviour
 
     protected Coroutine reusable;
 
-    public bool CanPlayerMoves;
     public bool IsUsed
     {
         get

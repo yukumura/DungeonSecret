@@ -5,33 +5,35 @@ using UnityEngine.Rendering.HighDefinition;
 
 public class LightEffect : MonoBehaviour
 {
-    HDAdditionalLightData light;
+    HDAdditionalLightData lightData;
     [SerializeField]
-    float minimum = 2000f;
+    float minValue = 6f;
     [SerializeField]
-    float maximum = 3500f;
-    float t = 0.0f;
+    float maxValue = 7f;
     [SerializeField]
-    float speed;
+    float durationInSeconds = .4f;
+
+    bool delayedStart = false;
 
     // Start is called before the first frame update
     void Awake()
     {
-        light = GetComponent<HDAdditionalLightData>();
+        lightData = GetComponent<HDAdditionalLightData>();
+        float random = Random.Range(0f, 1f);
+        StartCoroutine(Cooldown(random));
     }
 
     // Update is called once per frame
     void Update()
     {
-        light.SetIntensity(Mathf.Lerp(minimum, maximum, t));
-        t += speed * Time.deltaTime;
+        if (delayedStart)
+            lightData.luxAtDistance = Mathf.Lerp(minValue, maxValue, Mathf.PingPong(Time.time / durationInSeconds, 1));
 
-        if (t > 1.0f)
-        {
-            float temp = maximum;
-            maximum = minimum;
-            minimum = temp;
-            t = 0.0f;
-        }
+    }
+
+    IEnumerator Cooldown(float time)
+    {
+        yield return new WaitForSeconds(time);
+        delayedStart = true;
     }
 }
