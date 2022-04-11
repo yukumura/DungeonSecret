@@ -19,6 +19,14 @@ public static class Helpers
     public static Vector3 ToIso(this Vector3 vector) => _isoMatrix.MultiplyPoint3x4(vector);
     public static Vector3 ToIso2(this Vector3 vector) => _isoMatrix2.MultiplyPoint3x4(vector);
 
+    public static string GameSceneName
+    {
+        get
+        {
+            return "High Details";
+        }
+    }
+
     public static string PlayerTag
     {
         get

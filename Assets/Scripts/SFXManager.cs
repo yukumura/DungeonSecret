@@ -5,7 +5,6 @@ using UnityEngine;
 public class SFXManager : MonoBehaviour
 {
     public AudioSource Audio;
-
     public static SFXManager Instance;
 
     private void Awake()
@@ -18,5 +17,7 @@ public class SFXManager : MonoBehaviour
         Instance = this;
         Audio = GetComponent<AudioSource>();
         DontDestroyOnLoad(this);
-    }
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }   
 }
