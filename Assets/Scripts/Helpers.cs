@@ -26,6 +26,13 @@ public static class Helpers
             return "High Details";
         }
     }
+    public static string MainMenuName
+    {
+        get
+        {
+            return "Main Menu";
+        }
+    }
 
     public static string PlayerTag
     {

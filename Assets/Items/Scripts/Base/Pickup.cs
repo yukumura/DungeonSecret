@@ -13,7 +13,7 @@ public class Pickup : Item
     protected Sprite iconInInventory;
     public Sprite IconInInventory { get { return iconInInventory; } }
 
-    public void Pick()
+    public virtual void Pick()
     {
         Inventory.Instance.AddItemInInventory(iconInInventory, itemName);
         Destroy(gameObject);

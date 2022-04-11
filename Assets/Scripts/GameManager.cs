@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     Image blackScreen;
     [SerializeField]
     TextMeshProUGUI finishGameTimer;
+    [SerializeField]
+    Button buttonBack;
 
     ManagePlayerUI playerUI;
     PlayerController playerController;
@@ -102,5 +105,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         var ts = TimeSpan.FromSeconds(Time.timeSinceLevelLoad);
         finishGameTimer.text = string.Format("You have completed this introduction. \n \n Congratulations! \n \n Your completion time is {0:00}:{1:00}", ts.Minutes, ts.Seconds);
+        buttonBack.gameObject.SetActive(true);
+        buttonBack.Select();
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(Helpers.MainMenuName);
     }
 }

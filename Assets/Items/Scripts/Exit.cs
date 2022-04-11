@@ -13,5 +13,6 @@ public class Exit : Actionable
     {
         yield return new WaitForSeconds(1f);
         GameManager.Instance.FinishGame();
+        gameObject.SetActive(false);
     }
 }

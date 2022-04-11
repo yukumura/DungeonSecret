@@ -31,7 +31,11 @@ public class PillarManager : MonoBehaviour
     private void EnigmaSolved()
     {
         enigmaSolved = true;
-        Array.ForEach(pillars, x => x.Use());
+        //Array.ForEach(pillars, x => x.Use());
+        foreach (var pillar in pillars)
+        {
+            pillar.Use();
+        }
         windowGlass.Disappear();
         GameManager.Instance.SetCharacterThoughts(message, 3f);
     }
