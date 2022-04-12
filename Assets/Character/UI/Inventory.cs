@@ -6,6 +6,8 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance { get; private set; }
+    [SerializeField]
+    AudioClip audioInventory;
 
     void Awake()
     {
@@ -59,16 +61,18 @@ public class Inventory : MonoBehaviour
 
             if (isOpen)
             {
-                transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 200, transform.localPosition.y), .8f).setEaseInOutBack();
+                transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 200, transform.localPosition.y), .5f).setEaseInOutBack();
                 isOpen = false;
                 StartCoroutine(CanTriggerAgain());
             }
             else
             {
-                transform.LeanMoveLocal(new Vector2(transform.localPosition.x + 200, transform.localPosition.y), .8f).setEaseInOutBack();
+                transform.LeanMoveLocal(new Vector2(transform.localPosition.x + 200, transform.localPosition.y), .5f).setEaseInOutBack();
                 isOpen = true;
                 StartCoroutine(CanTriggerAgain());
             }
+
+            SFXManager.Instance.Audio.PlayOneShot(audioInventory);
         }
     }
 

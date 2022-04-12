@@ -1,22 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Commands : MonoBehaviour
+public class GameMenu : MonoBehaviour
 {
 
     [SerializeField]
-    public static bool isOpen = false;
+    public bool isOpen = false;
     [SerializeField]
     AudioClip audioMenu;
     [SerializeField]
-    GameObject commands;
+    GameObject panel;
+    [SerializeField]
+    Image commands;
+    [SerializeField]
+    Button gameButton;
 
     private bool canTriggerAgain = true;
 
     private void Awake()
     {
-        commands.SetActive(false);
+        panel = GameObject.FindGameObjectWithTag(Helpers.CommandsTag);
+        panel.SetActive(false);
     }
 
     public void Trigger()
@@ -29,19 +36,22 @@ public class Commands : MonoBehaviour
             {
                 //transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 1900, transform.localPosition.y), 1f).setEaseInOutBack();
                 isOpen = false;
-                commands.transform.LeanScale(Vector3.zero, .3f).setOnComplete(OnComplete);
+                panel.transform.LeanScale(Vector3.zero, .3f).setOnComplete(OnComplete);
                 StartCoroutine(CanTriggerAgain());
             }
             else
             {
                 //transform.LeanMoveLocal(new Vector2(transform.localPosition.x + 1900, transform.localPosition.y), 1f).setEaseInOutBack();
-                commands.SetActive(true);
+                panel.SetActive(true);
                 isOpen = true;
-                commands.transform.LeanScale(Vector3.one, .3f);
+                panel.transform.LeanScale(Vector3.one, .3f);
                 StartCoroutine(CanTriggerAgain());
+                commands.gameObject.SetActive(false);                
+                gameButton.Select();
             }
 
             SFXManager.Instance.Audio.PlayOneShot(audioMenu);
+            GameManager.Instance.PauseGame();
         }
     }
 
@@ -53,6 +63,23 @@ public class Commands : MonoBehaviour
 
     void OnComplete()
     {
-        commands.SetActive(false);
+        panel.SetActive(false);
     }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(Helpers.MainMenuName);
+    }
+
+    public void TriggerCommands()
+    {
+        commands.gameObject.SetActive(!commands.gameObject.activeSelf);
+
+        if (commands.gameObject.activeSelf)
+            commands.gameObject.GetComponent<Button>().Select();
+        else
+        {
+            gameButton.Select();
+        }
+    }
+
 }

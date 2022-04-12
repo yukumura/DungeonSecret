@@ -687,14 +687,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1692498620999894785, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
-      propertyPath: select
-      value: 
-      objectReference: {fileID: 8300000, guid: 055eab6c12f53e44b8fd74642096475c, type: 3}
-    - target: {fileID: 1692498620999894785, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
-      propertyPath: choiceMenu
-      value: 
-      objectReference: {fileID: 8300000, guid: f4c0ca1d434adea459506cf2b27eaa27, type: 3}
     - target: {fileID: 1692498620999894790, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
       propertyPath: m_Name
       value: SFX Manager

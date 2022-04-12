@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public bool finishGame = false;
     [SerializeField]
+    public bool pausedGame = false;
+    [SerializeField]
     Image blackScreen;
     [SerializeField]
     TextMeshProUGUI finishGameTimer;
@@ -22,7 +24,7 @@ public class GameManager : MonoBehaviour
     ManagePlayerUI playerUI;
     PlayerController playerController;
     [SerializeField]
-    Commands commandsController;
+    GameMenu gameMenuController;
 
     void Awake()
     {
@@ -32,7 +34,9 @@ public class GameManager : MonoBehaviour
 
         playerUI = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<ManagePlayerUI>();
         playerController = GameObject.FindGameObjectWithTag(Helpers.PlayerTag).GetComponent<PlayerController>();
-        commandsController = GameObject.FindGameObjectWithTag(Helpers.CommandsTag).GetComponent<Commands>();
+        gameMenuController = GetComponent<GameMenu>();
+        finishGame = false;
+        pausedGame = false;
     }
 
     public void SetCharacterThoughts(string message, float time)
@@ -79,9 +83,14 @@ public class GameManager : MonoBehaviour
         finishGame = true;
     }
 
-    public void TriggerCommands()
+    public void PauseGame()
     {
-        commandsController.Trigger();
+        pausedGame = !pausedGame;
+    }
+
+    public void TriggerMenu()
+    {
+        gameMenuController.Trigger();
     }
 
     IEnumerator FadeIn(float fadeSpeed = .5f)
@@ -107,10 +116,5 @@ public class GameManager : MonoBehaviour
         finishGameTimer.text = string.Format("You have completed this introduction. \n \n Congratulations! \n \n Your completion time is {0:00}:{1:00}", ts.Minutes, ts.Seconds);
         buttonBack.gameObject.SetActive(true);
         buttonBack.Select();
-    }
-
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(Helpers.MainMenuName);
     }
 }

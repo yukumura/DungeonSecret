@@ -232,8 +232,9 @@ public class PlayerController : MonoBehaviour
     private void CheckMenu()
     {
         if (isMenuPressed)
-        {
-            GameManager.Instance.TriggerCommands();
+        {            
+            GameManager.Instance.TriggerMenu();
+            StopMovement();
         }
     }
 
@@ -305,7 +306,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (canDoAction && !GameManager.Instance.finishGame)
+        if (canDoAction && !GameManager.Instance.finishGame && !GameManager.Instance.pausedGame)
         {
             HandleRotation();
             HandleMovement();
@@ -316,14 +317,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canDoAction && !GameManager.Instance.finishGame)
+        if (canDoAction && !GameManager.Instance.finishGame && !GameManager.Instance.pausedGame)
         {
             CheckInventory();
-            CheckMenu();
             HandleRotateCamera();
             HandleMovementAnimation();
         }
 
+            CheckMenu();
     }
 
     private void HandleMovement()

@@ -9,14 +9,22 @@ public class SFXManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Destroy(gameObject); return;
+            //First run, set the instance
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+        }
+        else if (Instance != this)
+        {
+            //Instance is not the same as the one we have, destroy old one, and reset to newest one
+            Destroy(Instance.gameObject);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
-        Instance = this;
         Audio = GetComponent<AudioSource>();
-        DontDestroyOnLoad(this);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }   
