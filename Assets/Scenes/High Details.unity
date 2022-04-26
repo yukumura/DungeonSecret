@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.3369, g: 325.0498, b: 430.21924, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,6 +266,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1352146358}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -317,6 +325,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -400,6 +432,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -451,6 +491,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -704,6 +768,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -756,6 +828,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &38004647 stripped
@@ -789,6 +885,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 440731838}
   - {fileID: 745423606}
@@ -809,6 +906,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669150968}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -860,6 +965,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -950,6 +1079,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1352146358}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -1001,6 +1138,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -1127,6 +1288,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 861685411}
   m_Father: {fileID: 1107926898}
@@ -1303,7 +1465,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1692498620999894784, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1692498620999894784, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1348,6 +1510,10 @@ PrefabInstance:
     - target: {fileID: 1692498620999894790, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
       propertyPath: m_Name
       value: SFX Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692498620999894790, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4210fef2f10194c46bd4442ac5b9b652, type: 3}
@@ -1629,6 +1795,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1677,6 +1844,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 741404281}
   m_Father: {fileID: 1864556458}
@@ -1764,6 +1932,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (1)
@@ -1812,6 +2000,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -1825,6 +2025,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -1876,6 +2084,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -2020,7 +2252,7 @@ SphereCollider:
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!95 &148332958
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2033,6 +2265,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -2168,6 +2401,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 0.92118454, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2136943319}
   - {fileID: 157601961}
@@ -2184,6 +2418,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1352146358}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -2236,6 +2478,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!1 &157601960
@@ -2264,6 +2530,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 47907279}
   - {fileID: 1863223298}
@@ -2567,6 +2834,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1052664312}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 218139864277508908, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2623,6 +2898,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &193485329 stripped
@@ -2659,6 +2958,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 374930888}
   m_Father: {fileID: 690411992}
@@ -2818,6 +3118,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1474095491}
   m_Father: {fileID: 2010065385}
@@ -2976,6 +3277,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (8)
@@ -3023,6 +3344,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -3311,6 +3644,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (9)
@@ -3358,6 +3711,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -4239,6 +4604,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (19)
@@ -4286,6 +4671,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -4569,6 +4966,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 194447614}
   m_RootOrder: 0
@@ -4910,6 +5308,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.6700001}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 290291385}
   - {fileID: 1445832426}
@@ -4969,6 +5368,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (2)
@@ -5016,6 +5435,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -5149,6 +5580,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -5201,6 +5640,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!1001 &432074845
@@ -5210,6 +5673,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (28)
@@ -5258,6 +5741,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -5295,6 +5790,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.681, y: 3.3, z: -0.402}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1521439305}
   m_RootOrder: 1
@@ -5485,6 +5981,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -5536,6 +6040,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -5694,6 +6222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: 480fafcc13a8e2046856ec42a99ac371, type: 2}
   m_StaticLightingSkyUniqueID: 1
+  m_StaticLightingCloudsUniqueID: 0
+  m_StaticLightingVolumetricClouds: 0
 --- !u!4 &455972306
 Transform:
   m_ObjectHideFlags: 1
@@ -5704,9 +6234,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &459987138
 PrefabInstance:
@@ -5870,6 +6401,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -5921,6 +6460,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -6040,7 +6603,6 @@ GameObject:
   m_Component:
   - component: {fileID: 494455960}
   - component: {fileID: 494455961}
-  - component: {fileID: 494455962}
   - component: {fileID: 494455965}
   - component: {fileID: 494455963}
   - component: {fileID: 494455964}
@@ -6061,9 +6623,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &494455961
 MonoBehaviour:
@@ -6083,18 +6646,6 @@ MonoBehaviour:
   finishGameTimer: {fileID: 1740656412}
   buttonBack: {fileID: 200973975}
   gameMenuController: {fileID: 0}
---- !u!114 &494455962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494455959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01652f1c06ff0444c88d9fb726bbf9c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &494455963
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6346,6 +6897,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (1)
@@ -6393,6 +6964,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -6676,6 +7259,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -6727,6 +7318,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -6955,9 +7570,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &543186337
 PrefabInstance:
@@ -7023,6 +7639,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (10)
@@ -7070,6 +7706,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -7759,6 +8407,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -7810,6 +8466,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -8279,6 +8959,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (3)
@@ -8327,6 +9027,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -8340,6 +9052,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -8391,6 +9111,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -8478,6 +9222,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 91893125}
   - {fileID: 1049412744}
@@ -8591,6 +9336,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 837527189}
   - {fileID: 194447614}
@@ -8599,7 +9345,7 @@ RectTransform:
   - {fileID: 1984470177}
   - {fileID: 10825159}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8819,6 +9565,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -8870,6 +9624,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -9032,6 +9810,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.84, z: -0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 127072038}
   m_RootOrder: 0
@@ -9048,14 +9827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 11
-  m_ObsoleteShadowResolutionTier: 1
-  m_ObsoleteUseShadowQualitySettings: 0
-  m_ObsoleteCustomShadowResolution: 512
-  m_ObsoleteContactShadows: 0
-  m_PointlightHDType: 0
-  m_SpotLightShape: 0
-  m_AreaLightShape: 0
   m_Intensity: 2000
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 7
@@ -9139,6 +9910,7 @@ MonoBehaviour:
   m_BarnDoorAngle: 90
   m_BarnDoorLength: 0.05
   m_preserveCachedShadow: 0
+  m_OnDemandShadowRenderOnPlacement: 1
   m_ShadowCascadeRatios:
   - 0.05
   - 0.2
@@ -9154,10 +9926,17 @@ MonoBehaviour:
   useOldInspector: 0
   useVolumetric: 1
   featuresFoldout: 1
-  showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
   m_AreaLightEmissiveMeshLayer: -1
+  m_Version: 11
+  m_ObsoleteShadowResolutionTier: 1
+  m_ObsoleteUseShadowQualitySettings: 0
+  m_ObsoleteCustomShadowResolution: 512
+  m_ObsoleteContactShadows: 0
+  m_PointlightHDType: 0
+  m_SpotLightShape: 0
+  m_AreaLightShape: 0
 --- !u!108 &741404283
 Light:
   m_ObjectHideFlags: 0
@@ -9429,6 +10208,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (6)
@@ -9476,6 +10275,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -9530,6 +10341,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (27)
@@ -9577,6 +10408,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -9688,6 +10531,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2002552194}
   - {fileID: 1472643197}
@@ -10007,6 +10851,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (17)
@@ -10055,6 +10919,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -10096,6 +10972,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (26)
@@ -10144,6 +11040,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -10188,6 +11096,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 690411992}
   m_RootOrder: 0
@@ -10393,6 +11302,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 77760699}
   m_RootOrder: 0
@@ -10696,6 +11606,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (5)
@@ -10744,6 +11674,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -10776,6 +11718,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 0.92118454, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1739597086}
   - {fileID: 39040802}
@@ -10911,6 +11854,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 1.3711846, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1122164688}
   - {fileID: 1620235829}
@@ -11014,6 +11958,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.1380486, y: 1.2015686, z: -2.1774244}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1256961083}
   m_RootOrder: 0
@@ -11251,6 +12196,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 753296484}
   - {fileID: 2054220535}
@@ -11692,9 +12638,10 @@ Transform:
   m_LocalRotation: {x: -0.35355335, y: 0.35355356, z: -0.14644668, w: -0.85355335}
   m_LocalPosition: {x: 69.90001, y: 17.565136, z: -58.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 25, y: -135, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -11742,7 +12689,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 7
+  clearColorMode: 1
+  backgroundColorHDR: {r: 0.003921569, g: 0.003921569, b: 0.02745098, a: 1}
+  clearDepth: 1
+  volumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  volumeAnchorOverride: {fileID: 0}
+  antialiasing: 3
+  SMAAQuality: 2
+  dithering: 0
+  stopNaNs: 0
+  taaSharpenStrength: 0.5
+  TAAQuality: 1
+  taaHistorySharpening: 0.35
+  taaAntiFlicker: 0.5
+  taaMotionVectorRejection: 0
+  taaAntiHistoryRinging: 0
+  taaBaseBlendFactor: 0.875
+  physicalParameters:
+    m_Iso: 200
+    m_ShutterSpeed: 0.005
+    m_Aperture: 16
+    m_FocusDistance: 10
+    m_BladeCount: 5
+    m_Curvature: {x: 2, y: 11}
+    m_BarrelClipping: 0.25
+    m_Anamorphism: 0
+  flipYMode: 0
+  xrRendering: 1
+  fullscreenPassthrough: 0
+  allowDynamicResolution: 0
+  customRenderingSettings: 0
+  invertFaceCulling: 0
+  probeLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hasPersistentHistory: 0
+  allowDeepLearningSuperSampling: 1
+  deepLearningSuperSamplingUseCustomQualitySettings: 0
+  deepLearningSuperSamplingQuality: 0
+  deepLearningSuperSamplingUseCustomAttributes: 0
+  deepLearningSuperSamplingUseOptimalSettings: 1
+  deepLearningSuperSamplingSharpening: 0
+  exposureTarget: {fileID: 0}
+  materialMipBias: 0
+  m_RenderingPathCustomFrameSettings:
+    bitDatas:
+      data1: 72198262773251917
+      data2: 13763000468760363032
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    msaaMode: 9
+    materialQuality: 0
+  renderingPathCustomFrameSettingsOverrideMask:
+    mask:
+      data1: 0
+      data2: 0
+  defaultFrameSettings: 0
+  m_Version: 8
   m_ObsoleteRenderingPath: 0
   m_ObsoleteFrameSettings:
     overrides: 0
@@ -11789,61 +12801,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
-  clearColorMode: 1
-  backgroundColorHDR: {r: 0.003921569, g: 0.003921569, b: 0.02745098, a: 1}
-  clearDepth: 1
-  volumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  volumeAnchorOverride: {fileID: 0}
-  antialiasing: 3
-  SMAAQuality: 2
-  dithering: 0
-  stopNaNs: 0
-  taaSharpenStrength: 0.5
-  TAAQuality: 1
-  taaHistorySharpening: 0.35
-  taaAntiFlicker: 0.5
-  taaMotionVectorRejection: 0
-  taaAntiHistoryRinging: 0
-  physicalParameters:
-    m_Iso: 200
-    m_ShutterSpeed: 0.005
-    m_Aperture: 16
-    m_BladeCount: 5
-    m_Curvature: {x: 2, y: 11}
-    m_BarrelClipping: 0.25
-    m_Anamorphism: 0
-  flipYMode: 0
-  xrRendering: 1
-  fullscreenPassthrough: 0
-  allowDynamicResolution: 0
-  customRenderingSettings: 0
-  invertFaceCulling: 0
-  probeLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  hasPersistentHistory: 0
-  exposureTarget: {fileID: 0}
-  m_RenderingPathCustomFrameSettings:
-    bitDatas:
-      data1: 72198262773251917
-      data2: 13763000468760363032
-    lodBias: 1
-    lodBiasMode: 0
-    lodBiasQualityLevel: 0
-    maximumLODLevel: 0
-    maximumLODLevelMode: 0
-    maximumLODLevelQualityLevel: 0
-    sssQualityMode: 0
-    sssQualityLevel: 0
-    sssCustomSampleBudget: 20
-    materialQuality: 0
-  renderingPathCustomFrameSettingsOverrideMask:
-    mask:
-      data1: 0
-      data2: 0
-  defaultFrameSettings: 0
 --- !u!1 &970599693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5925024055628774765, guid: b031ae05ca0e962459a2fd05ad510b84, type: 3}
@@ -11965,6 +12922,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -12016,6 +12981,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -12155,6 +13144,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669150968}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -12207,6 +13204,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &994418616 stripped
@@ -12221,6 +13242,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (8)
@@ -12268,6 +13309,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -12414,6 +13467,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 157601961}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -12465,6 +13526,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -12739,6 +13824,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (4)
@@ -12787,6 +13892,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -12823,6 +13940,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1052664312}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 218139864277508908, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -12883,6 +14008,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!1 &1052664311
@@ -12911,6 +14060,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450651890531834}
   - {fileID: 1773439417}
@@ -12986,6 +14136,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (29)
@@ -13033,6 +14203,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -13111,6 +14293,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 0.92118454, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 783680290}
   - {fileID: 1669150968}
@@ -13150,6 +14333,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6462003538346181871}
   - {fileID: 600481305}
@@ -13159,7 +14343,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1068924653
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13172,6 +14356,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -13222,6 +14407,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -13273,6 +14466,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -13357,6 +14574,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8155610277611389741}
   - {fileID: 6948450318417307978}
@@ -13455,6 +14673,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1780551832}
   - {fileID: 1773730453}
@@ -13598,6 +14817,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -13650,6 +14877,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!1 &1122164687
@@ -13678,6 +14929,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450652142286217}
   - {fileID: 2718482994563135648}
@@ -13877,6 +15129,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -13928,6 +15188,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -14169,6 +15453,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1780551832}
   m_RootOrder: 0
@@ -14282,6 +15567,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -14333,6 +15626,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -14510,6 +15827,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (21)
@@ -14557,6 +15894,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -14695,6 +16044,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (5)
@@ -14742,6 +16111,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -15155,6 +16536,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.87, y: 0.95000005, z: -50.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1319652077}
   m_Father: {fileID: 1068924652}
@@ -15208,7 +16590,10 @@ MonoBehaviour:
     NearClipPlane: 0.001
     FarClipPlane: 500
     Dutch: 0
+    ModeOverride: 0
     LensShift: {x: 0, y: 0}
+    GateFit: 2
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -15234,10 +16619,11 @@ Transform:
   m_LocalRotation: {x: -0.35355335, y: 0.35355356, z: -0.14644668, w: -0.85355335}
   m_LocalPosition: {x: 69.90001, y: 17.565136, z: -58.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 906931053}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 45, y: 315, z: 0}
 --- !u!1001 &1258369095
 PrefabInstance:
@@ -15313,6 +16699,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1052664312}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 218139864277508908, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -15368,6 +16762,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -15528,6 +16946,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (20)
@@ -15575,6 +17013,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -15699,6 +17149,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -15750,6 +17208,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -15957,6 +17439,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669150968}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -16009,6 +17499,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &1312933458 stripped
@@ -16023,6 +17537,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (4)
@@ -16071,6 +17605,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -16084,6 +17630,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -16136,6 +17690,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &1317640178 stripped
@@ -16171,6 +17749,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1245107502}
   m_RootOrder: 0
@@ -16283,6 +17862,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (3)
@@ -16330,6 +17929,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -16475,6 +18086,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1252322015}
   - {fileID: 590556517}
@@ -16599,6 +18211,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1508276556}
   - {fileID: 982020168}
@@ -17318,6 +18931,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1352146358}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -17370,6 +18991,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &1458513893 stripped
@@ -17384,6 +19029,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (23)
@@ -17431,6 +19096,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -17832,6 +19509,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 200973973}
   m_RootOrder: 0
@@ -17945,6 +19623,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -17996,6 +19682,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -18135,6 +19845,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (2)
@@ -18182,6 +19912,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
@@ -18495,6 +20237,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (13)
@@ -18543,6 +20305,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -18586,12 +20360,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 59.9, y: 1.4829997, z: -48.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1196958685}
   - {fileID: 435036196}
   - {fileID: 1678367817}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1521439306
 SphereCollider:
@@ -18622,7 +20397,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 1.8, z: 0}
 --- !u!95 &1521439308
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18635,6 +20410,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -18729,6 +20505,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.2832756, y: -0.92118454, z: -16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2005571466}
   - {fileID: 1962992682}
@@ -18739,7 +20516,7 @@ Transform:
   - {fileID: 1066483190}
   - {fileID: 149051397}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1524511951 stripped
 Transform:
@@ -18879,7 +20656,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Intensity
-      value: 54000
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
       objectReference: {fileID: 0}
     - target: {fileID: 218139864277508908, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Enabled
@@ -18941,9 +20722,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Intensity
-      value: 1500
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -18973,6 +20774,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 0.92118454, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 944429370}
   - {fileID: 1352146358}
@@ -19081,6 +20883,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (16)
@@ -19128,6 +20950,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -19608,9 +21442,10 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1594615930
 MonoBehaviour:
@@ -19624,15 +21459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 11
-  m_ObsoleteShadowResolutionTier: 1
-  m_ObsoleteUseShadowQualitySettings: 0
-  m_ObsoleteCustomShadowResolution: 512
-  m_ObsoleteContactShadows: 0
-  m_PointlightHDType: 0
-  m_SpotLightShape: 0
-  m_AreaLightShape: 0
-  m_Intensity: 800
+  m_Intensity: 0.5
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -19715,6 +21542,7 @@ MonoBehaviour:
   m_BarnDoorAngle: 90
   m_BarnDoorLength: 0.05
   m_preserveCachedShadow: 0
+  m_OnDemandShadowRenderOnPlacement: 1
   m_ShadowCascadeRatios:
   - 0.05
   - 0.2
@@ -19730,10 +21558,17 @@ MonoBehaviour:
   useOldInspector: 0
   useVolumetric: 1
   featuresFoldout: 1
-  showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
   m_AreaLightEmissiveMeshLayer: -1
+  m_Version: 11
+  m_ObsoleteShadowResolutionTier: 1
+  m_ObsoleteUseShadowQualitySettings: 0
+  m_ObsoleteCustomShadowResolution: 512
+  m_ObsoleteContactShadows: 0
+  m_PointlightHDType: 0
+  m_SpotLightShape: 0
+  m_AreaLightShape: 0
 --- !u!108 &1594615931
 Light:
   m_ObjectHideFlags: 0
@@ -19746,7 +21581,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 800
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -19803,6 +21638,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (22)
@@ -19850,6 +21705,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -20021,6 +21888,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 629323780}
   - {fileID: 601892507}
@@ -20182,6 +22050,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (15)
@@ -20230,6 +22118,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -20267,6 +22167,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 581070440}
   - {fileID: 66796711}
@@ -20395,13 +22296,14 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.82001, y: 4.61, z: -96.9}
   m_LocalScale: {x: 2, y: 6, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 149051397}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1633979787
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20414,6 +22316,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -20455,6 +22358,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20549,6 +22453,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.049, y: 0.111, z: 0.253}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 586926425}
   m_RootOrder: 0
@@ -20565,14 +22470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 11
-  m_ObsoleteShadowResolutionTier: 1
-  m_ObsoleteUseShadowQualitySettings: 0
-  m_ObsoleteCustomShadowResolution: 512
-  m_ObsoleteContactShadows: 0
-  m_PointlightHDType: 0
-  m_SpotLightShape: 0
-  m_AreaLightShape: 0
   m_Intensity: 341.91675
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1.72
@@ -20656,6 +22553,7 @@ MonoBehaviour:
   m_BarnDoorAngle: 90
   m_BarnDoorLength: 0.05
   m_preserveCachedShadow: 0
+  m_OnDemandShadowRenderOnPlacement: 1
   m_ShadowCascadeRatios:
   - 0.05
   - 0.2
@@ -20671,10 +22569,17 @@ MonoBehaviour:
   useOldInspector: 0
   useVolumetric: 1
   featuresFoldout: 1
-  showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
   m_AreaLightEmissiveMeshLayer: -1
+  m_Version: 11
+  m_ObsoleteShadowResolutionTier: 1
+  m_ObsoleteUseShadowQualitySettings: 0
+  m_ObsoleteCustomShadowResolution: 512
+  m_ObsoleteContactShadows: 0
+  m_PointlightHDType: 0
+  m_SpotLightShape: 0
+  m_AreaLightShape: 0
 --- !u!108 &1649211430
 Light:
   m_ObjectHideFlags: 0
@@ -20887,6 +22792,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (6)
@@ -20934,6 +22859,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -21029,6 +22966,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 285619105}
   - {fileID: 794910769}
@@ -21225,6 +23163,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1352146358}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -21276,6 +23222,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -21574,6 +23544,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3203369734499640990}
   - {fileID: 1654059157812334068}
@@ -21821,6 +23792,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1422789687}
   - {fileID: 236279222}
@@ -21913,6 +23885,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2010065385}
   m_RootOrder: 0
@@ -22283,6 +24256,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (30)
@@ -22330,6 +24323,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -22439,6 +24444,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2043975767}
   m_Father: {fileID: 1107926898}
@@ -22823,6 +24829,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1156880321}
   m_Father: {fileID: 1107926898}
@@ -23085,6 +25092,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669150968}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -23137,6 +25152,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &1811260443 stripped
@@ -23151,6 +25190,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (7)
@@ -23198,6 +25257,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -23608,54 +25679,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4398178030480644219, guid: a6be041baa49fe549b41cdd37c30780c, type: 3}
   m_PrefabInstance: {fileID: 1856341649}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1860609867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1860609869}
-  - component: {fileID: 1860609868}
-  m_Layer: 0
-  m_Name: Post Processing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1860609868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860609867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: db22a47ea2ddd6a4facb2ca537371fd8, type: 2}
---- !u!4 &1860609869
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860609867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1860643038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23663,6 +25686,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 688408164}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -23714,6 +25745,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -23809,14 +25864,15 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 62.4, y: 4.96, z: -50.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 127072038}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1864556459
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23829,6 +25885,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -23845,6 +25902,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (25)
@@ -23892,6 +25969,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -23973,6 +26062,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669150968}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -24024,6 +26121,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -24254,6 +26375,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 157601961}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -24306,6 +26435,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!1 &1949400824 stripped
@@ -24352,6 +26505,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 0.92118454, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1093727692}
   - {fileID: 688408164}
@@ -24519,6 +26673,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2832756, y: 0.92118454, z: 16.840828}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1372028556}
   - {fileID: 1052664312}
@@ -24801,6 +26956,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 690411992}
   m_RootOrder: 4
@@ -25080,6 +27236,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1352146358}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3105970721606557764, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: speed
       value: 1.5
@@ -25132,6 +27296,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch with Holder 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
 --- !u!4 &2005571466 stripped
@@ -25167,6 +27355,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1740656411}
   - {fileID: 200973973}
@@ -25568,6 +27757,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (12)
@@ -25616,6 +27825,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -25634,6 +27855,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 39040802}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02
@@ -25682,6 +27923,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
       value: 1.5
@@ -25721,6 +27974,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1773730453}
   m_RootOrder: 0
@@ -26161,6 +28415,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1052664312}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 218139864277508908, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -26216,6 +28478,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
@@ -26354,6 +28640,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02
@@ -26401,6 +28707,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -26646,6 +28964,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 769464888}
   - {fileID: 1811260443}
@@ -26702,6 +29021,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 337782733}
   - {fileID: 928952444}
@@ -26896,6 +29216,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620235829}
     m_Modifications:
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476542276, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 975941958538956305, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 4029996898486534608, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 02 (18)
@@ -26943,6 +29283,18 @@ PrefabInstance:
     - target: {fileID: 4370387743508208490, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111348064522525027, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8725556298811792634, guid: 5898cfa713f1f734588e11178e34b559, type: 3}
       propertyPath: speed
@@ -28057,6 +30409,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1052664312}
     m_Modifications:
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 175584190427127414, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_ColorTemperature
+      value: 5800
+      objectReference: {fileID: 0}
     - target: {fileID: 3884948270386564294, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28104,6 +30464,30 @@ PrefabInstance:
     - target: {fileID: 4513111995336660604, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
       propertyPath: m_Name
       value: Torch with Holder 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: maxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: minValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600384888399019654, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_Intensity
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LightUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114644498185739495, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577233d8f1fe074fa8b2bd109c4f54d, type: 3}
