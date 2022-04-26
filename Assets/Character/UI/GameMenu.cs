@@ -36,6 +36,7 @@ public class GameMenu : MonoBehaviour
             {
                 //transform.LeanMoveLocal(new Vector2(transform.localPosition.x - 1900, transform.localPosition.y), 1f).setEaseInOutBack();
                 isOpen = false;
+                commands.gameObject.SetActive(false);
                 panel.transform.LeanScale(Vector3.zero, .3f).setOnComplete(OnComplete);
                 StartCoroutine(CanTriggerAgain());
             }
