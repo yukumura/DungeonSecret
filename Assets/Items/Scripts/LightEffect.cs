@@ -27,7 +27,8 @@ public class LightEffect : MonoBehaviour
     void Update()
     {
         if (delayedStart)
-            lightData.luxAtDistance = Mathf.Lerp(minValue, maxValue, Mathf.PingPong(Time.time / durationInSeconds, 1));
+            lightData.SetIntensity(Mathf.Lerp(minValue, maxValue, Mathf.PingPong(Time.time / durationInSeconds, 1)));
+        //lightData.luxAtDistance = Mathf.Lerp(minValue, maxValue, Mathf.PingPong(Time.time / durationInSeconds, 1));
 
     }
 
