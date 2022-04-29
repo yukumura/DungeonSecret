@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     Animator animator;
     RuntimeAnimatorController ac;
+    [SerializeField]
+    ParticleSystem dustEffect;
 
 
     int isWalkingHash;
@@ -443,10 +445,16 @@ public class PlayerController : MonoBehaviour
     {
         int step = UnityEngine.Random.Range(0, steps.Count() - 1);
         SFXManager.Instance.Audio.PlayOneShot(steps[step], .5f);
+        PlayDust();
     }
 
     public void PlayGetUp()
     {
         SFXManager.Instance.Audio.PlayOneShot(audioGetUp, .5f);
+    }
+
+    public void PlayDust()
+    {
+        dustEffect.Play();
     }
 }
